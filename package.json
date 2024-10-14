@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"new": "bun create slidev",
-		"build": "bun run --filter '*' build",
+		"build": "bun ./scripts/build.ts",
 		"lint": "eslint --cache .",
 		"format": "nr lint --fix",
 		"prepare": "npx bunpare"
@@ -17,14 +17,16 @@
 		"@slidev/client": "^0.50.0-beta.3",
 		"@slidev/theme-default": "^0.25.0",
 		"@slidev/theme-seriph": "latest",
+		"@types/bun": "^1.1.11",
 		"eslint": "^9.12.0",
 		"eslint-plugin-format": "^0.1.2",
 		"markdown-it-magic-link": "^0.1.4",
 		"prettier-plugin-slidev": "^1.0.5",
+		"tinyglobby": "^0.2.9",
 		"unocss": "^0.63.4",
 		"vue": "^3.5.12"
 	},
 	"workspaces": [
-		"./*"
+		"*/src"
 	]
 }
