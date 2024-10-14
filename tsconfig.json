@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "node",
+		"allowImportingTsExtensions": true,
+		"strict": true,
+		"strictNullChecks": true,
+		"noEmit": true,
+		"allowSyntheticDefaultImports": true
+	},
+	"exclude": [
+		"**/*.md"
+	]
+}

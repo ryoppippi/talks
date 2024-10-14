@@ -1,11 +1,13 @@
 {
-  "name": "2024-08-30-svelte-japan-online-meetup",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
-    "export": "slidev export"
-  }
+	"name": "2024-08-30-svelte-japan-online-meetup",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "slidev build",
+		"dev": "slidev --open",
+		"export": "slidev export"
+	},
+	"devDependencies": {
+		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config"
+	}
 }
-

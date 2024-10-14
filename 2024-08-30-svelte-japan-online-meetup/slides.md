@@ -61,7 +61,7 @@ image: ./budoux.png
 ```ts
 /* svelte.config.js */
 import {
-  budouxPreprocess
+	budouxPreprocess
 } from 'svelte-preprocess-budoux';
 
 export default {
@@ -69,9 +69,7 @@ export default {
 		budouxPreprocess({ language: 'ja' }),
 	],
 };
-
 ```
-
 
 ````md magic-move
 ```svelte
@@ -83,14 +81,13 @@ export default {
 <!-- +page.svelte -->
 <p
   style="
-    word-break: keep-all; 
+    word-break: keep-all;
     overflow-wrap: anywhere;
     "
-> 
-  本日は 晴天です。 明日は 曇りでしょう。 
+>
+  本日は 晴天です。 明日は 曇りでしょう。
 </p>
 ```
-
 ````
 
 ---
@@ -116,7 +113,6 @@ url: https://sveltweet.vercel.app/async/1829286885627445584
 # [svelte-preprocess-import-css](https://github.com/ryoppippi/svelte-preprocess-import-css)
 [![JSR](https://jsr.io/badges/@ryoppippi/svelte-preprocess-import-css)](https://jsr.io/@ryoppippi/svelte-preprocess-import-css)
 
-
 ### モチベーション
 - 外部のCSS File を読み込んで使いたいが、scoped にしたい
 <!-- svelte script tagでimport css すると、scoped にならない -->
@@ -124,11 +120,11 @@ url: https://sveltweet.vercel.app/async/1829286885627445584
 - Svelte Preprocessor
 - <budoux> `style` タグ内で `@import` を使うことで、外部 css を scoped に読み込むことができる</budoux>
 
-
 ```css
 /* a.css */
-.message { color: blue; }
-
+.message {
+	color: blue;
+}
 ```
 ````md magic-move
 ```svelte
@@ -166,21 +162,21 @@ div { color: green; }
 - `dev`/`preview`にもリダイレクトを確認できる
 
 ```ts
+import { cloudflareRedirect } from '@ryoppippi/vite-plugin-cloudflare-redirect';
 // vite.config.js
-import { defineConfig } from 'vite'
-import { cloudflareRedirect } from '@ryoppippi/vite-plugin-cloudflare-redirect'
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-    plugins: [
-        cloudflareRedirect({
-            mode: "parse",
-            entries: [
-                { from: '/foo', to: 'https://example.com', status: 302 },
-                // ...
-            ]
-        })
-    ]
-})
+	plugins: [
+		cloudflareRedirect({
+			mode: 'parse',
+			entries: [
+				{ from: '/foo', to: 'https://example.com', status: 302 },
+				// ...
+			]
+		})
+	]
+});
 ```
 
 ```
@@ -196,7 +192,6 @@ export default defineConfig({
 - `Vite` で `favicons` や `manifest.json` を自動生成するプラグイン
 - 複数のサイズのアイコンを生成
 - キャッシュ機能もあるよ！
-
 
 ````md magic-move
 ```ts
@@ -261,7 +256,6 @@ layout: two-cols-header
 - [Demo](https://unplugin-typia-sveltekit.pages.dev/)
 - <budoux>[`Superforms`](https://superforms.rocks/) 等のエコシステムライブラリにPRを送ってます</budoux>
 - <budoux>みんな使ってね！</budoux>
-
 
 ::right::
 

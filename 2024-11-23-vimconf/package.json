@@ -1,10 +1,10 @@
 {
-  "name": "2024-11-23-vimconf",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
-    "export": "slidev export"
-  }
+	"name": "2024-11-23-vimconf",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "slidev build",
+		"dev": "slidev --open",
+		"export": "slidev export"
+	}
 }
