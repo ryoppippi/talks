@@ -40,3 +40,6 @@ await $`rm -rf dist`;
 		await $`cp ${pdf} ${p.join(rootDist, projectDirName)}/`;
 	}
 }
+
+/* copy redirects */
+await $`cp -r _redirects ${rootDist}/`;
