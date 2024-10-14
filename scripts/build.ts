@@ -24,6 +24,7 @@ await $`rm -rf dist`;
 		const srcDir = p.dirname(packageFile);
 		const projectDist = p.join(srcDir, 'dist');
 		const projectDirName = p.dirname(srcDir);
+		await $`rm ${projectDist}/_redirects`;
 		await $`mkdir -p ${p.join(rootDist, projectDirName)}`;
 		await $`cp -r ${projectDist}/* ${p.join(rootDist, projectDirName)}/`;
 	}
