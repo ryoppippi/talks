@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "new": "bun create slidev",
     "build": "bun run --filter '*' build",
     "lint": "bun run --filter '*' lint",
     "format": "bun run --filter '*' format",
