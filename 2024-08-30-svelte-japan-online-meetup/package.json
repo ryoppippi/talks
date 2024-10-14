@@ -1,20 +1,13 @@
 {
-  "name": "2024-08-30-svelte-japan-online-meetup",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
-    "export": "slidev export"
-  },
-  "dependencies": {
-    "@slidev/cli": "^0.49.29",
-    "@slidev/theme-apple-basic": "^0.25.1",
-    "@slidev/theme-default": "latest",
-    "@slidev/theme-seriph": "latest",
-    "vue": "^3.4.38"
-  },
-  "devDependencies": {
-    "@ryoppippi/slidev-transformer-budoux": "npm:@jsr/ryoppippi__slidev-transformer-budoux"
-  }
+	"name": "2024-08-30-svelte-japan-online-meetup",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "slidev build --base /2024-08-30-svelte-japan-online-meetup/ --out ../dist/2024-08-30-svelte-japan-online-meetup",
+		"dev": "slidev --open",
+		"export": "slidev export"
+	},
+	"dependencies": {
+		"@slidev/theme-apple-basic": "^0.25.1"
+	}
 }
