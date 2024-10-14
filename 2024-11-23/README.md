@@ -1,11 +1,7 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+---
+title: 'Neovim for Frontend Developers: Boosting Productivity and Creativity'
+date: 2024-11-23
+event: Vimconf 2024
+eventLink: https://vimconf.org/2024/
+---
 
-To start the slide show:
-
-- `npm install`
-- `npm run dev`
-- visit <http://localhost:3030>
-
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev at the [documentation](https://sli.dev/).
