@@ -4,4 +4,3 @@ date: 2024-11-23
 event: Vimconf 2024
 eventLink: https://vimconf.org/2024/
 ---
-
