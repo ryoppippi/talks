@@ -6,8 +6,5 @@
 		"build": "slidev build",
 		"dev": "slidev --open",
 		"export": "slidev export"
-	},
-	"devDependencies": {
-		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config"
 	}
 }
