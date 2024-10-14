@@ -1,6 +1,7 @@
 ---
 title: vimで人生が豊かになった話
 date: 2023-12-13
+lang: ja
 event: gorilla vim
 eventLink: https://gorillavim.connpass.com/event/301953/
 link:

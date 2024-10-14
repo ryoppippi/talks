@@ -43,6 +43,7 @@ await $`cp -r _redirects ${rootDist}/`;
 	const schema = v.object({
 		title: v.string(),
 		date: v.date(),
+		lang: v.union([v.literal('ja'), v.literal('en')]),
 		event: v.string(),
 		eventLink: v.optional(urlSchema),
 		videoLink: v.optional(urlSchema),
