@@ -1,5 +1,5 @@
 import { mergeConfigs, presetWebFonts } from 'unocss';
-import config from '../../unocss.config';
+import config from '../unocss.config';
 
 export default mergeConfigs([
 	config,

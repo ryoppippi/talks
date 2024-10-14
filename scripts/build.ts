@@ -10,25 +10,7 @@ $.cwd(root);
 
 await $`rm -rf dist`;
 
-/* build and copy dist to parent dist */
-{
-/* build */
-	await $`bun run --filter '*' build`;
-
-	const packageFiles = (await glob('*/src/package.json', {
-		onlyFiles: true,
-	})).sort();
-
-	/* copy dist to parent dist recursively */
-	for (const packageFile of packageFiles) {
-		const srcDir = p.dirname(packageFile);
-		const projectDist = p.join(srcDir, 'dist');
-		const projectDirName = p.dirname(srcDir);
-		await $`rm ${projectDist}/_redirects`;
-		await $`mkdir -p ${p.join(rootDist, projectDirName)}`;
-		await $`cp -r ${projectDist}/* ${p.join(rootDist, projectDirName)}/`;
-	}
-}
+await $`bun run --filter '*' build`;
 
 /* copy pdfs */
 {

@@ -3,7 +3,7 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"build": "slidev build --base ./ --out ./dist",
+		"build": "slidev build --base /2024-08-30-svelte-japan-online-meetup/ --out ../dist/2024-08-30-svelte-japan-online-meetup",
 		"dev": "slidev --open",
 		"export": "slidev export"
 	},
