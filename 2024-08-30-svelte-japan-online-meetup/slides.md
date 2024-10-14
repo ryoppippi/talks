@@ -25,7 +25,8 @@ image: https://ryoppippi.com/ryoppippi.jpg
 - UK在住
 - <budoux>Webとか機械学習系のPoCを回してる</budoux>
 - <budoux>好きあらばSvelte/SvelteKitを案件にぶちこむ人</budoux>
-- [vim-jp](https://vim-jp.org/) にも生息してます(Neovimはいいぞ)
+
+{vim-jp} {Svelte Japan}
 
 ---
 layout: statement
