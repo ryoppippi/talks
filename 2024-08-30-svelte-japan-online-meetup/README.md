@@ -1,11 +1,5 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# 最近作ってるライブラリ怒涛の紹介！
 
-To start the slide show:
+2024/08/30 Svelte Japan Online Meetup #4
 
-- `npm install`
-- `npm run dev`
-- visit <http://localhost:3030>
-
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev at the [documentation](https://sli.dev/).
+[Svelte Japan Online Meetup #4](https://svelte-jp.connpass.com/event/322663/)
