@@ -47,9 +47,11 @@ await $`cp -r _redirects ${rootDist}/`;
 		event: v.string(),
 		eventLink: v.optional(urlSchema),
 		videoLink: v.optional(urlSchema),
-		link: v.optional(v.array(urlSchema)),
 		content: v.string(),
-		urls: v.array(urlSchema),
+		links: v.pipe(
+			v.array(urlSchema),
+			v.transform((links: string[]) => links.filter(l => l.startsWith(ROOT_URL)).concat(links.filter(l => !l.startsWith(ROOT_URL)))),
+		),
 	});
 
 	const results = [];
@@ -60,13 +62,13 @@ await $`cp -r _redirects ${rootDist}/`;
 		const projectDirName = p.relative(root, p.dirname(projectMD));
 		const distPath = p.join(rootDist, projectDirName);
 
-		const urls: string[] = [];
+		const { links = [] } = data as { links: string[] };
 
 		/* find url */
 		if (await Bun.file(p.join(distPath, 'index.html')).exists()) {
 			console.log('exists', distPath);
 			const url = ufo.joinURL(ROOT_URL, p.relative(rootDist, distPath));
-			urls.push(url);
+			links.push(url);
 		}
 
 		/* find pdf */
@@ -74,13 +76,13 @@ await $`cp -r _redirects ${rootDist}/`;
 		if (pdfPath.length > 0) {
 			console.log('exists', pdfPath[0]);
 			const pdf = ufo.joinURL(ROOT_URL, p.relative(rootDist, pdfPath[0]));
-			urls.push(pdf);
+			links.push(pdf);
 		}
 
 		const result = v.safeParse(schema, {
 			...data,
 			content,
-			urls,
+			links,
 		});
 		if (!result.success) {
 			console.error({
@@ -91,7 +93,8 @@ await $`cp -r _redirects ${rootDist}/`;
 			continue;
 		}
 
-		results.push(result.output);
+		const { output } = result;
+		results.push(output);
 	}
 
 	await Bun.write(p.join(rootDist, 'talks.json'), JSON.stringify(results, null, 2));
