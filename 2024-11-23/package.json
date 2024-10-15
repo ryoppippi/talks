@@ -5,6 +5,7 @@
 	"scripts": {
 		"build": "slidev build --base /2024-11-23 --out ../dist/2024-11-23",
 		"dev": "slidev --open",
+		"dev:remote": "slidev --open --remote --tunnel",
 		"export": "slidev export"
 	}
 }
