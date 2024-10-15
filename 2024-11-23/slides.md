@@ -8,6 +8,14 @@ class: bg-#0F0F0F
 
 # Neovim for Frontend Developers: Boosting Productivity and Creativity
 
+
+---
+layout: section
+---
+
+# Thank you
+## for invted to me!
+
 ---
 layout: image-right
 image: https://ryoppippi.com/ryoppippi.jpg
@@ -16,21 +24,32 @@ image: https://ryoppippi.com/ryoppippi.jpg
 # Who am I?
 
 - {@ryoppippi}
-- Freelance & Ph.D Student
+- Freelance Engineer
 - Living in the UK
 - {vim-jp} {Svelte Japan}
 
 ![haichu](https://ryoppippi.com/haichu.png){v-click}
 
 ---
-layout: section
----
-
-Thank you
-
----
 layout: intro-image
 image: /projects.jpeg
 ---
 
+---
+layout: bullets
+---
 
+# VSCode is the King, but...
+
+![vscode](/vscode.svg)
+
+---
+layout: bullets
+---
+
+# Why Neovim?
+
+* Oil + Macro
+* AI
+* WebBrowser
+* LSP
