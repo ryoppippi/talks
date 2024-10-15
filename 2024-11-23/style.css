@@ -32,3 +32,9 @@
 	width: 1.6em;
 	border-radius: 50%;
 }
+
+figure figcaption {
+	line-height: 1.4285714;
+	margin-top: 0.8571429em;
+	--uno: op80 text-2xl;
+}
