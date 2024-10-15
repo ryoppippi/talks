@@ -97,5 +97,7 @@ await $`cp -r _redirects ${rootDist}/`;
 		results.push(output);
 	}
 
+	results.sort((a, b) => b.date.getTime() - a.date.getTime());
+
 	await Bun.write(p.join(rootDist, 'talks.json'), JSON.stringify(results, null, 2));
 }
