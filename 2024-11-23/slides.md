@@ -26,8 +26,13 @@ image: https://ryoppippi.com/ryoppippi.jpg
 
 ---
 layout: section
-class: gcc 
+---
+
+Thank you
+
+---
+layout: intro-image
+image: /projects.jpeg
 ---
 
 
-[![projects](/projects.png)](https://ryoppippi.com/projects)
