@@ -21,6 +21,7 @@
 		"eslint": "^9.15.0",
 		"eslint-plugin-format": "^0.1.2",
 		"gray-matter": "^4.0.3",
+		"markdown-it-image-figures": "^2.1.1",
 		"markdown-it-magic-link": "^0.1.4",
 		"playwright-chromium": "^1.48.0",
 		"prettier-plugin-slidev": "^1.0.5",
