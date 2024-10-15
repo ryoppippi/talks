@@ -2,6 +2,8 @@
 theme: apple-basic
 layout: intro
 title: 'Neovim for Frontend Developers: Boosting Productivity and Creativity'
+mdc: true
+class: bg-#0F0F0F
 ---
 
 # Neovim for Frontend Developers: Boosting Productivity and Creativity
@@ -24,7 +26,7 @@ image: https://ryoppippi.com/ryoppippi.jpg
 
 ---
 layout: section
-class: gcc bg-#0F0F0F
+class: gcc 
 ---
 
 
