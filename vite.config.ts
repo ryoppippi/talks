@@ -20,6 +20,7 @@ export default defineConfig({
 					linksMap: {
 						'vim-jp': { link: 'https://vim-jp.org/', imageUrl: 'https://vim-jp.org/assets/images/vim2-128.png' },
 						'Svelte Japan': { link: 'https://svelte.jp', imageUrl: 'https://cdn.jsdelivr.net/gh/sveltejs/branding/svelte-logo-square.png' },
+						'ryoppippi.com': {link:'https://ryoppippi.com', imageUrl: 'https://ryoppippi.com/ryoppippi.jpg'},
 					},
 				});
 			},
