@@ -8,7 +8,6 @@ class: bg-#0F0F0F
 
 # Neovim for Frontend Developers: Boosting Productivity and Creativity
 
-
 ---
 layout: section
 ---
@@ -35,13 +34,11 @@ layout: intro-image
 image: /projects.jpeg
 ---
 
-
 ---
 layout: image-right
 image: /stackoverflow.png
 link: https://survey.stackoverflow.co/2024/technology#1-integrated-development-environment
 ---
-
 
 # VSCode is the King
 
