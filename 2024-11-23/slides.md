@@ -20,9 +20,7 @@ image: https://ryoppippi.com/ryoppippi.jpg
 - Living in the UK
 - {vim-jp} {Svelte Japan}
 
-<v-click>
-  <img src="https://ryoppippi.com/haichu.png" alt="haichu">
-</v-click>
+![haichu](https://ryoppippi.com/haichu.png){v-click}
 
 ---
 layout: section
