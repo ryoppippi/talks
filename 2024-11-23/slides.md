@@ -35,19 +35,58 @@ layout: intro-image
 image: /projects.jpeg
 ---
 
+
+---
+layout: image-right
+image: /stackoverflow.png
+link: https://survey.stackoverflow.co/2024/technology#1-integrated-development-environment
+---
+
+
+# VSCode is the King
+
+![vscode](/vscode.svg){mb-10}
+
+* De-facto Standard for Editor
+  * VSCode is written in TypeScript
+  * Extensions are written in TypeScript
+  * TypeScript is de-facto lang for Frontend
+
 ---
 layout: bullets
 ---
 
-# VSCode is the King, but...
+# Why Neovim / Vim?
 
-![vscode](/vscode.svg)
+* Just looks cool{v-click}
+* That's it{v-click}
+
+---
+layout: statement
+---
+
+# Thank you for Listening!
+
+<div absolute bottom-20 right-10 rotate-15 animate-pulse animate-duration-500 v-click>
+  <p text-3xl> just kidding </p>
+</div>
 
 ---
 layout: bullets
 ---
 
-# Why Neovim?
+# Why Neovim / Vim?
+
+* Hackable
+* Customizable
+* Fast
+* Keyboard-Driven
+
+---
+layout: bullets
+---
+
+# Plugins
 
 * Oil + Macro
 * AI
