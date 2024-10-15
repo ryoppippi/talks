@@ -22,6 +22,7 @@
 		"eslint-plugin-format": "^0.1.2",
 		"gray-matter": "^4.0.3",
 		"markdown-it-magic-link": "^0.1.4",
+		"playwright-chromium": "^1.48.0",
 		"prettier-plugin-slidev": "^1.0.5",
 		"tinyglobby": "^0.2.10",
 		"ufo": "^1.5.4",
