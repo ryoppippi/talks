@@ -54,8 +54,12 @@ layout: bullets
 
 # Why Neovim / Vim?
 
-* Just looks cool{v-click}
-* That's it{v-click}
+<v-clicks>
+
+* Just looks cool
+* That's it
+
+</v-clicks>
 
 ---
 layout: statement
