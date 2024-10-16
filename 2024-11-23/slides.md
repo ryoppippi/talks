@@ -23,7 +23,6 @@ image: https://ryoppippi.com/ryoppippi.jpg
 # Who am I?
 
 - {@ryoppippi}
-- Freelance Engineer
 - Living in the UK
 - {vim-jp} {Svelte Japan}
 
@@ -62,11 +61,9 @@ layout: bullets
 layout: statement
 ---
 
-# Thank you for Listening!
+# Thank you for Listening!{v-click.hide :class="{op30: $clicks>=1}"
 
-<div absolute bottom-20 right-10 rotate-15 animate-pulse animate-duration-500 v-click>
-  <p text-3xl> just kidding </p>
-</div>
+just kidding{class='text-3xl absolute bottom-20 right-10 rotate-15 animate-pulse animate-duration-500' v-click='1'}
 
 ---
 layout: bullets
