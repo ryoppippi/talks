@@ -14,6 +14,7 @@ export default mergeConfigs([
 					strong: 'Rubik Iso',
 					fast: 'Ubuntu',
 					hand: 'Caveat',
+					mono: 'JetBrains Mono',
 				},
 			}),
 		],
