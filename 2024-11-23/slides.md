@@ -67,7 +67,7 @@ layout: statement
 
 # Thank you for Listening!{v-click.hide :class="{op30: $clicks>=1}"
 
-just kidding{class='text-3xl absolute bottom-20 right-10 rotate-15 animate-pulse animate-duration-500' v-click='1'}
+just kidding{.text-3xl .absolute .bottom-20 .right-10 .rotate-15 .animate-pulse .animate-duration-500 v-click='1'}
 
 ---
 layout: bullets
