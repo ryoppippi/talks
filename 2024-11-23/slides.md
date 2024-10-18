@@ -2,6 +2,7 @@
 theme: apple-basic
 layout: intro
 title: 'Neovim for Frontend Developers: Boosting Productivity and Creativity'
+transition: view-transition
 mdc: true
 class: bg-#0F0F0F
 ---
@@ -63,6 +64,7 @@ layout: bullets
 
 ---
 layout: statement
+transition: none
 ---
 
 # Thank you for Listening!{v-click.hide :class="{op30: $clicks>=1}"
