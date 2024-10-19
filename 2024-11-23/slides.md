@@ -5,6 +5,7 @@ title: 'Neovim for Frontend Developers: Boosting Productivity and Creativity'
 transition: view-transition
 mdc: true
 class: bg-#0F0F0F
+colorSchema: dark
 ---
 
 # Neovim for Frontend Developers: Boosting Productivity and Creativity
@@ -25,7 +26,17 @@ image: https://ryoppippi.com/ryoppippi.jpg
 
 - {@ryoppippi}
 - Living in the UK
-- {vim-jp} {Svelte Japan}
+- Engineer mainly on Frontend
+- {Svelte Japan}
+- {vim-jp}
+  - `#times-ryoppippi`
+  - `#times-yasunori`
+  - `#tech-frontend`
+  - `#neovim`
+  - `#neovim-plugins`
+  - `#vim-jp-radio`
+  - `#lang-zig`
+  - `#game-smashbros`
 
 ![haichu](https://ryoppippi.com/haichu.png){v-click}
 
@@ -35,6 +46,29 @@ image: /projects.jpeg
 ---
 
 ---
+
+![vscode](/everyone-vscode.png){.w-90% .mxa}
+
+## Everyone uses VSCode?{.fxc .absolute .bottom-5}
+
+---
+layout: bullets
+---
+
+---
+layout: bullets
+---
+
+# My Editor Journey
+
+- 2015 - 2017 Atom
+- 2017 - 2022 VSCode
+- 2021 - VSCode + Neovim
+- 2022 - Neovim
+
+![vscode](/vscode.svg){.view-transition-vscode .mb-10}
+
+---
 layout: image-right
 image: /stackoverflow.png
 link: https://survey.stackoverflow.co/2024/technology#1-integrated-development-environment
@@ -42,7 +76,7 @@ link: https://survey.stackoverflow.co/2024/technology#1-integrated-development-e
 
 # VSCode is the King
 
-![vscode](/vscode.svg){mb-10}
+![vscode](/vscode.svg){.view-transition-vscode .mb-10 .w-[50%]}
 
 * De-facto Standard for Editor
   * VSCode is written in TypeScript
