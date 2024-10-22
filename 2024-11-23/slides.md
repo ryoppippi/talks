@@ -98,6 +98,16 @@ link: https://survey.stackoverflow.co/2024/technology#1-integrated-development-e
   * TypeScript is de-facto lang for Frontend
 
 ---
+layout: image-right
+image: /unocss-vscode.png
+---
+
+# Many Extensions are built for VSCode
+<!--
+TODO: add description why VSCode
+-->
+
+---
 layout: bullets
 ---
 
