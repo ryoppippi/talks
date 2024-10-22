@@ -41,17 +41,6 @@ image: https://ryoppippi.com/ryoppippi.jpg
 ![haichu](https://ryoppippi.com/haichu.png){v-click}
 
 ---
-layout: intro-image
-image: /projects.jpeg
----
-
----
-
-![vscode](/everyone-vscode.png){.w-90% .mxa}
-
-## Everyone uses VSCode?{.fxc .absolute .bottom-5}
-
----
 layout: bullets
 ---
 
