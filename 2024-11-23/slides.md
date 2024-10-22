@@ -19,7 +19,7 @@ layout: section
 
 ---
 layout: image-right
-image: https://ryoppippi.com/ryoppippi.jpg
+image: /ryoppippi.avif
 ---
 
 # Who am I?
@@ -28,6 +28,24 @@ image: https://ryoppippi.com/ryoppippi.jpg
 - Living in the UK
 - Software Engineer mainly on Web Frontend
 - {Svelte Japan}
+- {vim-jp}
+  <!-- - `#times-ryoppippi` -->
+  <!-- - `#times-yasunori` -->
+  <!-- - `#tech-frontend` -->
+  <!-- - `#neovim` -->
+  <!-- - `#neovim-plugins` -->
+  <!-- - `#vim-jp-radio` -->
+  <!-- - `#lang-zig` -->
+  <!-- - `#game-smashbros` -->
+
+![haichu](https://ryoppippi.com/haichu.avif){v-click}
+
+---
+layout: bullets
+---
+
+# My Favorite Vim-jp Channels
+
 - {vim-jp}
   - `#times-ryoppippi`
   - `#times-yasunori`
@@ -38,10 +56,9 @@ image: https://ryoppippi.com/ryoppippi.jpg
   - `#lang-zig`
   - `#game-smashbros`
 
-![haichu](https://ryoppippi.com/haichu.png){v-click}
-
 ---
-layout: bullets
+layout: image
+image: /projects.avif
 ---
 
 ---
@@ -55,11 +72,19 @@ layout: bullets
 - 2021 - VSCode + Neovim
 - 2022 - Neovim
 
-![vscode](/vscode.svg){.view-transition-vscode .mb-10}
+<div fxa>
+  <v-clicks>
+  <img src="/vscode.svg" w-30 view-transition-vscode />
+  <!-- TODO Arrow -->
+  <img src="/vscode-neovim.avif" w-30 view-transition-vscode-neovim />
+  <!-- TODO Arrow -->
+  <img src="/neovim.svg" w-30 view-transition-neovim />
+  </v-clicks>
+</div>
 
 ---
 layout: image-right
-image: /stackoverflow.png
+image: /stackoverflow.avif
 link: https://survey.stackoverflow.co/2024/technology#1-integrated-development-environment
 ---
 
@@ -95,6 +120,11 @@ transition: none
 just kidding{.text-3xl .absolute .bottom-20 .right-10 .rotate-15 .animate-pulse .animate-duration-500 v-click='1'}
 
 ---
+layout: image
+image: '/my-lovely-terminal.avif'
+---
+
+---
 layout: bullets
 ---
 
@@ -111,7 +141,14 @@ layout: bullets
 
 # Plugins
 
-* Oil + Macro
+* LSP
+* oil.nvim + Macro
 * AI
 * WebBrowser
-* LSP
+
+---
+layout: section
+note: 時間があれば
+---
+
+# Demo
