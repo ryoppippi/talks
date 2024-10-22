@@ -26,7 +26,7 @@ image: https://ryoppippi.com/ryoppippi.jpg
 
 - {@ryoppippi}
 - Living in the UK
-- Engineer mainly on Frontend
+- Software Engineer mainly on Web Frontend
 - {Svelte Japan}
 - {vim-jp}
   - `#times-ryoppippi`
