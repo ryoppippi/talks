@@ -15,7 +15,7 @@ layout: section
 ---
 
 # Thank you
-## for invted to me!
+## for inviting me!
 
 ---
 layout: image-right
