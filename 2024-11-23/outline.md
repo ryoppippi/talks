@@ -31,7 +31,7 @@ neovimの方がいいよ！
 - 高度な編集機能
 - terminal integration
 
-frontendのためのplugin開発
+Web frontendのためのplugin開発
 
 - bun
 - pnpm
