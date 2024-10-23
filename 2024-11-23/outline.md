@@ -1,6 +1,6 @@
 自己紹介
 
-frontend開発でvim使ってるよ〜〜
+Web frontend開発でvim使ってるよ〜〜
 
 この世界だとvscodeを中心に回ってるよ！
 
