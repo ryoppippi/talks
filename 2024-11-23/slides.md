@@ -47,6 +47,7 @@ layout: bullets
 # My Favorite Vim-jp Channels
 
 - {vim-jp}
+  - `#hobby-gourmet`
   - `#times-ryoppippi`
   - `#times-yasunori`
   - `#tech-frontend`
