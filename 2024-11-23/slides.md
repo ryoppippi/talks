@@ -103,6 +103,7 @@ image: /unocss-vscode.png
 ---
 
 # Many Extensions are built for VSCode
+
 <!--
 TODO: add description why VSCode
 -->
@@ -111,7 +112,7 @@ TODO: add description why VSCode
 layout: bullets
 ---
 
-# Why Neovim / Vim?
+# Why the hell did I switch to Neovim
 
 <v-clicks>
 
@@ -138,27 +139,172 @@ image: '/my-lovely-terminal.avif'
 layout: bullets
 ---
 
-# Why Neovim / Vim?
+# Why the hell did I switch to Neovim
 
-* Hackable
-* Customizable
-* Fast
-* Keyboard-Driven
+<div flex='~ gap-4'>
+
+<div w='50%'>
+
+## Pros
+
+- Neovim can deal with front-end development
+- Hackable
+- Keyboard-Driven
+- Fast/Lightweight
+
+</div>
+
+<div w='50%'>
+
+## Cons
+- No GUI
+- No WebViews
+- Lack of Language Server Protocol (LSP) support
+
+</div>
+
+</div>
+
+---
+layout: section
+---
+
+## But can we REALLY do them with Neovim??
+
+<!--
+TODO: maybe rewrite the above
+
+You may be worried about the lack of GUI, WebViews, and LSP support in Neovim.
+-->
+
+---
+layout: section
+---
+
+## A man said...
+
+---
+layout: quote
+---
+
+# Vim can do that too
+## __それ、vimでもできるよ__
+
+{@mattn}
 
 ---
 layout: bullets
 ---
 
-# Plugins
+# LSP
 
-* LSP
-* oil.nvim + Macro
-* AI
-* WebBrowser
+- We have Language Server Protocol (LSP)
+- LSP is a protocol to communicate between editor and language server
+
+<!--
+TODO: add LSP desc more
+-->
+
+---
+
+<!-- LSP Demo -->
+
+<div gcc h-120>
+  <SlidevVideo autoplay controls loop slide>
+    <source src="/screen-lsp.mp4"/>
+  </SlidevVideo>
+</div>
+
+---
+layout: bullets
+---
+
+# Debug
+
+- Debugging is possible with Neovim
+- DAP
+
+<!--
+TODO: DAP
+-->
 
 ---
 layout: section
-note: 時間があれば
+---
+
+# Only Neovim can do it!
+
+---
+layout: bullets
+---
+
+# Let's hack with Neovim!
+
+- oil.nvim
+- sippets
+- WebBrowser
+
+---
+layout: section
 ---
 
 # Demo
+
+<!--
+- snippetとoil.nvimでfileを一気に作る
+- denippet でhackableなsnippetを作る
+多分５分くらいかかりそう
+-->
+
+---
+layou: bullets
+---
+
+# [oil.nvim](https://github.com/stevearc/oil.nvim)
+
+- made by {@stevearc}
+- A plugin to manage files as buffer
+- You can yank, delete, and paste files like editing text
+- You can use snippet 🎉 {.font-bold}
+  - I use [vim-sonictemplate](https://github.com/mattn/vim-sonictemplate)
+- VSCODE cannot do that
+
+---
+layout: bullets
+---
+
+# [denippet.vim](https://github.com/uga-rosa/denippet.vim)
+
+- made by {@uga-rosa}
+- snippet library with [ Denops ](https://github.com/vim-denops/denops.vim) by {@lambdalisue}
+- Configurable with TypeScript
+
+<!--
+TODO: add more example
+-->
+
+---
+layout: bullets
+---
+
+# Web Inspector integration
+
+<!--
+# My plugins!
+- [nvim-pnpm-catalog-lens](https://github.com/ryoppippi/nvim-pnpm-catalog-lens)
+- [vim-bun-lock](https://github.com/ryoppippi/vim-bun-lock)
+-->
+
+---
+layout: section
+---
+
+# Conclusion
+
+---
+layout: bullets
+---
+
+# Conclusion
+
+- Neovim is a powerful enough editor for Frontend Development
