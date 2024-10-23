@@ -38,7 +38,7 @@ image: /ryoppippi.avif
   <!-- - `#lang-zig` -->
   <!-- - `#game-smashbros` -->
 
-![haichu](https://ryoppippi.com/haichu.avif){v-click}
+![haichu](/haichu.png){v-click}
 
 ---
 layout: bullets
@@ -59,7 +59,7 @@ layout: bullets
 
 ---
 layout: image
-image: /projects.avif
+image: /projects.jpeg
 ---
 
 ---
@@ -77,7 +77,7 @@ layout: bullets
   <v-clicks>
   <img src="/vscode.svg" w-30 view-transition-vscode />
   <!-- TODO Arrow -->
-  <img src="/vscode-neovim.avif" w-30 view-transition-vscode-neovim />
+  <img src="/vscode-neovim.png" w-30 view-transition-vscode-neovim />
   <!-- TODO Arrow -->
   <img src="/neovim.svg" w-30 view-transition-neovim />
   </v-clicks>
@@ -85,7 +85,7 @@ layout: bullets
 
 ---
 layout: image-right
-image: /stackoverflow.avif
+image: /stackoverflow.png
 link: https://survey.stackoverflow.co/2024/technology#1-integrated-development-environment
 ---
 
@@ -133,7 +133,7 @@ just kidding{.text-3xl .absolute .bottom-20 .right-10 .rotate-15 .animate-pulse 
 
 ---
 layout: image
-image: '/my-lovely-terminal.avif'
+image: '/my-lovely-terminal.jpeg'
 ---
 
 ---
