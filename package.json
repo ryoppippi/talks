@@ -22,7 +22,7 @@
 		"gray-matter": "^4.0.3",
 		"markdown-it-magic-link": "^0.1.4",
 		"prettier-plugin-slidev": "^1.0.5",
-		"tinyglobby": "^0.2.9",
+		"tinyglobby": "^0.2.10",
 		"ufo": "^1.5.4",
 		"unocss": "^0.63.4",
 		"valibot": "^0.42.1",
