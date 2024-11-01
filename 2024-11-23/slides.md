@@ -9,7 +9,15 @@ layout: cover
 glowSeed: 4
 ---
 
-# Neovim for Frontend Developers: Boosting Productivity and Creativity
+# Neovim for Frontend Developers {.font-mono}
+## Boosting Productivity and Creativity {.font-mono}
+
+{@ryoppippi}
+
+<div abs-br mx-10 mb-10 flex="~ col gap-4 items-end" text-left>
+  <img src="/vimconf-logo.png" w-40 />
+  <div text-sm opacity-75 mt--4>23rd November 2024</div>
+</div>
 
 ---
 layout: section
