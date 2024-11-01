@@ -1,11 +1,12 @@
 ---
-theme: apple-basic
-layout: intro
 title: 'Neovim for Frontend Developers: Boosting Productivity and Creativity'
 transition: view-transition
 mdc: true
-class: bg-#0F0F0F
+highlighter: shiki
+css: unocss
 colorSchema: dark
+layout: cover
+glowSeed: 4
 ---
 
 # Neovim for Frontend Developers: Boosting Productivity and Creativity
@@ -41,7 +42,6 @@ image: /ryoppippi.avif
 ![haichu](/haichu.png){v-click}
 
 ---
-layout: bullets
 ---
 
 # My Favorite Vim-jp Channels
@@ -87,11 +87,12 @@ layout: bullets
 layout: image-right
 image: /stackoverflow.png
 link: https://survey.stackoverflow.co/2024/technology#1-integrated-development-environment
+glow: buttom-left
 ---
 
 # VSCode is the King
 
-![vscode](/vscode.svg){.view-transition-vscode .mb-10 .w-[50%]}
+<img src="/vscode.svg" w-50 view-transition-vscode mb-10 />
 
 * De-facto Standard for Editor
   * VSCode is written in TypeScript
