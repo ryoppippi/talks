@@ -218,12 +218,23 @@ TODO: add LSP desc more
 
 ---
 layout: bullets
+transition: none
 ---
 
 # Debug
 
 - Debugging is possible with Neovim
 - DAP
+
+<div
+  v-motion
+  v-click='[1, 2]'
+  :initial="{y: 200}"
+  :enter="{y: 50, x: -150}"
+  :leave="{y: 200}"
+>
+  <img src="https://cdn.jsdelivr.net/gh/uhooi/UhooiPicBook@2b5c257/Sources/MonsterWidgets/Resources/Assets.xcassets/Uhooi.imageset/uhooi.png" rotate-30 w-100/>
+</div>
 
 <!--
 TODO: DAP
