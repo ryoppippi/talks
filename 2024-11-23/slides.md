@@ -81,7 +81,6 @@ title: vim-jp radio
     <img src='/ryoppippi.avif' />
 </div>
 ---
-layout: bullets
 ---
 
 # My Editor Journey
@@ -129,7 +128,6 @@ TODO: add description why VSCode
 -->
 
 ---
-layout: bullets
 ---
 
 # Why the hell did I switch to Neovim
@@ -156,7 +154,6 @@ image: '/my-lovely-terminal.jpeg'
 ---
 
 ---
-layout: bullets
 ---
 
 # Why the hell did I switch to Neovim
@@ -205,6 +202,7 @@ layout: section
 
 ---
 layout: quote
+title: vim can do that too by mattn
 ---
 
 # Vim can do that too
@@ -213,7 +211,6 @@ layout: quote
 {@mattn}
 
 ---
-layout: bullets
 ---
 
 # LSP
@@ -236,7 +233,6 @@ TODO: add LSP desc more
 </div>
 
 ---
-layout: bullets
 transition: none
 ---
 
@@ -266,7 +262,6 @@ layout: section
 # Only Neovim can do it!
 
 ---
-layout: bullets
 ---
 
 # Let's hack with Neovim!
@@ -288,7 +283,6 @@ layout: section
 -->
 
 ---
-layou: bullets
 ---
 
 # [oil.nvim](https://github.com/stevearc/oil.nvim)
@@ -301,7 +295,6 @@ layou: bullets
 - VSCODE cannot do that
 
 ---
-layout: bullets
 ---
 
 # [denippet.vim](https://github.com/uga-rosa/denippet.vim)
@@ -315,7 +308,6 @@ TODO: add more example
 -->
 
 ---
-layout: bullets
 ---
 
 # Web Inspector integration
@@ -333,7 +325,6 @@ layout: section
 # Conclusion
 
 ---
-layout: bullets
 ---
 
 # Conclusion
