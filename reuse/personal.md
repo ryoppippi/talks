@@ -7,24 +7,21 @@ class: p-20
 
 <img src="https://ryoppippi.com/haichu.avif"  absolute top-5 left-20 w-80 />
 
-Living in the UK
-
 Software Engineer mainly on **Web Frontend x Machine Learning**
+
+Living in the UK
 
 Member of {vim-jp} / {Svelte Japan}
 
 <img src="https://ryoppippi.com/ryoppippi.avif" rounded-full w-40 abs-tr mt-32 mr-30 />
 
-<div my-10 w-min flex="~ gap-1" items-center justify-center op85>
-  <div flex='~ gap-1'>
-    <div i-ri-github-line op50 ma text-xl />
-    <div><a href="https://github.com/ryoppippi" target="_blank" border-none="!">ryoppippi</a></div>
-  </div>
-
-  <div flex='~ gap-1'>
-    <div i-tabler-brand-bluesky op80 ma text-xl ml4 text="#1DA1F2" />
-    <div><a href="https://bsky.app/profile/ryoppippi.com" border-none="!" target="_blank">@ryoppippi.com</a></div>
-  </div>
+<div my-10 w-min flex="~ gap-1" items-center justify-center>
+  <div i-ri-user-3-line op50 ma text-xl />
+  <div><a href="https://ryoppippi.com" target="_blank" class="border-none! font-300">ryoppippi.com</a></div>
+  <div i-ri-github-line op50 ma text-xl ml4/>
+  <div><a href="https://github.com/ryoppippi" target="_blank" class="border-none! font-300">ryoppippi</a></div>
+  <div i-tabler-brand-bluesky op50 ma text-xl ml4/>
+  <div><a href="https://bsky.app/profile/ryoppippi.com" target="_blank" class="border-none! font-300">@ryoppippi.com</a></div>
 </div>
 
 <!--
