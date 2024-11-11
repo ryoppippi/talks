@@ -1,0 +1,7 @@
+{
+  "name": "2024-11-08",
+  "scripts": {
+    "build": "bun run --shell bun build:copy",
+    "build:copy": "mkdir -p dist && cp ./*.png ./*.svg dist/ && cp _redirects dist/"
+  }
+}
