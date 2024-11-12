@@ -1,5 +1,2 @@
 name = "talks"
 pages_build_output_dir = "dist"
-
-[build]
-command = "bun run build"
