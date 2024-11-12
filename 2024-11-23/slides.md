@@ -51,7 +51,7 @@ I'm ryoppippi, a software engineer recently mainly working on web frontend.
 
 Also, I'm a member of Svelte Japan.
 
-[click] And also, many people asks me the pronounciation of my name
+[click] And also, many people asks me the pronunciation of my name
 
 My name is called リョッピッピ
 -->
@@ -106,7 +106,7 @@ One of the recent public projects I worked on is landing page for vim-jp radio.
 You may know vim-jp radio, a podcast for vim-jp community.
 
 [click] I worked with Tomoya and staticWagomU.
-The souce code is available on GitHub.
+The source code is available on GitHub.
 -->
 
 ---
@@ -137,7 +137,7 @@ The souce code is available on GitHub.
 layout: image-right
 image: /stackoverflow.png
 link: https://survey.stackoverflow.co/2024/technology#1-integrated-development-environment
-glow: buttom-left
+glow: bottom-left
 ---
 
 # Why [VSCode]{.view-transition-extensions-vscode}?

@@ -1,5 +1,5 @@
 ---
-title: 'Neovim for Frontend Developers: Boosting Yourr Dev with some Plugins'
+title: 'Neovim for Frontend Developers: Boosting Your Dev with some Plugins'
 transition: view-transition
 mdc: true
 highlighter: shiki
@@ -67,14 +67,13 @@ In 2021, I started using vscode-neovim extension,
 and, in 2022, I switched to Neovim.
 
 So, I'm using Neovim for about three years now.
-
 -->
 
 ---
 layout: image-right
 image: /stackoverflow.png
 link: https://survey.stackoverflow.co/2024/technology#1-integrated-development-environment
-glow: buttom-left
+glow: bottom-left
 ---
 
 # [VSCode]{.view-transition-extensions-vscode} is the King
@@ -99,7 +98,7 @@ According to the StackOverflow Survey 2024, VSCode is the most popular editor.
 <v-clicks>
   <div text-2xl absolute top-45 left-40>Easiest GUI</div>
   <div text-2xl absolute top-45 left-100>TyperScript first</div>
-  <div text-2xl font-hand absolute top-10 left-100 text='2xl center'>Good for<br/>modern Web Fronend <br/>Development<br/> 👇</div>
+  <div text-2xl font-hand absolute top-10 left-100 text='2xl center'>Good for<br/>modern Web Frontend <br/>Development<br/> 👇</div>
   <div text-2xl absolute top-45 left-170>Lots of Extensions</div>
   <div text-2xl font-hand abs-tr top-25 right-10 rotate-13 text='2xl'>Extensions are<br/> written in TypeScript<br/>👇</div>
   <div text-2xl absolute top-110 left-90>No need to pay money!!</div>
@@ -161,7 +160,6 @@ Because I really wanted to customize my editor, I gave it up to configure VSCode
 </v-clicks>
 
 <!--
-
 So, why do I use Neovim?
 
 [click] Neovim is hackable.
@@ -175,9 +173,7 @@ So, why do I use Neovim?
 [click] Neovim is terminal-friendly. Dvelopment tools are heavily rely on terminal. Neovim is a terminal-based editor, so it's easy to integrate with other tools.
 
 [click] Neovim is fast and lightweight.
-
 -->
-
 
 ---
 
@@ -193,7 +189,6 @@ So, why do I use Neovim?
 </v-clicks>
 
 <!--
-
 I switched to Neovim and use it for about three years.
 
 I love it but some people think like this.
@@ -205,7 +200,6 @@ I love it but some people think like this.
 [click] How do you manage files?
 
 [click] Can I use AI?
-
 -->
 
 ---
@@ -215,9 +209,7 @@ layout: section
 # Demo
 
 <!--
-
 So, in this talk, I'd like to share with you my workflow with Neovim.
-
 
 At first, create an exazmple project
 In this example, I'll create a svelte project using the brand-new sv command.
@@ -239,10 +231,9 @@ This is really useful.
 Some people think that this works only on VSCode or GUI editors, but if you configure it properly, you can use it on Neovim
 
 That was my Demo! how was it?
-
 -->
 
---- 
+---
 
 # LSP
 
@@ -250,16 +241,13 @@ That was my Demo! how was it?
 - LSP is a protocol to communicate between editor and language server
 
 <!--
-
 So, let's wrap up the plugins and tools in Demo.
 
 First, LSP.
 
 LSP is a protocol to communicate between editor and language server.
 
-
 Thanks to LSP, we can use the same features in any editor.
-
 -->
 
 ---
@@ -273,11 +261,9 @@ Thanks to LSP, we can use the same features in any editor.
 </div>
 
 <!--
-
 LSP provides features like auto-completion, go to definition, and so on.
 
 so, rich language features including auto-completion, auto-import, snippets are available in Neovim.
-
 -->
 
 ---
@@ -292,7 +278,6 @@ so, rich language features including auto-completion, auto-import, snippets are 
 - VSCODE cannot do that
 
 <!--
-
 Next, oil.nvim.
 
 oil.nvim is a plugin to manage files as buffer.
@@ -300,7 +285,6 @@ oil.nvim is a plugin to manage files as buffer.
 You can yank, delete, and paste files like editing text.
 
 With snippet library, you can create multiple files at the same time, which is really useful.
-
 -->
 
 ---
@@ -311,13 +295,11 @@ With snippet library, you can create multiple files at the same time, which is r
 - You can switch related files easily (ex. sever and client files)
 
 <!--
-
 Another plugin I'd like to mention is other.nvim.
 
 other.nvim is a plugin to switch related files easily.
 
 For example, you can switch between server and client files easily.
-
 -->
 
 ---
@@ -328,13 +310,11 @@ For example, you can switch between server and client files easily.
 - You can integrate browser inspector with Neovim
 
 <!--
-
 Next, vim-svelte-inspector.
 
 vim-svelte-inspector is a plugin to integrate browser inspector with Neovim.
 
 so, you can jump to the source code from the browser inspector like VSCode.
-
 -->
 
 ---
@@ -345,7 +325,6 @@ so, you can jump to the source code from the browser inspector like VSCode.
 - You can use GitHub Copilot with Neovim like VSCode
 
 <!--
-
 The last plugin I mention is about AI.
 
 copilot.lua is a plugin to use GitHub Copilot with Neovim like VSCode.
@@ -355,7 +334,6 @@ So, you can use AI with Neovim.
 And AI plugins in Neovim is hackable. You can customize it as you like.
 
 Which is pretty cool.
-
 -->
 
 ---
@@ -373,13 +351,11 @@ layout: section
 - If you are a VSCode user and want to try Neovim, I recommend you to try it
 
 <!--
-
 So, in conclusion, Neovim is a great editor for frontend developers.
 
 Neovim has good plugins for frontend development.
 
 If you are a VSCode user and want to try Neovim, I recommend you to try it.
-
 -->
 
 ---
@@ -396,13 +372,10 @@ If you are a VSCode user and want to try Neovim, I recommend you to try it.
 ...
 
 <!--
-
 There are many other plugins I didn't mention in this talk.
 
 I'll upload this slide to my GitHub repository, so please check it out.
-
 -->
-
 
 ---
 layout: section
