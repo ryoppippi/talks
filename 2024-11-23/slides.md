@@ -188,6 +188,14 @@ TODO: add description why VSCode
 -->
 
 ---
+layout: image
+image: '/vi-screenshot.png'
+title: vi?
+---
+
+---
+title: why neovim
+---
 
 # Why the hell did I switch to Neovim
 
