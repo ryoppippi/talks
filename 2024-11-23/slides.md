@@ -153,28 +153,32 @@ title: why vscode
 
 # Why [VSCode]{.view-transition-extensions-vscode}?
 
-<div grid='~ cols-2' >
+<div i-vscode-icons-file-type-vscode size-40 view-transition-vscode abs-b mxa mb-40 />
 
-<div v-click>
+<v-clicks>
+  <div text-2xl absolute top-45 left-40>Easiest GUI</div>
+  <div text-2xl absolute top-45 left-100>TyperScript first</div>
+  <div text-2xl font-hand absolute top-10 left-100 text='2xl center'>Good for<br/>modern Web Frontend <br/>Development<br/> 👇</div>
+  <div text-2xl absolute top-45 left-170>Lots of Extensions</div>
+  <div text-2xl font-hand abs-tr top-25 right-10 rotate-13 text='2xl'>Extensions are<br/> written in TypeScript<br/>👇</div>
+  <div text-2xl absolute top-110 left-90>No need to pay money!!</div>
+</v-clicks>
 
-  - Easiest GUI Text Editor
-  - You can use mouse as well
-  - No need to pay money
+<!--
+So, why do people use VSCode?
 
-</div>
+[click] VSCode is a GUI editor, so it's easy to use.
 
-<div v-click>
+[click] VSCode is written in TypeScript...
 
-  - TypeScript first {.font-bold}
-    - VSCode is written in TypeScript
-    - [Extensions]{.view-transition-extensions-text} are written in TypeScript
-    - TypeScript is de-facto lang for Frontend
+[click] which means that it's good for modern web frontend development.
 
-</div>
+[click] There are a lot of extensions available.
 
-</div>
+[click] And the written in TypeScript, so library authors can share codes easily.
 
-<div i-vscode-icons-file-type-vscode size-50 view-transition-vscode abs-b mxa mb-10 />
+[click] And, you don't need to pay money to use it.
+-->
 
 ---
 layout: image-right
@@ -222,38 +226,43 @@ title: my terminal screenshot
 ---
 
 ---
+title: why neovim?
+---
 
-# Why the hell did I switch to Neovim
+# Why the hell did I switch to [Neovim]{.view-transition-extensions-neovim}?
 
-<div flex='~ gap-4'>
+<div i-devicon-neovim size-40 view-transition-neovim abs-b mxa mb-40 />
 
-<div w='50%'>
+<v-clicks>
+  <div text-2xl absolute top-45 left-30>Hackable</div>
+  <div text-2xl absolute top-45 left-100>Keyboard friendly</div>
+  <div text-2xl absolute top-45 left-170>Easy to customise</div>
+  <div font-hand abs-tr top-15 right-10 rotate-13 text-2xl>Just write<br/> Vim script or Lua &<br/> publish it on GH <br/>👇</div>
+  <div text-2xl absolute top-110 left-60>Terminal friendly</div>
+  <div text-2xl absolute top-110 left-150>Fast & Lightweight</div>
+</v-clicks>
 
-## Pros
+<!--
+So, why do I use Neovim?
 
-- Neovim can deal with front-end development
-- Hackable
-- Keyboard-Driven
-- Fast/Lightweight
+[click] Neovim is hackable.
 
-</div>
+[click] Neovim is keyboard-friendly. You can do everything with a keyboard.
 
-<div w='50%'>
+[click] Neovim is easy to customize.
 
-## Cons
-- No GUI
-- No WebViews
-- Lack of Language Server Protocol (LSP) support
+[click] You can write Vim script or Lua and publish it on GitHub.
 
-</div>
+[click] Neovim is terminal-friendly. Dvelopment tools are heavily rely on terminal. Neovim is a terminal-based editor, so it's easy to integrate with other tools.
 
-</div>
+[click] Neovim is fast and lightweight.
+-->
 
 ---
 layout: section
 ---
 
-## But can we REALLY do them with Neovim??
+## But can we REALLY do them with [Neovim]{.view-transition-extensions-neovim}?
 
 <!--
 TODO: maybe rewrite the above
@@ -304,7 +313,7 @@ transition: none
 
 # Debug
 
-- Debugging is possible with Neovim
+- Debugging is possible with [Neovim]{.view-transition-extensions-neovim}
 - DAP
 
 <div
@@ -325,11 +334,11 @@ TODO: DAP
 layout: section
 ---
 
-# Only Neovim can do it!
+# Only [Neovim]{.view-transition-extensions-neovim} can do it!
 
 ---
 
-# Let's hack with Neovim!
+# Let's hack with [Neovim]{.view-transition-extensions-neovim}!
 
 - oil.nvim
 - sippets
@@ -390,4 +399,4 @@ layout: section
 
 # Conclusion
 
-- Neovim is a powerful enough editor for Frontend Development
+- [Neovim]{.view-transition-extensions-neovim} is a powerful enough editor for Frontend Development
