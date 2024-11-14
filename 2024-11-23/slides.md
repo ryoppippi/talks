@@ -181,17 +181,6 @@ So, why do people use VSCode?
 -->
 
 ---
-layout: image-right
-image: /unocss-vscode.png
----
-
-# Many [Extensions]{.view-transition-extensions-text} are built for VSCode
-
-<!--
-TODO: add description why VSCode
--->
-
----
 layout: image
 image: '/vi-screenshot.png'
 title: vi?
