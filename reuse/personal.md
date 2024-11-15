@@ -9,7 +9,9 @@ class: p-20
 
 Software Engineer mainly on **Web Frontend x Machine Learning**
 
-Living in the UK
+<div gap-3 fyc>
+  Living in the UK <div i-flag-gb-4x3 font-300/>
+</div>
 
 Member of {vim-jp} / {Svelte Japan}
 
@@ -31,7 +33,7 @@ I'm ryoppippi, a software engineer recently mainly working on web frontend.
 
 Also, I'm a member of Svelte Japan.
 
-And also, many people asks me the pronounciation of my name
+And also, many people asks me the pronunciation of my name
 
 My name is called リョッピッピ
 -->
