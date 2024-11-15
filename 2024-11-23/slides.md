@@ -388,4 +388,39 @@ layout: section
 
 # Conclusion
 
-- [Neovim]{.view-transition-extensions-neovim} is a powerful enough editor for Frontend Development
+- Neovim is a great editor for frontend developers
+- Neovim has good plugins for frontend development
+- If you are a VSCode user and want to try Neovim, I recommend you to try it
+
+<!--
+So, in conclusion, Neovim is a great editor for frontend developers.
+
+Neovim has good plugins for frontend development.
+
+If you are a VSCode user and want to try Neovim, I recommend you to try it.
+-->
+
+---
+
+# Other plugins I didn't mention in this talk
+
+- [codecompanion.nvim]( https://github.com/olimorris/codecompanion.nvim )
+- [nvim-pnpm-catalog-lens](https://github.com/ryoppippi/nvim-pnpm-catalog-lens)
+- [vim-bun-lock](https://github.com/ryoppippi/vim-bun-lock)
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [denippet.vim](https://github.com/uga-rosa/denippet.vim)
+
+...
+
+<!--
+There are many other plugins I didn't mention in this talk.
+
+I'll upload this slide to my GitHub repository, so please check it out.
+-->
+
+---
+layout: section
+---
+
+# Thank you!
