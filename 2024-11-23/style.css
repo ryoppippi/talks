@@ -39,6 +39,10 @@ figure figcaption {
 	--uno: op80 text-2xl;
 }
 
+ul > li {
+	--uno: text-xl;
+}
+
 /* @keyframes fade-in { */
 /* 	from { */
 /* 		opacity: 0; */
