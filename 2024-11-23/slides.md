@@ -381,43 +381,40 @@ title: web frontend development is too complicated
 
 # Web Frontend Development is too complicated
 
-<div grid='~ cols-2' v-click='1'>
-  <div mxa>
+<div grid='~ cols-4' v-click='1'>
+  <div mxa mya>
     <img src='/frontend-files.png' w-60/>
   </div>
 
-<div mxa>
+  <div mxa>
+    <LongcatHead class='w-31' v-click='2'/>
+    <LongcatBody class='w-31' v-click='3'/>
+    <LongcatBody class='w-31' v-click='4'/>
+    <LongcatBody class='w-31' v-click='5'/>
+    <LongcatBody class='w-31' v-click='6'/>
+    <LongcatTail class='w-31' v-click='7'/>
+  </div>
 
-<v-switch>
+  <div mxa text-2xl grid-col-span-2>
 
-<template #2>
-<LongcatHead class='w-40'/>
-<LongcatBody class='w-40'/>
-<LongcatBody class='w-40'/>
-<LongcatBody class='w-40'/>
-<LongcatTail class='w-40'/>
-</template>
+  <v-clicks at='+2'>
 
-<template #3>
-
-  - HTML
-  - CSS
-    - SCSS / SASS
-    - Tailwind CSS
-    - CSS Modules
-    - CSS-in-JS?
-  - JavaScript / TypeScript
-  - TSX
-  - Markups ( Svelte / Vue/ Astro )
-  - Assets ( Images / Icons / Fonts )
   - Config files
-    - ( Vite / ESlint / TailwindCSS / UnoCSS ...)
+    - Vite / Webpack / Tailwind CSS ...
+    - ESLint / Prettier ...
+  - Package.json / Lock file
+  - Assets ( Images / Icons / Fonts )
+  - CSS
+    - SCSS / SASS / CSS Modules
+    - Tailwind CSS
+  - JavaScript / TypeScript
+  - Markups
+    - TSX / JSX
+    - Svelte / Vue / Astro
 
-</template>
+  </v-clicks>
 
-</v-switch>
-</div>
-
+  </div>
 </div>
 
 <!--
@@ -425,25 +422,21 @@ By the way, have you ever seen a frontend project?
 
 [click] Look at this!
 
-The file structure is too long!
+[click] We have configuration files for tools.
 
-[click] That is looooooooong!
+[click] We have package.json and lock files.
 
-[click] There are various kinds of files in web frontend development.
+[click] We have assets like images, icons, and fonts.
 
-We have HTML
+[click] We have CSS. You have multiple options for styling.
 
-We have CSS. You have multiple options for styling.
+[click] Of course, we have JavaScript or TypeScript for logic.
 
-We have JavaScript or TypeScript
+[click] And we have Markup files like TSX, Svelte, Vue, and Astro.
 
-We have Markup files like TSX, Svelte, Vue, and Astro.
+That's a loooooong file structure!
 
-We have assets like images, icons, and fonts.
-
-We have to write configuration files for tools.
-
-That's A LOT!
+We need to deal with those variety of files in web frontend development.
 -->
 
 ---
