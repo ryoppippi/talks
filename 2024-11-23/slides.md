@@ -486,6 +486,15 @@ layout: section
 
 ## Can we REALLY do them with [Neovim]{.view-transition-extensions-neovim}?
 
+<div
+  v-motion
+  :initial="{y: 200}"
+  :enter="{y: 130, x: 650}"
+  :leave="{y: 200}"
+>
+    <div src i-devicon-neovim size-50 rotate--15 />
+</div>
+
 <!--
 Can we do that with Neovim?
 -->
@@ -501,12 +510,6 @@ I gonna show you my workflow with Neovim.
 
 So, let's get started!
 -->
-
----
-layout: section
----
-
-# Only [Neovim]{.view-transition-extensions-neovim} can do it!
 
 ---
 
