@@ -218,6 +218,30 @@ So, why do people use VSCode?
 -->
 
 ---
+
+# Why not [VSCode]{.view-transition-extensions-vscode}?
+
+<div i-vscode-icons-file-type-vscode size-40 view-transition-vscode abs-b mxa mb-40 />
+
+<v-clicks>
+  <div text-2xl absolute top-45 left-60>Non-hackable</div>
+  <div text-2xl absolute top-45 left-150>Keyboard unfriendly</div>
+  <div text-2xl absolute top-110 left-75>Hard to create/publish Extensinos</div>
+</v-clicks>
+
+<!--
+But, there are some drawbacks of VSCode.
+
+[click] VSCode is not hackable. The config file is JSON, and it's hard to write complex logic.
+
+[click] VSCode is not keyboard-friendly. You need to use a mouse to use it. I tried to control all VSCode operations with a keyboard, but I gave it up.
+
+[click] It's hard to create and publish extensions. You need to learn TypeScript and the VSCode API. If you want to publish it , you need to register Azure account.
+
+Because I really wanted to customize my editor, I gave it up to configure VSCode.
+-->
+
+---
 title: why neovim
 ---
 
@@ -230,9 +254,7 @@ title: why neovim
 
 </v-clicks>
 
-
 <!--
-
 But! I throw away VSCode and switched to Neovim.
 
 Why?
@@ -255,8 +277,7 @@ layout: statement
 just kidding{.text-3xl .absolute .bottom-20 .right-10 .rotate-15 .animate-pulse .animate-duration-500 v-click='1'}
 
 <!--
-
-That's all for my talk. 
+That's all for my talk.
 Thank you for listening!
 
 [click] Sorry, I'm just kidding.
@@ -327,7 +348,6 @@ layout: section
 
 ## But can we REALLY do them with [Neovim]{.view-transition-extensions-neovim}?
 
-
 <!--
 You may be worried about the lack of GUI, WebViews, and LSP support in Neovim.
 -->
@@ -339,9 +359,7 @@ layout: section
 ## A man said...
 
 <!--
-
 A great man said...
-
 -->
 
 ---
@@ -355,9 +373,7 @@ title: vim can do that too by mattn
 {@mattn}
 
 <!--
-
 Yes, vim can do that too.
-
 -->
 
 ---
@@ -392,10 +408,10 @@ title: web frontend development is too complicated
     - CSS Modules
     - CSS-in-JS?
   - JavaScript / TypeScript
-  - TSX 
+  - TSX
   - Markups ( Svelte / Vue/ Astro )
   - Assets ( Images / Icons / Fonts )
-  - Config files 
+  - Config files
     - ( Vite / ESlint / TailwindCSS / UnoCSS ...)
 
 </template>
@@ -429,9 +445,7 @@ We have assets like images, icons, and fonts.
 We have to write configuration files for tools.
 
 That's A LOT!
-
 -->
-
 
 ---
 title: what we need for frontend development
@@ -472,8 +486,6 @@ These features should be available for various languages like JS/TS, CSS, HTML, 
 [click] We need to test our code.
 
 [click] wait.... That's a lot!!!
-
-
 -->
 
 ---
@@ -483,9 +495,7 @@ layout: section
 ## Can we REALLY do them with [Neovim]{.view-transition-extensions-neovim}?
 
 <!--
-
 Can we do that with Neovim?
-
 -->
 
 ---
@@ -495,11 +505,9 @@ layout: section
 # Demo
 
 <!--
-
 I gonna show you my workflow with Neovim.
 
 So, let's get started!
-
 -->
 
 ---
@@ -539,7 +547,6 @@ layout: section
 - denippet でhackableなsnippetを作る
 多分５分くらいかかりそう
 -->
-
 
 ---
 
@@ -689,7 +696,6 @@ If you are a VSCode user and want to try Neovim, I recommend you to try it.
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [denippet.vim](https://github.com/uga-rosa/denippet.vim)
 
-
 <div
   v-motion
   v-click='[1, 2]'
@@ -710,7 +716,6 @@ Also, I didn't mention the debugging plugins like nvim-dap.
 But!
 
 [click] We learn it later!
-
 -->
 
 ---
@@ -720,7 +725,6 @@ layout: section
 # Thank you!
 
 <!--
-
 So, that's all for my talk.
 
 Thank you for listening!
@@ -728,5 +732,4 @@ Thank you for listening!
 I hope my talk helps you a lot!
 
 And, enjoy the rest of VimConf 2024!
-
 -->
