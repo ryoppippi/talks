@@ -101,7 +101,6 @@ If you are interested in my projects, please check out my GitHub profile.
 ---
 layout: image
 image: /vim-jp-radio.png
-
 title: vim-jp radio
 ---
 
