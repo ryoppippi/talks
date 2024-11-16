@@ -35,3 +35,38 @@ Web frontendのためのplugin開発
 
 - bun
 - pnpm
+
+# デモの流れ
+
+- bunx sv create でsvelte projectを作る
+
+- floating terminalを開く ( uga-term )
+
+- tree-sitterの紹介
+
+  - syntax highlightが動いていることを示す
+
+- lspの紹介
+
+  - vtsls, svelte lsp, tailwind-lsp, eslint-lspが導入されていることを示す
+  - formatter は動くか ( efm-langserver )
+  - 打ってみて補完が出るか (cmp.nvim)
+  - auto-importは動くか？
+  - hover docは出るか (https://github.com/DNLHC/glance.nvim)
+  - tailwindの色は表示されるか ( nvim-highlight-colors )
+
+- dial.nvimでlet/constの切り替え
+
+- text object
+- mini.surround で tagでかこむ
+- quickrunで実行する
+
+- oil + snippetでfileを生成する
+
+- other.nvim でfileを切り替える
+
+- testを実行する (neotest)
+
+- copilotとcodecompanionでコード生成
+
+- vim-inspectorでbrowserと連携する
