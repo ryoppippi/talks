@@ -1,0 +1,20 @@
+diff --git a/builtin/SlidevVideo.vue b/builtin/SlidevVideo.vue
+index 0be737ffb8535cfc76450deabee09869cab1a603..cca4d6c28dd13f36c9e5ee5dfbf1edab4e14dbb0 100644
+--- a/builtin/SlidevVideo.vue
++++ b/builtin/SlidevVideo.vue
+@@ -13,6 +13,7 @@ const props = defineProps<{
+   timestamp?: string | number
+   printTimestamp?: string | number | 'last'
+   controls?: boolean
++  playbackRate?: number
+ }>()
+ 
+ const printPoster = computed(() => props.printPoster ?? props.poster)
+@@ -66,6 +67,7 @@ function onLoadedMetadata(ev: Event) {
+     ref="video"
+     :poster="noPlay ? printPoster : props.poster"
+     :controls="!noPlay && props.controls"
++    :playbackRate="props.playbackRate ?? 1"
+     @play="played = true"
+     @loadedmetadata="onLoadedMetadata"
+   >
