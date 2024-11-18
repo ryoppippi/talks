@@ -29,11 +29,12 @@ Member of {vim-jp} / {Svelte Japan}
 <!--
 Let me introduce myself.
 
-I'm ryoppippi, a software engineer recently mainly working on web frontend.
+I'm ryoppippi, a software engineer recently mainly working on web frontend and machine learning.
 
-Also, I'm a member of Svelte Japan.
+I'm living in the UK.
 
-And also, many people asks me the pronunciation of my name
+I'm a member of vim-jp and the core member of Svelte Japan.
 
-My name is called リョッピッピ
+The important thing you remember is the pronunciation of my name.
+So, remember my name is called リョッピッピ
 -->
