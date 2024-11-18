@@ -300,6 +300,7 @@ First, create an example project.
 
 In this example, I'll create a Svelte project using the brand-new `sv` command.
 -->
+
 ---
 
 # Terminal integration
@@ -315,7 +316,6 @@ I use ugaterm.nvim by uga-rosa.
 This plugin enables you to open any type of terminal in Neovim, including floating terminal.
 
 So you can launch dev server in the terminal and switch between terminal and editor easily.
-
 -->
 
 ---
@@ -327,10 +327,9 @@ So you can launch dev server in the terminal and switch between terminal and edi
 
 - a protocol to communicate between editor and language server
 
+</div>
 
-</div> 
-
-<div> 
+<div>
 
 # Tree-sitter
 
@@ -353,6 +352,7 @@ Tree-sitter is a parser generator tool and an incremental parsing library.
 
 They are essential for modern code editors.
 -->
+
 ---
 
 - Code completion
@@ -370,7 +370,6 @@ They are essential for modern code editors.
   - [@tailwindcss/language-server](https://www.npmjs.com/package/@tailwindcss/language-server) by {@tailwindcss}
 
 <!--
-
 For code completion, I use nvim-cmp by hrsh7th.
 
 For diagnostics, I use lsp_lines.nvim to display diagnostics as a virtual text.
@@ -386,8 +385,7 @@ so, rich language features like auto-completion
 
 Also auto-import works fine.
 
-
-Modern web developement is complecated
+Modern web development is complicated
 
 For example, svelte file contains script, style, and markup in a single file.
 However, we can use LSP to get auto-completion for each part. Brilliant.
@@ -413,7 +411,6 @@ I'm using eslint as a linter in this project, so as I edit the code in a wrong w
   - [codecompanion.nvim]( https://github.com/olimorris/codecompanion.nvim ) by {@olimorris}
 
 <!--
-
 Next, enhance your editing files.
 
 Neovim has many built-in text-objects, this is one of the most powerful features in vim and neovim.
@@ -444,9 +441,7 @@ In this example, I asked to local LLM to make buttons look better.
 - VSCODE cannot do that
 
 <!--
-
 For file management, I use oil.nvim by stevearc.
-
 
 oil.nvim is a plugin to manage files as buffer.
 
@@ -475,7 +470,6 @@ If we can switch the related files easily, it will be a great help.
 other.nvim is a plugin to switch related files easily.
 
 For example, you can switch between server and client files in SvelteKit project.
-
 -->
 
 ---
@@ -495,7 +489,6 @@ T
 -->
 
 ---
-
 
 ---
 layout: section
