@@ -25,13 +25,19 @@ Please use the UK English spelling.
 </div>
 
 <!--
-# Vim! Vim! Vim! (vim call!)
+(30 sec)
+
+*Vim! Vim! Vim! (vim call!)*
 
 Hello everyone!
 
-Are you enjoying VimConf 2024?
+Are you enjoying VimConf 24?
 
-Today, I'd like to share with you about Neovim for Frontend Developers.
+*( gesture to the audience )*
+
+Today, I'd like to share with you about Neovim for web Frontend Developers.
+
+so let's get started!
 -->
 
 ---
@@ -42,26 +48,20 @@ layout: section
 ## for inviting me!
 
 <!--
-At first, I'd like to thank the organisers and sponsors, and of course, you for inviting me to speak at VimConf 2024.
-I'm here because of you, and I'm really excited to be here.
+30 sec
+
+At first, I'd like to thank the organisers, sponsors, and of course, you for inviting me to speak at VimConf 24.
+
+I'm really excited to be here today.
+
+When I started using Neovim, I cannot imagine this kind of wonderful opportunity.
+
 Thank you so much!
 -->
 
 ---
 src: '../reuse/personal.md'
 ---
-
-<!--
-Let me introduce myself.
-
-I'm ryoppippi, a software engineer recently mainly working on web frontend.
-
-Also, I'm a member of Svelte Japan.
-
-[click] And also, many people asks me the pronunciation of my name
-
-My name is called リョッピッピ
--->
 
 ---
 
@@ -79,9 +79,9 @@ My name is called リョッピッピ
 - `#game-smashbros`
 
 <!--
-I take a lot of time in vim-jp.
+I take a lot of time in vim-jp everyday.
 
-Here is the list of my favorite channels.
+I love those channels sooo much!
 -->
 
 ---
@@ -117,12 +117,11 @@ a {
 </style>
 
 <!--
-One of the recent public projects I worked on is landing page for vim-jp radio.
-You may know vim-jp radio, a podcast for vim-jp community.
+One of the recent public projects I worked on is the landing page for vim-jp radio.
+You may know vim-jp radio, a Japanese podcast for engineers.
 
-[click] I worked with Tomoya and staticWagomU.
-The source code is available on GitHub.
-This project is written in Svelte, so if you want to learn Svelte, this is a good example!
+[click] I worked with Tomoya-san and wagomu-san.
+This project is open source, so you can check out the code on GitHub.
 -->
 
 ---
@@ -154,11 +153,11 @@ Let me explain my editor journey.
 
 I started coding in 2015, and my first editor was Atom.
 
-Then, I moved to VSCode in 2017.
+[click] Then, I moved to VSCode in 2017.
 
-In 2021, I started using vscode-neovim extension,
+[click] In 2021, I started using vscode-neovim extension, and this was my first vim experience.
 
-and, in 2022, I switched to Neovim.
+[click] in 2022, I switched to Neovim.
 
 So, I'm using Neovim for about three years now.
 -->
@@ -201,7 +200,7 @@ title: why vscode
 </v-clicks>
 
 <!--
-So, why do people use VSCode?
+So, why do people use VSCode, especially for web frontend development?
 
 [click] VSCode is a GUI editor, so it's easy to use.
 
@@ -209,9 +208,11 @@ So, why do people use VSCode?
 
 [click] which means that it's good for modern web frontend development.
 
+Also the extensions are really easy to use. You can start development out of the box.
+
 [click] There are a lot of extensions available.
 
-[click] And the written in TypeScript, so library authors can share codes easily.
+[click] And they are written in TypeScript, so library authors can share codes easily.
 
 [click] And, you don't need to pay money to use it.
 -->
@@ -254,7 +255,7 @@ title: why neovim
 </v-clicks>
 
 <!--
-But! I throw away VSCode and switched to Neovim.
+So, my choice is Neovim.
 
 Why?
 
@@ -289,7 +290,7 @@ title: vi?
 ---
 
 <!--
-You may think like this.
+I don't think you guys thnink like this, but some people think like:
 "Oh, I know vim! This is a boring editor accidentally launched when I type git commit."
 
 No, no!
@@ -326,7 +327,7 @@ title: why neovim?
 </v-clicks>
 
 <!--
-So, why do I use Neovim?
+So, why do I use Neovim actually?
 
 [click] Neovim is hackable.
 
@@ -334,7 +335,7 @@ So, why do I use Neovim?
 
 [click] Neovim is easy to customize.
 
-[click] You can write Vim script or Lua and publish it on GitHub.
+[click] When you use plugins, you can just write Vim script or Lua and it is easy to publish it on GitHub.
 
 [click] Neovim is terminal-friendly. Dvelopment tools are heavily rely on terminal. Neovim is a terminal-based editor, so it's easy to integrate with other tools.
 
@@ -345,34 +346,12 @@ So, why do I use Neovim?
 layout: section
 ---
 
-## But can we REALLY do them with [Neovim]{.view-transition-extensions-neovim}?
+# Do [Neovim]{.view-transition-extensions-neovim} REALLY work for web frontend development?
 
 <!--
-You may be worried about the lack of GUI, WebViews, and LSP support in Neovim.
--->
+But, can we REALLY use Neovim for web frontend development?
 
----
-layout: section
----
-
-## A man said...
-
-<!--
-A great man said...
--->
-
----
-layout: quote
-title: vim can do that too by mattn
----
-
-# Vim can do that too
-## __それ、vimでもできるよ__
-
-{@mattn}
-
-<!--
-Yes, vim can do that too.
+Because it looks hard to configure and use.
 -->
 
 ---
@@ -418,17 +397,19 @@ title: web frontend development is too complicated
 </div>
 
 <!--
+And actually, the modern web frontend development is too complicated.
+
 By the way, have you ever seen a frontend project?
 
-[click] Look at this!
+[click] Looks at this caos of files!
 
-[click] We have configuration files for tools.
+[click] We have configurations for tools.
 
 [click] We have package.json and lock files.
 
-[click] We have assets like images, icons, and fonts.
+[click] We have assets
 
-[click] We have CSS. You have multiple options for styling.
+[click] We have CSS and styling configurations
 
 [click] Of course, we have JavaScript or TypeScript for logic.
 
@@ -461,7 +442,7 @@ title: what we need for frontend development
 </div>
 
 <!--
-So, what do we want from editors for web frontend development?
+So, what do we want from editors to achieve good developer experience?
 
 [click] We need syntax highlighting.
 
@@ -469,11 +450,11 @@ So, what do we want from editors for web frontend development?
 
 [click] We need documentation.
 
-These features should be available for various languages like JS/TS, CSS, HTML, and others.
+These features should be available for various languages.
 
 [click] We need to manage lots of files.
 
-[click] We need to integrate with other CLI tools.
+[click] We need integration with other CLI tools.
 
 [click] We need to test our code.
 
@@ -503,12 +484,38 @@ Can we do that with Neovim?
 layout: section
 ---
 
+## A man said...
+
+<!--
+A great man said...
+-->
+
+---
+layout: quote
+title: vim can do that too by mattn
+---
+
+# Vim can do that too
+## __それ、vimでもできるよ__
+
+{@mattn}
+
+<!--
+Yes, vim can do that too.
+-->
+
+---
+layout: section
+---
+
 # Demo
 
 <!--
-I gonna show you my workflow with Neovim.
+Okay, so in this demo. I gonna show you my workflow with Neovim.
 
 So, let's get started!
+
+(Until this slide, it takes like 7 mins)
 -->
 
 ---
@@ -538,124 +545,275 @@ layout: section
 # Demo
 
 <!--
-- snippetとoil.nvimでfileを一気に作る
-- denippet でhackableなsnippetを作る
-多分５分くらいかかりそう
+So, in this talk, I'd like to share with you my workflow with Neovim.
+
+At first, create an exazmple project
+In this example, I'll create a sveltekit project with taiwlind
+
+Next, lets open the project with neovim.
+I'm using floating terminal.
+As you know, this is all happens in terminal, so you can switch between terminal and editor easily! cool right?
+
+Lets start coding. As you can see, there is a auto completion powered by LSP. Also, you can get variable type information.
+
+OK, now use svelte module. Can you see that onMount function is auto-imported?
+
+In this example , I create page files and a page server file which is tyically used in sveltekit project
+
+The last thing I gonna mention is integrating with browser inspector.
+Modern web fronted frameworks have a feature that allows you to jump source code from browser dev mode.
+This is really useful.
+Some people think that this works only on VSCode or GUI editors, but if you configure it properly, you can use it on Neovim
+
+That was my Demo! how was it?
 -->
 
 ---
+layout: section
+---
 
-# LSP
-
-- We have Language Server Protocol (LSP)
-- LSP is a protocol to communicate between editor and language server
+# Setup a project
 
 <!--
-So, let's wrap up the plugins and tools in Demo.
+First, create an example project.
 
-First, LSP.
-
-LSP is a protocol to communicate between editor and language server.
-
-Thanks to LSP, we can use the same features in any editor.
+In this example, I'll create a Svelte project using the brand-new `sv` command.
 -->
 
 ---
 
-<!-- LSP Demo -->
+# Terminal integration
 
-<div gcc h-120>
-  <SlidevVideo autoplay controls loop slide>
-    <source src="/screen-lsp.mp4"/>
-  </SlidevVideo>
+- [ugaterm.nvim](https://github.com/uga-rosa/ugaterm.nvim) by {@uga-rosa}
+- Open any type of terminal in Neovim including floating terminal
+
+<!--
+Next, lets open the project in neovim terminal.
+
+I use ugaterm.nvim by uga-rosa.
+
+This plugin enables you to open any type of terminal in Neovim, including floating terminal.
+
+So you can launch dev server in the terminal and switch between terminal and editor easily.
+-->
+
+---
+
+<div gap-y-10 fcol>
+<div>
+
+# LSP (Language Server Protocol)
+
+- a protocol to communicate between editor and language server
+
+</div>
+
+<div>
+
+# Tree-sitter
+
+- a parser generator tool and an incremental parsing library
+- provides syntax highlighting, code folding, and more
+
+</div>
 </div>
 
 <!--
+Let's talk about LSP and Tree-sitter.
+
+LSP is a protocol to communicate between editor and language server.
+
 LSP provides features like auto-completion, go to definition, and so on.
 
-so, rich language features including auto-completion, auto-import, snippets are available in Neovim.
+Also, there is Tree-sitter built in Neovim.
+
+Tree-sitter is a parser generator tool and an incremental parsing library.
+
+They are essential for modern code editors.
 -->
 
 ---
 
-# [oil.nvim](https://github.com/stevearc/oil.nvim)
+- Code completion
+  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) by {@hrsh7th}
+
+- Diagnostics / Information
+  - [lsp_lines.nvim](https://git.sr.ht/~whynothugo/lsp_lines.nvim)
+  - [nvim-highlight-colors](https://github.com/brenoprata10/nvim-highlight-colors) by {@brenoprata10}
+
+- LSPs
+  - [nvim-vtsls](https://github.com/yioneko/nvim-vtsls) by {@yioneko}
+  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) by {@neovim}
+  - [efm-langserver](https://github.com/mattn/efm-langserver) by {@mattn}
+  - [sveltejs/language-tools](https://github.com/sveltejs/language-tools) by {@sveltejs}
+  - [@tailwindcss/language-server](https://www.npmjs.com/package/@tailwindcss/language-server) by {@tailwindcss}
+
+<!--
+For code completion, I use nvim-cmp by hrsh7th.
+
+For diagnostics, I use lsp_lines.nvim to display diagnostics as a virtual text.
+
+Also, nvim-highlight-colors is useful to display color info like tailwind color.
+
+And, I install some LSPs
+
+LSP provides features like auto-completion, go to definition, and so on.
+And, tree-sitter provides syntax highlighting and code folding.
+
+so, rich language features like auto-completion
+
+Also auto-import works fine.
+
+Modern web development is complicated
+
+For example, svelte file contains script, style, and markup in a single file.
+However, we can use LSP to get auto-completion for each part. Brilliant.
+
+I'm using eslint as a linter in this project, so as I edit the code in a wrong way, the error message is displayed on Neovim
+-->
+
+---
+
+# Enhance your editing files
+
+- Make use of the builtin text-objects!
+
+- Surround text with tags, quotes, etc.
+  - [mini.surround](https://github.com/echasnovski/mini.surround) by {@echasnovski}
+  - [nvim-insx](https://github.com/hrsh7th/nvim-insx) by {@hrsh7th}
+
+- Toggle / switch numbers, symbols, text case, etc.
+  - [dial.nvim](https://github.com/monaqa/dial.nvim) by {@monaqa}
+
+- Code suggestion by AI
+  - [copilot.lua](https://github.com/zbirenbaum/copilot.lua) by {@zbirenbaum} + nvm-cmp
+  - [codecompanion.nvim]( https://github.com/olimorris/codecompanion.nvim ) by {@olimorris}
+
+<!--
+Next, enhance your editing files.
+
+Neovim has many built-in text-objects.
+
+This is one of the most powerful features in vim, and this was one of the most surprising features for me when I started using Neovim.
+
+In addition, you can use some plugins to enhance your editing files.
+
+text objects is one of the most powerful features in vim.
+So, if you want to change the text in a specific html tag, just type `cit` and type the new text.
+
+mini.surround is a plugin to surround text with tags, brackets, quotes, etc.
+with configuration, you can wrap a word with a html with class names like emmet. Also using a word as a function argument is easy.
+
+Recently there are so many plugins to integrate with LLMs, but I'm using codecompanion.nvim because it's simple and easy to use.
+In this example, I asked to local LLM to make buttons look better.
+-->
+
+---
+
+# Testing
+
+- [neotest](https://github.com/nvim-neotest/neotest) by {@rcarriga}
+  - A framework for interacting with tests within NeoVim.
+  - You can run tests and see the results in a Neovim
+
+<!--
+For testing, I use neotest by nvim-neotest.
+
+neotest is a framework for interacting with tests within Neovim.
+
+In web development, we often execute tests with Jest or Vitest.
+
+With neotest, you can run tests and see the results in Neovim.
+-->
+
+---
+
+# File Management
+
+- [oil.nvim](https://github.com/stevearc/oil.nvim)
 
 - made by {@stevearc}
 - A plugin to manage files as buffer
 - You can yank, delete, and paste files like editing text
 - You can use snippet 🎉 {.font-bold}
-  - I use [vim-sonictemplate](https://github.com/mattn/vim-sonictemplate)
+  - I use [vim-sonictemplate](https://github.com/mattn/vim-sonictemplate) by {@mattn}
 - VSCODE cannot do that
 
 <!--
-Next, oil.nvim.
+For file management, I use oil.nvim by stevearc.
 
 oil.nvim is a plugin to manage files as buffer.
 
 You can yank, delete, and paste files like editing text.
 
 With snippet library, you can create multiple files at the same time, which is really useful.
+
+SvelteKit uses file-based routing, so, we need to create a files for new pages.
+Also, we often create multiple files because there are server and client files.
+So combining oil.nvim and snippet library is really useful in this case.
 -->
 
 ---
 
-# [denippet.vim](https://github.com/uga-rosa/denippet.vim)
+# File Switching
 
-- made by {@uga-rosa}
-- snippet library with [ Denops ](https://github.com/vim-denops/denops.vim) by {@lambdalisue}
-- Configurable with TypeScript
-
-<!--
-TODO: add more example
--->
-
----
-
-# [other.nvim](https://github.com/rgroli/other.nvim)
-
-- made by {@rgroli}
-- You can switch related files easily (ex. sever and client files)
+- [other.nvim](https://github.com/rgroli/other.nvim) by {@rgroli}
+  - You can switch related files easily (ex. sever and client files)
 
 <!--
-Another plugin I'd like to mention is other.nvim.
+So, there are many kinds of files in web frontend development.
+If we can switch the related files easily, it will be a great help.
 
 other.nvim is a plugin to switch related files easily.
 
-For example, you can switch between server and client files easily.
+For example, you can switch between server and client files in SvelteKit project.
 -->
 
 ---
 
-# [vim-svelte-inspector](https://github.com/ryoppippi/vim-svelte-inspector)
+# WebBrowser integration
 
-- made by {@ryoppippi}
-- You can integrate browser inspector with Neovim
+- [vim-svelte-inspector](https://github.com/ryoppippi/vim-svelte-inspector) by {@ryoppippi}
+  - You can integrate browser inspector with Neovim
 
 <!--
-Next, vim-svelte-inspector.
+Lastly, let's talk about the browser integration for debugging.
 
 vim-svelte-inspector is a plugin to integrate browser inspector with Neovim.
 
-so, you can jump to the source code from the browser inspector like VSCode.
+You can click the element in the browser inspector, and the cursor in Neovim will jump to the corresponding source code.
 -->
 
 ---
 
-# [copilot.lua](https://github.com/zbirenbaum/copilot.lua)
+# Git Integration
 
-- made by {@zbirenbaum}
-- You can use GitHub Copilot with Neovim like VSCode
+- Git command operation
+  - [lazygit](https://github.com/jesseduffield/lazygit) by {@jesseduffield}
+  - ```lua
+		vim.api.nvim_create_user_command("TG", function()
+			vim.cmd.tabe()
+			vim.fn.termopen("lazygit", {
+				on_exit = function(_, _, _)
+					vim.cmd.tabclose()
+				end,
+			})
+			local current_buffer = vim.api.nvim_get_current_buf()
+			vim.keymap.set("t", "<esc>", "<esc>", { buffer = current_buffer, remap = false })
+		end, { nargs = 0 })
+  ```
+
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) by {@lewis6991}
+- [git-conflict.nvim](https://github.com/akinsho/git-conflict.nvim) by {@akinsho}
 
 <!--
-The last plugin I mention is about AI.
+There are many plugins to integrate with Git.
+For example, ありすえ-san is developing Gin.vim.
 
-copilot.lua is a plugin to use GitHub Copilot with Neovim like VSCode.
+But I'm using lazygit instead of vim plugins because of the nice UI.
+I wrote a simple command to open lazygit in a new tab.
 
-So, you can use AI with Neovim.
-
-And AI plugins in Neovim is hackable. You can customize it as you like.
-
-Which is pretty cool.
+Also, gitsigns.nvim is useful to check blames, and git-conflict.nvim is useful to resolve conflicts.
 -->
 
 ---
@@ -684,33 +842,18 @@ If you are a VSCode user and want to try Neovim, I recommend you to try it.
 
 # Other plugins I didn't mention in this talk
 
-- [codecompanion.nvim]( https://github.com/olimorris/codecompanion.nvim )
-- [nvim-pnpm-catalog-lens](https://github.com/ryoppippi/nvim-pnpm-catalog-lens)
-- [vim-bun-lock](https://github.com/ryoppippi/vim-bun-lock)
-- [nvim-dap](https://github.com/mfussenegger/nvim-dap)
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- [denippet.vim](https://github.com/uga-rosa/denippet.vim)
+- [nvim-pnpm-catalog-lens](https://github.com/ryoppippi/nvim-pnpm-catalog-lens) by {@ryoppippi}
+- [vim-bun-lock](https://github.com/ryoppippi/vim-bun-lock) by {@ryoppippi}
+- [nvim-dap](https://github.com/mfussenegger/nvim-dap) by {@mfussenegger}
+- [denippet.vim](https://github.com/uga-rosa/denippet.vim) by {@uga-rosa}
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) started by {@tjdevries}
 
-<div
-  v-motion
-  v-click='[1, 2]'
-  :initial="{y: 200}"
-  :enter="{y: -50, x: -150}"
-  :leave="{y: 200}"
->
-  <img src="https://cdn.jsdelivr.net/gh/uhooi/UhooiPicBook@2b5c257/Sources/MonsterWidgets/Resources/Assets.xcassets/Uhooi.imageset/uhooi.png" rotate-30 w-100/>
-</div>
+...
 
 <!--
 There are many other plugins I didn't mention in this talk.
 
-If you are interested in Neovim, please check out those plugins.
-
-Also, I didn't mention the debugging plugins like nvim-dap.
-
-But!
-
-[click] We learn it later!
+I'll upload this slide to my GitHub repository, so please check it out.
 -->
 
 ---
