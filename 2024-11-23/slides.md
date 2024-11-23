@@ -512,26 +512,10 @@ layout: section
 
 <!--
 So, in this talk, I'd like to share with you my workflow with Neovim.
+Also, I'll break down the plugins and features I use on Neovim.
 
-At first, create an exazmple project
-In this example, I'll create a sveltekit project with taiwlind
-
-Next, lets open the project with neovim.
-I'm using floating terminal.
-As you know, this is all happens in terminal, so you can switch between terminal and editor easily! cool right?
-
-Lets start coding. As you can see, there is a auto completion powered by LSP. Also, you can get variable type information.
-
-OK, now use svelte module. Can you see that onMount function is auto-imported?
-
-In this example , I create page files and a page server file which is tyically used in sveltekit project
-
-The last thing I gonna mention is integrating with browser inspector.
-Modern web fronted frameworks have a feature that allows you to jump source code from browser dev mode.
-This is really useful.
-Some people think that this works only on VSCode or GUI editors, but if you configure it properly, you can use it on Neovim
-
-That was my Demo! how was it?
+I'm a little bit nervous, but let's start the demo!
+If my demo goes well, give me a big applause!
 -->
 
 ---
