@@ -97,7 +97,7 @@ According to the StackOverflow Survey 2024, VSCode is the most popular editor.
 
 <v-clicks>
   <div text-2xl absolute top-45 left-40>Easiest GUI</div>
-  <div text-2xl absolute top-45 left-100>TyperScript first</div>
+  <div text-2xl absolute top-45 left-100>TypeScript first</div>
   <div text-2xl font-hand absolute top-10 left-100 text='2xl center'>Good for<br/>modern Web Frontend <br/>Development<br/> 👇</div>
   <div text-2xl absolute top-45 left-170>Lots of Extensions</div>
   <div text-2xl font-hand abs-tr top-25 right-10 rotate-13 text='2xl'>Extensions are<br/> written in TypeScript<br/>👇</div>
