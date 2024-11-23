@@ -511,40 +511,6 @@ layout: section
 # Demo
 
 <!--
-Okay, so in this demo. I gonna show you my workflow with Neovim.
-
-So, let's get started!
-
-(Until this slide, it takes like 7 mins)
--->
-
----
-
-# Let's hack with [Neovim]{.view-transition-extensions-neovim}!
-
-- oil.nvim
-- sippets
-- WebBrowser
-
----
-layout: section
----
-
-## Can we REALLY do them with [Neovim]{.view-transition-extensions-neovim}?
-
-<!--
-TODO: maybe rewrite the above
-
-You may be worried about the lack of GUI, WebViews, and LSP support in Neovim.
--->
-
----
-layout: section
----
-
-# Demo
-
-<!--
 So, in this talk, I'd like to share with you my workflow with Neovim.
 
 At first, create an exazmple project
