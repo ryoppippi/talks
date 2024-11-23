@@ -11,6 +11,7 @@
 		"deploy": "bunx wrangler@latest pages deploy ."
 	},
 	"devDependencies": {
+		"@iconify/json": "^2.2.273",
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config",
 		"@ryoppippi/unocss-preset": "npm:@jsr/ryoppippi__unocss-preset",
 		"@slidev/cli": "^0.50.0-beta.6",
@@ -21,7 +22,9 @@
 		"eslint": "^9.15.0",
 		"eslint-plugin-format": "^0.1.2",
 		"gray-matter": "^4.0.3",
+		"markdown-it-image-figures": "^2.1.1",
 		"markdown-it-magic-link": "^0.1.4",
+		"playwright-chromium": "^1.48.2",
 		"prettier-plugin-slidev": "^1.0.5",
 		"tinyglobby": "^0.2.10",
 		"ufo": "^1.5.4",
@@ -31,5 +34,8 @@
 	},
 	"workspaces": [
 		"*"
-	]
+	],
+	"patchedDependencies": {
+		"@slidev/client@0.50.0-beta.6": "patches/@slidev%2Fclient@0.50.0-beta.6.patch"
+	}
 }

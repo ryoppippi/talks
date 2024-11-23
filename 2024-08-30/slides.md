@@ -1,6 +1,13 @@
 ---
 theme: apple-basic
 layout: intro
+download: true
+export:
+    format: pdf
+    theme: dark
+    withClicks: false
+    withToc: false
+remoteAssets: 'dev'
 ---
 
 # 最近作ってるライブラリ怒涛の紹介！

@@ -1,9 +1,9 @@
 {
-	"name": "2024-11-23-vimconf",
+	"name": "2024-11-19-neovimconf",
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"build": "slidev build --base /2024-11-23/ --out ../dist/2024-11-23",
+		"build": "slidev build --base /2024-11-19/ --out ../dist/2024-11-19",
 		"dev": "slidev --open",
 		"dev:remote": "slidev --open --remote --tunnel",
 		"export": "slidev export"
