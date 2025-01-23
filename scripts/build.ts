@@ -2,6 +2,7 @@
 
 import p from 'node:path';
 import { $ } from 'bun';
+import { Feed } from 'feed';
 import matter from 'gray-matter';
 import { glob } from 'tinyglobby';
 import * as ufo from 'ufo';
@@ -32,7 +33,6 @@ await $`bun run --filter '*' build`;
 /* copy redirects */
 await $`cp -r _redirects ${rootDist}/`;
 
-/* generate json */
 {
 	const projectMDs = await glob('*/README.md', {
 		onlyFiles: true,
@@ -100,4 +100,25 @@ await $`cp -r _redirects ${rootDist}/`;
 	results.sort((a, b) => b.date.getTime() - a.date.getTime());
 
 	await Bun.write(p.join(rootDist, 'talks.json'), JSON.stringify(results, null, 2));
+
+	/* generate rss */
+	const feed = new Feed({
+		title: 'ryoppippi talks',
+		description: 'ryoppippi talks',
+		copyright: `MIT 2024 © ryoppippi`,
+		id: ROOT_URL,
+		link: ROOT_URL,
+	});
+
+	for (const talk of results) {
+		feed.addItem({
+			title: talk.title,
+			id: talk.links[0],
+			link: talk.links[0],
+			date: talk.date,
+			content: talk.content,
+		});
+	}
+
+	await Bun.write(p.join(rootDist, 'feed.xml'), feed.rss2());
 }
