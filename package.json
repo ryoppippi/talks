@@ -7,7 +7,6 @@
 		"build": "bun ./scripts/build.ts",
 		"lint": "eslint --cache .",
 		"format": "nr lint --fix",
-		"prepare": "npx bunpare",
 		"deploy": "bunx wrangler@latest pages deploy ."
 	},
 	"devDependencies": {
