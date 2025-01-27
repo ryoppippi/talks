@@ -1,10 +1,10 @@
 {
-  "lockfileVersion": 0,
+  "lockfileVersion": 1,
   "workspaces": {
     "": {
       "name": "talks",
       "devDependencies": {
-        "@iconify/json": "^2.2.297",
+        "@iconify/json": "^2.2.299",
         "@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config",
         "@ryoppippi/unocss-preset": "npm:@jsr/ryoppippi__unocss-preset",
         "@slidev/cli": "^51.0.1",
@@ -50,13 +50,13 @@
     },
   },
   "packages": {
-    "2024-08-30-svelte-japan-online-meetup": ["2024-08-30-svelte-japan-online-meetup@workspace:2024-08-30", { "dependencies": { "@slidev/theme-apple-basic": "^0.25.1" } }],
+    "2024-08-30-svelte-japan-online-meetup": ["2024-08-30-svelte-japan-online-meetup@workspace:2024-08-30"],
 
-    "2024-11-08": ["2024-11-08@workspace:2024-11-08", {}],
+    "2024-11-08": ["2024-11-08@workspace:2024-11-08"],
 
-    "2024-11-19-neovimconf": ["2024-11-19-neovimconf@workspace:2024-11-19", { "devDependencies": { "seedrandom": "^3.0.5" } }],
+    "2024-11-19-neovimconf": ["2024-11-19-neovimconf@workspace:2024-11-19"],
 
-    "2024-11-23-vimconf": ["2024-11-23-vimconf@workspace:2024-11-23", { "devDependencies": { "seedrandom": "^3.0.5" } }],
+    "2024-11-23-vimconf": ["2024-11-23-vimconf@workspace:2024-11-23"],
 
     "@ampproject/remapping": ["@ampproject/remapping@2.3.0", "", { "dependencies": { "@jridgewell/gen-mapping": "^0.3.5", "@jridgewell/trace-mapping": "^0.3.24" } }, "sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw=="],
 
@@ -242,7 +242,7 @@
 
     "@iconify-json/svg-spinners": ["@iconify-json/svg-spinners@1.2.2", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-DIErwfBWWzLfmAG2oQnbUOSqZhDxlXvr8941itMCrxQoMB0Hiv8Ww6Bln/zIgxwjDvSem2dKJtap+yKKwsB/2A=="],
 
-    "@iconify/json": ["@iconify/json@2.2.297", "", { "dependencies": { "@iconify/types": "*", "pathe": "^1.1.2" } }, "sha512-Mu7m+R8xH0EQxkZ9Zq9ZqT7twennzG2E9BojDiWEwoKialJpHB99Aj+jKdRvlEkwDE7RuHxvf0fHdamhPXZ8uw=="],
+    "@iconify/json": ["@iconify/json@2.2.299", "", { "dependencies": { "@iconify/types": "*", "pathe": "^1.1.2" } }, "sha512-YsHoXNK4tBfY1aABlnAxGv8BFNsXBRfTuhRqkXLC0AK+amM+IDPLpVyOPCttcEHKuAsmh0OVPsrCZe2bC0puTA=="],
 
     "@iconify/types": ["@iconify/types@2.0.0", "", {}, "sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg=="],
 
