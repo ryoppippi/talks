@@ -4,6 +4,8 @@ Talks & Slides by ryoppippi
 
 https://talks.ryoppippi.com/talks.json
 
-# License
+# Copyright Notice
 
-Slides in this repository are made by ryoppippi, and re-distribution is not allowed unless you get permission from ryoppippi.
+© 2024 ryoppippi
+
+All slides in this repository were created by ryoppippi. Any redistribution, reproduction, or use of these materials, in whole or in part, is strictly prohibited without explicit prior written permission from the copyright holder.
