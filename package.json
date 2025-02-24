@@ -13,7 +13,7 @@
 		"@iconify/json": "^2.2.309",
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config",
 		"@ryoppippi/unocss-preset": "npm:@jsr/ryoppippi__unocss-preset",
-		"@slidev/cli": "^51.1.1",
+		"@slidev/cli": "^51.2.2",
 		"@slidev/client": "^51.1.1",
 		"@slidev/theme-default": "^0.25.0",
 		"@slidev/theme-seriph": "latest",
