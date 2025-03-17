@@ -14,7 +14,7 @@
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config",
 		"@ryoppippi/unocss-preset": "npm:@jsr/ryoppippi__unocss-preset",
 		"@slidev/cli": "^51.4.0",
-		"@slidev/client": "^51.3.0",
+		"@slidev/client": "^51.4.0",
 		"@slidev/theme-default": "^0.25.0",
 		"@slidev/theme-seriph": "latest",
 		"@types/bun": "^1.2.5",
