@@ -18,7 +18,7 @@
         "gray-matter": "^4.0.3",
         "markdown-it-image-figures": "^2.1.1",
         "markdown-it-magic-link": "^0.1.4",
-        "playwright-chromium": "^1.51.1",
+        "playwright-chromium": "^1.52.0",
         "prettier-plugin-slidev": "^1.0.5",
         "tinyglobby": "^0.2.12",
         "ufo": "^1.6.1",
@@ -1430,9 +1430,9 @@
 
     "plantuml-encoder": ["plantuml-encoder@1.4.0", "", {}, "sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g=="],
 
-    "playwright-chromium": ["playwright-chromium@1.51.1", "", { "dependencies": { "playwright-core": "1.51.1" }, "bin": { "playwright": "cli.js" } }, "sha512-IQpN8lgv/fx++WRxT8ITZylDwYAamd3Fv5H9g2AWsicp0N829L1oXHziK/6l9h/TMxioSTqc4ifPiZLS8nITxw=="],
+    "playwright-chromium": ["playwright-chromium@1.52.0", "", { "dependencies": { "playwright-core": "1.52.0" }, "bin": { "playwright": "cli.js" } }, "sha512-ZTpzBzRFFRglyqRnAqdK5mFaw1P41qe8V2zSR+fA0eKPgGEEaH7r91ejXKijs3WhReatRcatHQe3ndMBMN1PLA=="],
 
-    "playwright-core": ["playwright-core@1.51.1", "", { "bin": { "playwright-core": "cli.js" } }, "sha512-/crRMj8+j/Nq5s8QcvegseuyeZPxpQCZb6HNk3Sos3BlZyAknRjoyJPFWkpNn8v0+P3WiwqFF8P+zQo4eqiNuw=="],
+    "playwright-core": ["playwright-core@1.52.0", "", { "bin": { "playwright-core": "cli.js" } }, "sha512-l2osTgLXSMeuLZOML9qYODUQoPPnUsKsb5/P6LJ2e6uPKXUdPK5WYhN4z03G+YNbWmGDY4YENauNu4ZKczreHg=="],
 
     "pluralize": ["pluralize@8.0.0", "", {}, "sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA=="],
 
