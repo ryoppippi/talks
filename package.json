@@ -26,7 +26,7 @@
 		"markdown-it-magic-link": "^0.1.4",
 		"playwright-chromium": "^1.52.0",
 		"prettier-plugin-slidev": "^1.0.5",
-		"tinyglobby": "^0.2.12",
+		"tinyglobby": "^0.2.13",
 		"ufo": "^1.6.1",
 		"unocss": "^66.0.0",
 		"valibot": "^1.0.0",
