@@ -4,7 +4,7 @@
     "": {
       "name": "talks",
       "devDependencies": {
-        "@iconify/json": "^2.2.343",
+        "@iconify/json": "^2.2.349",
         "@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config",
         "@ryoppippi/unocss-preset": "npm:@jsr/ryoppippi__unocss-preset",
         "@slidev/cli": "^51.8.0",
@@ -244,7 +244,7 @@
 
     "@iconify-json/svg-spinners": ["@iconify-json/svg-spinners@1.2.2", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-DIErwfBWWzLfmAG2oQnbUOSqZhDxlXvr8941itMCrxQoMB0Hiv8Ww6Bln/zIgxwjDvSem2dKJtap+yKKwsB/2A=="],
 
-    "@iconify/json": ["@iconify/json@2.2.344", "", { "dependencies": { "@iconify/types": "*", "pathe": "^1.1.2" } }, "sha512-wY+TYoq4WSAaNunAbecUS+5S4VobTW/3cWpTLEWezRW9Wv4V3MqguNirNN3c/jSq/dfIMJNvr9Gz+N9iNFMInA=="],
+    "@iconify/json": ["@iconify/json@2.2.351", "", { "dependencies": { "@iconify/types": "*", "pathe": "^1.1.2" } }, "sha512-xZnNLPmnkRFpsQG+v9f0b7pQewIKz/ueJL7vAMLSBuw76UdL2SJ86pTCPUe0dgcZ8CdZ6pylUU+mTut0iB9DGQ=="],
 
     "@iconify/types": ["@iconify/types@2.0.0", "", {}, "sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg=="],
 
