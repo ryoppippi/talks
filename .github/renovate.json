@@ -1,23 +1,29 @@
 {
-	"vulnerabilityAlerts": {
-		"labels": [
-			"security"
-		]
-	},
-	"rangeStrategy": "bump",
-	"lockFileMaintenance": {
-		"enabled": true
-	},
-	"platformAutomerge": true,
-	"dependencyDashboard": false,
-	"automerge": true,
-	"branchConcurrentLimit": 0,
-	"labels": [
-		"dependencies",
-		"renovate"
-	],
-	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"stabilityDays": 2,
-	"timezone": "Europe/London",
-	"schedule": "before 2pm on Monday"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "schedule:weekly",
+    "group:allNonMajor"
+  ],
+  "postUpdateOptions": [
+    "pnpmDedupe"
+  ],
+  "vulnerabilityAlerts": {
+    "labels": [
+      "security"
+    ]
+  },
+  "labels": [
+    "dependencies",
+    "renovate"
+  ],
+  "rangeStrategy": "bump",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "platformAutomerge": true,
+  "dependencyDashboard": false,
+  "automerge": true,
+  "branchConcurrentLimit": 0,
+  "stabilityDays": 3
 }
