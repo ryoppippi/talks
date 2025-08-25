@@ -10,27 +10,27 @@
 		"deploy": "bunx wrangler@latest pages deploy ."
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.307",
+		"@iconify/json": "^2.2.376",
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config",
 		"@ryoppippi/unocss-preset": "npm:@jsr/ryoppippi__unocss-preset",
-		"@slidev/cli": "^51.1.1",
-		"@slidev/client": "^51.1.1",
+		"@slidev/cli": "^51.8.2",
+		"@slidev/client": "^51.8.2",
 		"@slidev/theme-default": "^0.25.0",
 		"@slidev/theme-seriph": "latest",
-		"@types/bun": "^1.2.2",
-		"eslint": "^9.20.1",
+		"@types/bun": "^1.2.20",
+		"eslint": "^9.33.0",
 		"eslint-plugin-format": "^1.0.1",
 		"feed": "^4.2.2",
 		"gray-matter": "^4.0.3",
 		"markdown-it-image-figures": "^2.1.1",
 		"markdown-it-magic-link": "^0.1.4",
-		"playwright-chromium": "^1.50.1",
+		"playwright-chromium": "^1.55.0",
 		"prettier-plugin-slidev": "^1.0.5",
-		"tinyglobby": "^0.2.10",
-		"ufo": "^1.5.4",
+		"tinyglobby": "^0.2.14",
+		"ufo": "^1.6.1",
 		"unocss": "^65.5.0",
 		"valibot": "^0.42.1",
-		"vue": "^3.5.13"
+		"vue": "^3.5.19"
 	},
 	"workspaces": [
 		"*"
