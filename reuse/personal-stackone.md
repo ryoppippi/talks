@@ -4,7 +4,7 @@ growSeed: 15
 growOpacity: 0.3
 class: p-20
 imports:
-  PersonalIntro: ./PersonalIntro.vue
+  PersonalIntro: ../reuse/PersonalIntro.vue
 ---
 
 <PersonalIntro>
