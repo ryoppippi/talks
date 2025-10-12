@@ -61,7 +61,20 @@ class: items-center justify-center
 ---
 src: '../reuse/sponsors.md'
 ---
-<!-- talk: Greg と Toyokumo に口頭で感謝を述べる。 -->
+<!-- sponsor ありがとうございます。 -->
+
+---
+layout: image
+image: https://ccusage.com/ccusage_thumbnail.png
+---
+
+<!-- Thank you greg -->
+
+---
+layout: image
+image: /toyokumo.png
+---
+<!-- Thanks OSS Award by Toyokumoに選んでいただきました！ありがとうございます🙏 -->
 
 ---
 layout: section
