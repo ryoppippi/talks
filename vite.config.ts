@@ -1,11 +1,11 @@
 /* eslint-disable ts/no-unsafe-argument */
 
-import MarkdownItMagicLink from 'markdown-it-magic-link';
-import { defineConfig } from 'vite';
-
-import '@slidev/cli';
 // @ts-expect-error no types
 import Figures from 'markdown-it-image-figures';
+import MarkdownItMagicLink from 'markdown-it-magic-link';
+
+import { defineConfig } from 'vite';
+import '@slidev/cli';
 
 export default defineConfig({
 	slidev: {

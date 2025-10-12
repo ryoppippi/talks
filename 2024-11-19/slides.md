@@ -489,8 +489,6 @@ T
 -->
 
 ---
-
----
 layout: section
 ---
 

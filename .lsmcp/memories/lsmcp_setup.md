@@ -6,9 +6,11 @@ updated: 2025-10-12T20:30:13.628Z
 # LSMCP Setup for talks Repository
 
 ## Project Overview
+
 This is a Slidev talks repository with TypeScript/Vue files organized by date-stamped folders (e.g., 2024-11-19/).
 
 ## Project Structure
+
 - **Root config files**: `unocss.config.ts`, `vite.config.ts`, `eslint.config.js`
 - **Build scripts**: `scripts/build.ts` - orchestrates multi-talk builds and feed generation
 - **Talk directories**: Date-stamped folders like `2024-11-19/`, each containing:
@@ -19,6 +21,7 @@ This is a Slidev talks repository with TypeScript/Vue files organized by date-st
 - **Shared content**: `reuse/` and `patches/` directories
 
 ## LSP Configuration Status
+
 ✅ **LSP Server**: Fully operational (TypeScript/Vue language server)
 ✅ **Document Symbols**: Working perfectly
 ✅ **Hover Information**: Providing type signatures
@@ -27,12 +30,14 @@ This is a Slidev talks repository with TypeScript/Vue files organized by date-st
 ✅ **Diagnostics**: Available for error checking
 
 ## Key Files to Navigate
+
 - `scripts/build.ts:11` - ROOT_URL constant (https://talks.ryoppippi.com/)
 - `scripts/build.ts:105` - Feed generation logic
 - `scripts/build.ts:57-100` - Main build processing loop
 - Individual talk configs in `YYYY-MM-DD/` folders
 
 ## Effective Usage
+
 1. Use `lsp_get_document_symbols` to explore file structure
 2. Use `lsp_find_references` to trace symbol usage across the codebase
 3. Use `lsp_get_definitions` with `includeBody: true` to see full implementations
@@ -40,6 +45,7 @@ This is a Slidev talks repository with TypeScript/Vue files organized by date-st
 5. Use `lsp_get_diagnostics` to check for TypeScript errors
 
 ## Notes
+
 - The symbol index search (`search_symbols`) returns no results, but direct LSP tools work perfectly
 - This is expected behavior - rely on document-level LSP tools instead
 - File patterns: `**/*.{ts,tsx,vue,js}` covers all source files

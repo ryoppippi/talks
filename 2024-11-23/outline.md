@@ -43,11 +43,9 @@ Web frontendのためのplugin開発
 - floating terminalを開く ( uga-term )
 
 - tree-sitterの紹介
-
   - syntax highlightが動いていることを示す
 
 - lspの紹介
-
   - vtsls, svelte lsp, tailwind-lsp, eslint-lspが導入されていることを示す
   - formatter は動くか ( efm-langserver )
   - 打ってみて補完が出るか (cmp.nvim)
