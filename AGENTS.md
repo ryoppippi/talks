@@ -4,6 +4,10 @@
 
 Date-stamped folders such as `2024-11-19/` or `2024-08-30/` hold individual Slidev talks; each contains `slides.md`, supporting Vue overrides, and a `public/` asset bucket. Shared tooling and configuration live at the repo root: `scripts/build.ts` orchestrates multi-talk builds and feed generation, `unocss.config.ts` and `eslint.config.js` centralise styling rules, while `patches/` and `reuse/` store dependency tweaks and reusable content respectively. The build output is written to `dist/` (ignored in VCS) during CI or manual builds.
 
+The `reuse/PersonalIntro.vue` component renders the shared self-introduction layout. Markdown front matter for intro slides should import it and provide content via slots. For StackOne branding, use `reuse/personal-stackone.md`, which already injects the GitHub magic link `{@StackOneHQ}` so Slidev renders the avatar automatically.
+
+Slide markdown supports GitHub-style cards via `markdown-it-magic-link`; wrap the handle in braces like `{@ryoppippi}` to auto-link and show the avatar. Use this for companies or individuals whenever a GitHub profile is available.
+
 ## Build, Test, and Development Commands
 
 Install dependencies with `bun install`. Use `bun run new` to scaffold a fresh talk folder via Slidev. Develop a specific deck with Bun’s workspace filter, e.g. `bun run --filter 2024-11-19 dev` to open the local server. `bun run build` performs a full repo build: it runs every talk’s Slidev build, copies PDFs, and regenerates `dist/talks.json` plus `dist/feed.xml`. Lint the codebase with `bun run lint`; auto-fix formatting via `bun run format`. Deployments are published through Cloudflare Pages using `bun run deploy` once `dist/` is up to date.

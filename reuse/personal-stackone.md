@@ -9,16 +9,22 @@ imports:
 
 <PersonalIntro>
   <template #headline>
-    Software Engineer mainly on <strong>Web Frontend x Machine Learning</strong>
+    AI Engineer @ <strong>StackOne</strong>
+  </template>
+  <template #affiliation>
+    {@StackOneHQ}
+  </template>
+  <template #location>
+    Working remotely from the UK
   </template>
 </PersonalIntro>
 
 <!--
 Let me introduce myself.
 
-I'm ryoppippi, a software engineer recently mainly working on web frontend and machine learning.
+I'm Ryotaro Kimura (ryoppippi), an AI engineer at StackOne focusing on web frontend and machine learning.
 
-I'm living in the UK.
+I'm working remotely from the UK.
 
 I'm a member of vim-jp and the core member of Svelte Japan.
 
