@@ -14,14 +14,10 @@ class: p-20
 />
 
 <div class="text-3xl leading-snug font-500">
-  AI Engineer @ <strong>StackOne</strong>
+  AI Engineer @ <strong>StackOne</strong> {@StackOneHQ}
 </div>
 
-<div class="mt-6 flex items-center gap-4 text-2xl">
-  {@StackOneHQ}
-</div>
-
-<div gap-3 fyc class="mt-6 text-2xl">
+<div gap-3 fyc class="mt-8 text-2xl">
   Working remotely from the UK
   <div class="i-flag-gb-4x3 font-300" />
 </div>
