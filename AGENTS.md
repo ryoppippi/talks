@@ -60,3 +60,7 @@ Symbols are identified by their name, kind, file location, and container. Use th
 - `get_workspace_symbols` - Search symbols across the entire workspace
 
 Always prefer indexed searches (tools with `_from_index` suffix) over reading entire files.
+
+## Documentation & Comments
+
+refer https://sli.dev/llms.txt or search for "slidev" in mcp servers such as deepwiki or context7
