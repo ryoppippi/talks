@@ -11,6 +11,7 @@
 	},
 	"devDependencies": {
 		"@iconify/json": "^2.2.391",
+		"@mizchi/lsmcp": "^0.10.0-rc.6",
 		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config",
 		"@ryoppippi/unocss-preset": "npm:@jsr/ryoppippi__unocss-preset",
 		"@slidev/cli": "^51.8.2",
@@ -18,6 +19,7 @@
 		"@slidev/theme-default": "^0.25.0",
 		"@slidev/theme-seriph": "latest",
 		"@types/bun": "^1.2.23",
+		"@typescript/native-preview": "^7.0.0-dev.20251012.1",
 		"eslint": "^9.36.0",
 		"eslint-plugin-format": "^1.0.2",
 		"feed": "^4.2.2",
