@@ -1,5 +1,0 @@
-- `https://api.star-history.com/svg?repos=ryoppippi/ccusage&type=Date&theme=dark`
-- `https://github.com/ryoppippi/ccusage` (docs/public/screenshot.png → ccusage-dashboard.png)
-- `https://github.com/ryoppippi/ccusage` (docs/public/blocks-live.png → ccusage-live.png)
-- `https://github.com/ryoppippi/ccusage` (docs/public/logo.png → ccusage-logo.png)
-- `toyokumo.png` (Thanks OSS Award スクリーンショット)

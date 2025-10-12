@@ -1,26 +1,23 @@
 ---
 title: 'claude codeの進化とccusage、そしてこれから'
-theme: default
-transition: fade
+transition: view-transition
 mdc: true
 highlighter: shiki
 css: unocss
 colorSchema: dark
----
-
----
 layout: cover
-background: https://anthropic.com/images/claude-terminal.png
-backgroundOpacity: 0.18
-class: items-center justify-center text-center
+glowSeed: 4
 ---
-<!-- talk: オープニング。Terminal-firstで行くと宣言。 -->
 
-# claude codeの進化とccusage、そしてこれから
+# ccusage
+## Claude Code, ccusage, そしてこれから
 
-### Terminalから始まるLLM革命
+{@ryoppippi}
 
-@ryoppippi ・ GitHub: ryoppippi/ccusage
+<div abs-br mx-10 mb-10 flex="~ col gap-4 items-end" text-left>
+  <div class="text-2xl font-semibold">Claude Code Meetup Tokyo</div>
+  <div text-sm opacity-75 mt--4>17th October 2025</div>
+</div>
 
 ---
 src: '../reuse/personal-stackone.md'
@@ -37,7 +34,7 @@ ccusage = Claude Code の心拍センサー
 
 ---
 layout: image
-image: https://raw.githubusercontent.com/ryoppippi/ccusage/main/docs/public/screenshot.png
+image: https://ccusage.com/screenshot.png
 class: items-center justify-center
 ---
 <!-- talk: CLI & Web ダッシュボードを映して概要を語る。 -->
@@ -123,7 +120,7 @@ class: px-12
 
 ---
 layout: image
-image: https://raw.githubusercontent.com/ryoppippi/ccusage/main/docs/public/blocks-live.png
+image: https://ccusage.com/blocks-live.png
 class: items-center justify-center
 ---
 <!-- talk: Live monitor の画面で使用体験を語る。 -->
