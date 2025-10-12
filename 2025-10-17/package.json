@@ -1,0 +1,14 @@
+{
+	"name": "2025-10-17-claude-code-meetup-tokyo",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "slidev build --base /2025-10-17/ --out ../dist/2025-10-17",
+		"dev": "slidev --open",
+		"dev:remote": "slidev --open --remote --tunnel",
+		"export": "slidev export"
+	},
+	"devDependencies": {
+		"seedrandom": "^3.0.5"
+	}
+}
