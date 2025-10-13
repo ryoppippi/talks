@@ -7,11 +7,17 @@ class: p-20
 
 <img src="https://ryoppippi.com/haichu.avif"  absolute top-5 left-20 w-80 />
 
-AI Engineer {@StackoneHQ}
+<div class="pt-10">
+
+AI Engineer at {stackone}
 
 Creator of {ccusage}
 
 Member of {vim-jp} / {Svelte Japan}
+
+Based in the UK 🇬🇧
+
+</div>
 
 <img src="https://ryoppippi.com/ryoppippi.avif" rounded-full w-40 abs-tr mt-32 mr-30 />
 

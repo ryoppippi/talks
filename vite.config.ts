@@ -22,6 +22,7 @@ export default defineConfig({
 						'Svelte Japan': { link: 'https://svelte.jp', imageUrl: 'https://cdn.jsdelivr.net/gh/sveltejs/branding/svelte-logo-square.png' },
 						'ryoppippi.com': { link: 'https://ryoppippi.com', imageUrl: 'https://ryoppippi.com/ryoppippi.jpg' },
 						'ccusage': { link: 'https://ccusage.com', imageUrl: 'https://ccusage.com/logo.svg' },
+						'stackone': { link: 'https://www.stackone.com/', imageUrl: 'https://stackone-logos.com/api/stackone/icon/svg' },
 					},
 				});
 			},
