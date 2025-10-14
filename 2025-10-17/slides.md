@@ -35,7 +35,7 @@ class: text-5xl font-semibold px-12
 
 <!-- talk: ccusage の位置づけを一言で。 -->
 
-ccusage = Claude Code の心拍センサー
+ccusage とは
 
 ---
 layout: image
@@ -48,22 +48,51 @@ talk: CLI & Web ダッシュボードを映して概要を語る。
 -->
 
 ---
-layout: center
-class: px-12
+title: ミロさん
 ---
 
-<!-- talk: Adoption 数字だけを提示。 -->
+<!-- https://x.com/ml0_1337/status/1927585666755362933 -->
+<!-- ミロさん -->
+<Tweet id="1927585666755362933" cards="hidden"/>
 
-<div class="grid md:grid-cols-3 gap-6 text-center">
-  <div class="bg-white/5 border border-white/10 rounded-2xl py-6 text-3xl font-bold">516,967<div class="text-sm opacity-65 font-normal mt-2">npm downloads</div></div>
-  <div class="bg-white/5 border border-white/10 rounded-2xl py-6 text-3xl font-bold">8.5k★<div class="text-sm opacity-65 font-normal mt-2">GitHub stars</div></div>
-  <div class="bg-white/5 border border-white/10 rounded-2xl py-6 text-3xl font-bold">30k/day<div class="text-sm opacity-65 font-normal mt-2">latest 7-day avg</div></div>
+---
+title: oikonさん
+---
+<!-- https://x.com/oikon48/status/1928282969401348123 -->
+<!-- oikonさん -->
+<Tweet id="1928282969401348123" cards="hidden"/>
+
+
+---
+title: statusline
+class: flex
+---
+
+<div class="flex justify-center items-start w-full space-x-6">
+  <!-- claude code community -->
+  <Tweet id="1937094515396944058" cards="hidden" class="w-1/2" />
+
+  <!-- statusline -->
+  <Tweet id="1954272037976842547" scale="0.9" w-120 />
 </div>
 
 ---
+class: text-3xl font-semibold px-12
+---
+<!-- ccusage is the next github graph -->
+<!-- https://x.com/AnkMister/status/1934499508031009156 -->
+<Tweet id="1934499508031009156" cards="hidden" />
+
+---
 layout: image
-image: https://api.star-history.com/svg?repos=ryoppippi/ccusage&type=Date&theme=dark
-class: items-center justify-center
+image: /npm.jpeg
+backgroundSize: contain
+---
+
+---
+layout: image
+image: https://api.star-history.com/svg?repos=ryoppippi/ccusage&type=Date&theme=dark&type=timeline&legend=bottom-right
+backgroundSize: contain
 ---
 
 <!--
@@ -248,7 +277,5 @@ class: text-center px-12
 
 <!-- talk: クロージング。 -->
 
-## ありがとうございました
+# Happy Vibe Coding!
 
-Terminal / Neovim × Claude Code の話、続きは Slack や X で。
-GitHub: ryoppippi/ccusage ・ X: @ryoppippi
