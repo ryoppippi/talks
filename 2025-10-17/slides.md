@@ -49,19 +49,26 @@ talk: CLI & Web ダッシュボードを映して概要を語る。
 
 ---
 title: ミロさん
+class: flex items-center justify-center
 ---
 
 <!-- https://x.com/ml0_1337/status/1927585666755362933 -->
 <!-- ミロさん -->
-<Tweet id="1927585666755362933" cards="hidden"/>
+<div relative>
+  <Tweet id="1927585666755362933" cards="hidden" mt--4 flex justify-center items-center transition class="important:[&_iframe]:w-230 important:[&_iframe]:rounded-13px" />
+</div>
 
 ---
 title: oikonさん
 ---
-<!-- https://x.com/oikon48/status/1928282969401348123 -->
-<!-- oikonさん -->
-<Tweet id="1928282969401348123" cards="hidden"/>
 
+<div relative>
+  <Tweet id="1927585666755362933" cards="hidden" ml--45 mt--4 flex justify-center items-center transition class="important:[&_iframe]:w-230 important:[&_iframe]:rounded-13px" :class="$clicks > 1 ? 'op50 duration-600' : ''" v-click />
+
+  <!-- oikonさん -->
+  <!-- https://x.com/oikon/status/1928282969401348123 -->
+  <Tweet id="1928282969401348123" cards="hidden" absolute top-15 left-5 class="important:[&_iframe]:w-200 important:[&_iframe]:rounded-13px important:[&_iframe]:shadow-xl" v-click />
+</div>
 
 ---
 title: statusline
@@ -70,6 +77,7 @@ class: flex
 
 <div class="flex justify-center items-start w-full space-x-6">
   <!-- claude code community -->
+    <!-- https://x.com/claude_code/status/1937094515396944058 -->
   <Tweet id="1937094515396944058" cards="hidden" class="w-1/2" />
 
   <!-- statusline -->
@@ -79,6 +87,7 @@ class: flex
 ---
 class: text-3xl font-semibold px-12
 ---
+
 <!-- ccusage is the next github graph -->
 <!-- https://x.com/AnkMister/status/1934499508031009156 -->
 <Tweet id="1934499508031009156" cards="hidden" />
@@ -134,54 +143,72 @@ layout: section
 # 2025 Timeline
 
 ---
-layout: center
+layout: default
 class: px-12
 ---
 
-<!-- talk: May〜July をまとめて。 -->
+<!-- talk: May GA & 手探り -->
 
-<div class="grid md:grid-cols-3 gap-6 text-left">
-  <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-    <p class="text-xs uppercase opacity-60 tracking-[0.3em]">May</p>
-    <p class="text-lg font-semibold mt-2">GA & 手探り</p>
-    <p class="text-sm opacity-75 mt-3">/context /usage 不在 → ccusage v0.1 を即公開。</p>
-  </div>
-  <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-    <p class="text-xs uppercase opacity-60 tracking-[0.3em]">June</p>
-    <p class="text-lg font-semibold mt-2">Slash / MCP</p>
-    <p class="text-sm opacity-75 mt-3">/command /search と Remote MCP で CLI 文化が芽生える。</p>
-  </div>
-  <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-    <p class="text-xs uppercase opacity-60 tracking-[0.3em]">July</p>
-    <p class="text-lg font-semibold mt-2">制限と需要</p>
-    <p class="text-sm opacity-75 mt-3">Max の週次キャップ導入。Live monitor を実装。</p>
-  </div>
-</div>
+## May: GA & 手探り
+
+- `/context` `/usage` 不在
+- ccusage v0.1 を即公開
 
 ---
-layout: center
+layout: default
 class: px-12
 ---
 
-<!-- talk: August〜October。 -->
+<!-- talk: June Slash / MCP -->
 
-<div class="grid md:grid-cols-3 gap-6 text-left">
-  <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-    <p class="text-xs uppercase opacity-60 tracking-[0.3em]">August</p>
-    <p class="text-lg font-semibold mt-2">/context 公式化</p>
-    <p class="text-sm opacity-75 mt-3">Remote MCP と合わせて二刀流運用に。</p>
-  </div>
-  <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-    <p class="text-xs uppercase opacity-60 tracking-[0.3em]">September</p>
-    <p class="text-lg font-semibold mt-2">Autonomy update</p>
-    <p class="text-sm opacity-75 mt-3">チェックポイント & `/usage` が純正に。</p>
-  </div>
-  <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
-    <p class="text-xs uppercase opacity-60 tracking-[0.3em]">October</p>
-    <p class="text-lg font-semibold mt-2">Plugin system</p>
-    <p class="text-sm opacity-75 mt-3">Slash + Sub-agent + MCP + Hooks を bundle。</p>
-  </div>
-</div>
+## June: Slash / MCP
+
+- `/command` `/search` と Remote MCP で CLI 文化が芽生える
+
+---
+layout: default
+class: px-12
+---
+
+<!-- talk: July 制限と需要 -->
+
+## July: 制限と需要
+
+- Max の週次キャップ導入
+- Live monitor を実装
+
+---
+layout: default
+class: px-12
+---
+
+<!-- talk: August /context 公式化 -->
+
+## August: /context 公式化
+
+- Remote MCP と合わせて二刀流運用に
+
+---
+layout: default
+class: px-12
+---
+
+<!-- talk: September Autonomy update -->
+
+## September: Autonomy update
+
+- チェックポイント & `/usage` が純正に
+
+---
+layout: default
+class: px-12
+---
+
+<!-- talk: October Plugin system -->
+
+## October: Plugin system
+
+- Slash + Sub-agent + MCP + Hooks を bundle
 
 ---
 layout: image
@@ -194,7 +221,7 @@ talk: Live monitor の画面で使用体験を語る。
 -->
 
 ---
-layout: center
+layout: default
 class: px-12
 ---
 
@@ -202,15 +229,12 @@ class: px-12
 
 ## 制限導入のインパクト
 
-| プラン | Before | After (2025-07~) |
-|--------|--------|------------------|
-| Pro | 実質無制限 | 週 40–80h 目安 |
-| Max | Higher limit (曖昧) | 5h Blocks + 週キャップ |
-
-<p class="text-sm opacity-65 mt-4">Usage 設計 = プロダクト設計へシフト。</p>
+- **Pro**: 実質無制限 → 週 40–80h 目安
+- **Max**: Higher limit (曖昧) → 5h Blocks + 週キャップ
+- **結果**: Usage 設計 = プロダクト設計へシフト
 
 ---
-layout: center
+layout: default
 class: px-12
 ---
 
@@ -218,13 +242,11 @@ class: px-12
 
 ## Mindset Shift
 
-<div class="grid md:grid-cols-2 gap-8 text-lg opacity-85">
-  <div class="bg-white/5 border border-white/10 rounded-2xl px-5 py-5">Context を監視する文化が定着</div>
-  <div class="bg-white/5 border border-white/10 rounded-2xl px-5 py-5">Prompt + MCP + Tool をセットで設計</div>
-</div>
+- Context を監視する文化が定着
+- Prompt + MCP + Tool をセットで設計
 
 ---
-layout: center
+layout: default
 class: px-12
 ---
 
@@ -232,13 +254,11 @@ class: px-12
 
 ## 他エージェントへの波及
 
-<div class="grid md:grid-cols-2 gap-8 text-lg opacity-85">
-  <div class="bg-white/5 border border-white/10 rounded-2xl px-5 py-5">Codex CLI が token events を解禁</div>
-  <div class="bg-white/5 border border-white/10 rounded-2xl px-5 py-5">Cursor / Windsurf が usage ビューを実装</div>
-</div>
+- Codex CLI が token events を解禁
+- Cursor / Windsurf が usage ビューを実装
 
 ---
-layout: center
+layout: default
 class: px-12
 ---
 
@@ -246,14 +266,12 @@ class: px-12
 
 ## Extensibility = Claude Code
 
-<ul class="text-lg opacity-85 space-y-3 text-left">
-  <li>MCP で権限と接続先を宣言管理</li>
-  <li>Slash commands で会話をマクロ化</li>
-  <li>Plugin bundles で再現性と共有を担保</li>
-</ul>
+- MCP で権限と接続先を宣言管理
+- Slash commands で会話をマクロ化
+- Plugin bundles で再現性と共有を担保
 
 ---
-layout: center
+layout: default
 class: px-12
 ---
 
@@ -261,14 +279,13 @@ class: px-12
 
 ## これからの未来像
 
-<div class="grid md:grid-cols-[1.2fr,1fr] gap-10 items-center">
-  <ul class="text-lg opacity-85 space-y-3 leading-relaxed">
-    <li>Terminal 実験 → Claude SDK → 社会デプロイ</li>
-    <li>ccusage は Telemetry レイヤーとして継続</li>
-    <li>エンジニア主導で LLM をエンパワーする</li>
-  </ul>
-  <pre class="bg-black/60 backdrop-blur rounded-2xl px-6 py-4 text-sm opacity-70"><code>CLI → usage insight → plugin化 → SDK</code></pre>
-</div>
+- Terminal 実験 → Claude SDK → 社会デプロイ
+- ccusage は Telemetry レイヤーとして継続
+- エンジニア主導で LLM をエンパワーする
+
+```
+CLI → usage insight → plugin化 → SDK
+```
 
 ---
 layout: center
