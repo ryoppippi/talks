@@ -10,11 +10,12 @@ glowSeed: 4
 ---
 
 # ccusage
-## Claude Code, ccusage, そしてこれから
+## Claude Code, Agentic Coding, そしてこれから
 
 {@ryoppippi}
 
 <div abs-br mx-10 mb-10 flex="~ col gap-4 items-end" text-left>
+  <img src="/aiau.png" w-40 />
   <div class="text-2xl font-semibold">Claude Code Meetup Tokyo</div>
   <div text-sm opacity-75 mt--4>17th October 2025</div>
 </div>
@@ -22,12 +23,16 @@ glowSeed: 4
 ---
 src: '../reuse/personal-stackone.md'
 ---
-<!-- talk: StackOne / Neovim / AI ops 自己紹介。 -->
+
+<!--
+talk: StackOne / Neovim / AI ops 自己紹介。
+-->
 
 ---
 layout: center
 class: text-5xl font-semibold px-12
 ---
+
 <!-- talk: ccusage の位置づけを一言で。 -->
 
 ccusage = Claude Code の心拍センサー
@@ -37,12 +42,16 @@ layout: image
 image: https://ccusage.com/screenshot.png
 class: items-center justify-center
 ---
-<!-- talk: CLI & Web ダッシュボードを映して概要を語る。 -->
+
+<!--
+talk: CLI & Web ダッシュボードを映して概要を語る。
+-->
 
 ---
 layout: center
 class: px-12
 ---
+
 <!-- talk: Adoption 数字だけを提示。 -->
 
 <div class="grid md:grid-cols-3 gap-6 text-center">
@@ -56,29 +65,41 @@ layout: image
 image: https://api.star-history.com/svg?repos=ryoppippi/ccusage&type=Date&theme=dark
 class: items-center justify-center
 ---
-<!-- talk: 7月の制限導入で急伸した話をここで。 -->
+
+<!--
+talk: 7月の制限導入で急伸した話をここで。
+-->
 
 ---
 src: '../reuse/sponsors.md'
 ---
-<!-- sponsor ありがとうございます。 -->
+
+<!--
+sponsor ありがとうございます。
+-->
 
 ---
 layout: image
 image: https://ccusage.com/ccusage_thumbnail.png
 ---
 
-<!-- Thank you greg -->
+<!--
+Thank you greg
+-->
 
 ---
 layout: image
 image: /toyokumo.png
 ---
-<!-- Thanks OSS Award by Toyokumoに選んでいただきました！ありがとうございます🙏 -->
+
+<!--
+Thanks OSS Award by Toyokumoに選んでいただきました！ありがとうございます🙏
+-->
 
 ---
 layout: section
 ---
+
 <!-- talk: タイムラインの導入。 -->
 
 # 2025 Timeline
@@ -87,6 +108,7 @@ layout: section
 layout: center
 class: px-12
 ---
+
 <!-- talk: May〜July をまとめて。 -->
 
 <div class="grid md:grid-cols-3 gap-6 text-left">
@@ -111,6 +133,7 @@ class: px-12
 layout: center
 class: px-12
 ---
+
 <!-- talk: August〜October。 -->
 
 <div class="grid md:grid-cols-3 gap-6 text-left">
@@ -136,12 +159,16 @@ layout: image
 image: https://ccusage.com/blocks-live.png
 class: items-center justify-center
 ---
-<!-- talk: Live monitor の画面で使用体験を語る。 -->
+
+<!--
+talk: Live monitor の画面で使用体験を語る。
+-->
 
 ---
 layout: center
 class: px-12
 ---
+
 <!-- talk: 制限のまとめ。 -->
 
 ## 制限導入のインパクト
@@ -157,6 +184,7 @@ class: px-12
 layout: center
 class: px-12
 ---
+
 <!-- talk: Mindset shift の短文化。 -->
 
 ## Mindset Shift
@@ -170,6 +198,7 @@ class: px-12
 layout: center
 class: px-12
 ---
+
 <!-- talk: 他エージェント波及。 -->
 
 ## 他エージェントへの波及
@@ -183,6 +212,7 @@ class: px-12
 layout: center
 class: px-12
 ---
+
 <!-- talk: Extensibility summarised。 -->
 
 ## Extensibility = Claude Code
@@ -197,6 +227,7 @@ class: px-12
 layout: center
 class: px-12
 ---
+
 <!-- talk: 未来像。 -->
 
 ## これからの未来像
@@ -214,9 +245,10 @@ class: px-12
 layout: center
 class: text-center px-12
 ---
+
 <!-- talk: クロージング。 -->
 
 ## ありがとうございました
 
-Terminal / Neovim × Claude Code の話、続きは Slack や X で。  
+Terminal / Neovim × Claude Code の話、続きは Slack や X で。
 GitHub: ryoppippi/ccusage ・ X: @ryoppippi
