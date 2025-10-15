@@ -109,6 +109,16 @@ talk: 7月の制限導入で急伸した話をここで。
 -->
 
 ---
+
+<Contributors />
+
+<!--
+Also thanks to everyone who has contributed to ccusage itself and the companion tools so far. All your contributions and ideas made it possible for us to build ccusage today. Thank you!
+
+Also, I'd invite you to join us and help out!
+-->
+
+---
 src: '../reuse/sponsors.md'
 ---
 
@@ -295,4 +305,3 @@ class: text-center px-12
 <!-- talk: クロージング。 -->
 
 # Happy Vibe Coding!
-
