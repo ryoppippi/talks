@@ -16,6 +16,25 @@ if (token) {
 
 const usernames = new Set<string>();
 
+const botMatchers = [
+	(login: string) => login.toLowerCase().endsWith("[bot]"),
+	(login: string) => login.toLowerCase().endsWith("-bot"),
+	(login: string) => login.toLowerCase().startsWith("dependabot"),
+];
+
+const blockedLogins = new Set([
+	"copilot",
+	"github-copilot",
+	"claudecode",
+	"claude-code",
+]);
+
+function isBot(login: string) {
+	const normalized = login.toLowerCase();
+	if (blockedLogins.has(normalized)) return true;
+	return botMatchers.some((matcher) => matcher(normalized));
+}
+
 for (let page = 1; ; page++) {
 	const url = `https://api.github.com/repos/${owner}/${repo}/contributors?per_page=${perPage}&page=${page}`;
 	const response = await fetch(url, { headers });
@@ -31,7 +50,10 @@ for (let page = 1; ; page++) {
 
 	for (const contributor of contributors) {
 		if (contributor?.login) {
-			usernames.add(contributor.login);
+			const login = contributor.login;
+			if (!isBot(login)) {
+				usernames.add(login);
+			}
 		}
 	}
 
