@@ -7,13 +7,17 @@ class: p-20
 
 <img src="https://ryoppippi.com/haichu.avif"  absolute top-5 left-20 w-80 />
 
-Software Engineer mainly on **Web Frontend x Machine Learning**
+<div class="pt-10">
 
-<div gap-3 fyc>
-  Living in the UK <div i-flag-gb-4x3 font-300/>
-</div>
+AI Engineer at {stackone}
+
+Creator of {ccusage}
 
 Member of {vim-jp} / {Svelte Japan}
+
+Based in the UK 🇬🇧
+
+</div>
 
 <img src="https://ryoppippi.com/ryoppippi.avif" rounded-full w-40 abs-tr mt-32 mr-30 />
 
@@ -29,9 +33,9 @@ Member of {vim-jp} / {Svelte Japan}
 <!--
 Let me introduce myself.
 
-I'm ryoppippi, a software engineer recently mainly working on web frontend and machine learning.
+I'm ryoppippi, an AI engineer at Stackone.
 
-I'm living in the UK.
+Also, as you may know, I'm the creator of ccusage.
 
 I'm a member of vim-jp and the core member of Svelte Japan.
 
