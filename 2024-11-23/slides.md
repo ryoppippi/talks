@@ -105,8 +105,8 @@ title: vim-jp radio
 ---
 
 <div grid cols='1 gap-y-4' w-40 abs-tl mx-40 mt-10 v-click>
-  <a target='_blank' href='https://github.com/staticWagomU'><img src="https://cdn.jsdelivr.net/gh/vim-jp-radio/LP@d35cf46/src/assets/avatar/tomoya.jpg" /></a>
-  <a target='_blank' href='https://github.com/tomoya'><img src="https://cdn.jsdelivr.net/gh/staticWagomU/staticWagomU@ccc0f3b/wagomu.png" /></a>
+  <a target='_blank' href='https://github.com/tomoya'><img src="https://cdn.jsdelivr.net/gh/vim-jp-radio/LP@d35cf46/src/assets/avatar/tomoya.jpg" /></a>
+  <a target='_blank' href='https://github.com/staticWagomU'><img src="https://github.com/staticWagomU.png" /></a>
   <a target='_blank' href='https://github.com/ryoppippi'><img src='https://ryoppippi.com/ryoppippi.avif' /></a>
 </div>
 
