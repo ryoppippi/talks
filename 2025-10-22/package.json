@@ -1,0 +1,15 @@
+{
+  "name": "2025-10-22-work-not-build-meetup-feat-ryoppippi",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build --base /2025-10-22/ --out ../dist/2025-10-22",
+    "dev": "slidev --open",
+    "dev:remote": "slidev --open --remote --tunnel",
+    "export": "slidev export",
+    "contributors:ccusage": "bun scripts/fetch-ccusage-contributors.ts"
+  },
+  "devDependencies": {
+    "seedrandom": "^3.0.5"
+  }
+}
