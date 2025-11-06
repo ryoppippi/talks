@@ -25,11 +25,10 @@ src: '../reuse/personal-stackone.md'
 
 ---
 layout: default
-class: flex items-center justify-center 
+class: flex items-center justify-center
 ---
 
 <Youtube id="tBY3RxTrhkM" size-full  :class="$clicks > 0 ? 'op50' : ''" />
-
 
 <div text="7xl black bold " absolute bottom-50 left-20 rotate-15 animate="pulse duration-500" bg-white v-click :class="$clicks > 1 ? 'op50': '' ">
   Brought My Job Opportunity in the UK
@@ -38,7 +37,6 @@ class: flex items-center justify-center
 <div text="8xl black bold " absolute bottom-50 left-50 rotate--15 animate="pulse duration-500" bg-white v-click>
   Thank you vimconf!!
 </div>
-
 
 ---
 layout: section
@@ -109,7 +107,6 @@ image: /suggestion.jpeg
 backgroundSize: contain
 ---
 
-
 <!-- $ bun run src/cli.ts --suggestions-only -->
 <!-- [ai-keymap] Analyzing log at /Users/ryoppippi/.local/share/nvim/ai_keymap/keystrokes.jsonl ... -->
 <!-- 1. [n] map <leader>ws => sequence : % s / \s\+$ / / <CR> -->
@@ -136,7 +133,10 @@ backgroundSize: contain
 <!--    recommended mapping: ciw -->
 <!--    rationale: This mapping shortens the common 'ciw' (change inner word) operation to a two-key sequence, reducing finger travel and cognitive effort for frequent word edits. -->
 <!--    lua: vim.keymap.set("n", "<leader>w", "ciw", { desc = "AI-suggested: compress c → i → w" }) -->
-<!-- ~/g/g/r/nvim-in-the-loop main• 13.4s ❱ -->
+
+<!--
+~/g/g/r/nvim-in-the-loop main• 13.4s ❱
+-->
 
 ---
 layout: default

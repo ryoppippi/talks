@@ -15,7 +15,9 @@ let resizeObserver: ResizeObserver | null = null;
 
 onMounted(() => {
 	const el = gridEl.value;
-	if (!el) return;
+	if (!el) {
+		return;
+	}
 
 	const updateSize = (entry: ResizeObserverEntry) => {
 		const box = Array.isArray(entry.contentBoxSize)
@@ -27,7 +29,8 @@ onMounted(() => {
 				width: box.inlineSize,
 				height: box.blockSize,
 			};
-		} else {
+		}
+		else {
 			containerSize.value = {
 				width: entry.contentRect.width,
 				height: entry.contentRect.height,
@@ -36,7 +39,9 @@ onMounted(() => {
 	};
 
 	resizeObserver = new ResizeObserver((entries) => {
-		for (const entry of entries) updateSize(entry);
+		for (const entry of entries) {
+			updateSize(entry);
+		}
 	});
 	resizeObserver.observe(el);
 });
@@ -50,8 +55,8 @@ onBeforeUnmount(() => {
 
 const grid = computed(() => {
 	const total = contributors.length || 1;
-	const ratio =
-		containerSize.value.width && containerSize.value.height
+	const ratio
+		= containerSize.value.width && containerSize.value.height
 			? containerSize.value.width / containerSize.value.height
 			: 16 / 9;
 
@@ -65,7 +70,9 @@ const avatarSize = computed(() => {
 	const { width, height } = containerSize.value;
 	const { columns, rows } = grid.value;
 
-	if (!width || !height) return MIN_SIZE;
+	if (!width || !height) {
+		return MIN_SIZE;
+	}
 
 	const availableWidth = width - GAP * (columns - 1);
 	const availableHeight = height - GAP * (rows - 1);
@@ -124,7 +131,9 @@ function getAvatarStyle(login: string) {
 	border-radius: 9999px;
 	object-fit: cover;
 	box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
-	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	transition:
+		transform 0.2s ease,
+		box-shadow 0.2s ease;
 }
 
 .contributors-grid img:hover,

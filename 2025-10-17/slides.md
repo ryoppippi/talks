@@ -65,7 +65,9 @@ https://zenn.dev/ryoppippi/articles/6c9a8fe6629cd6
 - session
 - statusline
 
-<!-- 豊富なサブコマンド -->
+<!--
+豊富なサブコマンド
+-->
 
 ---
 layout: image
@@ -73,7 +75,6 @@ title: ccusage screenshot
 image: https://ccusage.com/screenshot.png
 class: items-center justify-center
 ---
-
 
 ---
 layout: image
@@ -125,7 +126,6 @@ layout: center
 
 これでCLI作ったら面白いのでは？
 
-
 ---
 layout: default
 ---
@@ -140,14 +140,18 @@ layout: image
 image: /zenn.png
 ---
 
-<!-- Zennにも記事を書いた -->
+<!--
+Zennにも記事を書いた
+-->
 
 ---
 layout: image
 image: /zenn1.png
 ---
 
-<!-- Zennにも記事を書いた -->
+<!--
+Zennにも記事を書いた
+-->
 
 ---
 
@@ -161,7 +165,6 @@ image: /zenn1.png
 
 <!-- https://x.com/tegnike/status/1928339032687124986 -->
 <Tweet id="1928339032687124986" absolute top-5 left-5 class="important:[&_iframe]:w-200 important:[&_iframe]:rounded-13px important:[&_iframe]:shadow-xl" v-click />
-
 
 <!-- https://x.com/shintaro_sprech/status/1928357123047493923 -->
 <Tweet id="1928357123047493923" absolute top--20 left-20 class="important:[&_iframe]:w-200 important:[&_iframe]:rounded-13px important:[&_iframe]:shadow-xl" v-click />
@@ -177,7 +180,9 @@ image: https://blogimg.goo.ne.jp/user_image/4e/33/f26648a242349393ccc3c06f49df0b
 backgroundSize: contain
 ---
 
-<!-- これが大事になるとは思っても見なかった -->
+<!--
+これが大事になるとは思っても見なかった
+-->
 
 ---
 layout: section
@@ -207,7 +212,6 @@ layout: section
 ---
 layout: section
 ---
-
 
 # じわじわ海外人気
 
@@ -282,7 +286,7 @@ layout: section
 
 ---
 title: statusline
-class: relative 
+class: relative
 ---
 
 <Tweet id="1953927012592366062" scale="0.7" absolute top-0 right-40 class="important:[&_iframe]:w-200 important:[&_iframe]:rounded-13px important:[&_iframe]:shadow-xl" />
@@ -296,7 +300,6 @@ layout: section
 ---
 layout: section
 ---
-
 
 # `ccusage statusline`
 
@@ -313,7 +316,10 @@ class: relative
 
 <!-- https://x.com/iannuttall/status/1954272037976842547 -->
 <Tweet id="1954272037976842547" scale="0.8" absolute  left-130 class="important:[&_iframe]:w-300 important:[&_iframe]:rounded-13px important:[&_iframe]:shadow-xl" v-click="+1" />
-<!-- Statusline発表 好評だった -->
+
+<!--
+Statusline発表 好評だった
+-->
 
 ---
 layout: section
@@ -321,7 +327,7 @@ layout: section
 
 # 2025年9月11日
 
---- 
+---
 
 # Claude Code Analytics API
 
@@ -330,7 +336,9 @@ layout: section
 <Tweet id="1965871901437472788" top-5 right-10 flex justify-center items-center transition class="important:[&_iframe]:w-230 important:[&_iframe]:rounded-13px"  v-click/>
 </div>
 
-<!-- cc analytics API の発表で、ccusageの存在意義が問われることに。ただ、個人ユーザは使えないとのことで、ccusageの需要はまだまだあると判断。 -->
+<!--
+cc analytics API の発表で、ccusageの存在意義が問われることに。ただ、個人ユーザは使えないとのことで、ccusageの需要はまだまだあると判断。
+-->
 
 ---
 layout: section
@@ -342,7 +350,7 @@ layout: section
 layout: section
 ---
 
-# `/usage` 
+# `/usage`
 
 ---
 
@@ -362,7 +370,9 @@ layout: section
 
 <img src="/2-0.jpg" class="w-80 rounded-2xl shadow-xl mxa" />
 
-<!-- とまあ、claude code自体がどんどん便利になっていった -->
+<!--
+とまあ、claude code自体がどんどん便利になっていった
+-->
 
 ---
 layout: image
@@ -375,7 +385,6 @@ layout: section
 ---
 
 # ccusage Related Projects
-
 
 ---
 
@@ -393,7 +402,7 @@ layout: section
 
 ---
 layout: section
---- 
+---
 
 # ccusageがもたらしたもの
 
@@ -405,7 +414,7 @@ layout: default
 
 <v-clicks>
 
-- Claude Code 利用者の増加 
+- Claude Code 利用者の増加
 - Claude Code のDXの向上
 - 周辺ツールの充実
   - `cc`なんとか系ツール群の登場
@@ -457,23 +466,23 @@ layout: center
 ---
 
 ```ts
-import { query } from "@anthropic-ai/claude-agent-sdk";
+import { query } from '@anthropic-ai/claude-agent-sdk';
 
 for await (const message of query({
-  prompt: "implement a cli to echo string using gunshi",
-  options: {
-    mcpServers: {
-      "gunshi": {
-        command: "bunx",
-        args: ["sitemcp", "https://gunshi.dev"],
-      }
-    },
-    allowedTools: ["mcp__gunshi__indexOfGunshi", "mcp__gunshi__getDocumentOfGunshi"]
-  }
+	prompt: 'implement a cli to echo string using gunshi',
+	options: {
+		mcpServers: {
+			gunshi: {
+				command: 'bunx',
+				args: ['sitemcp', 'https://gunshi.dev'],
+			}
+		},
+		allowedTools: ['mcp__gunshi__indexOfGunshi', 'mcp__gunshi__getDocumentOfGunshi']
+	}
 })) {
-  if (message.type === "result" && message.subtype === "success") {
-    console.log(message.result);
-  }
+	if (message.type === 'result' && message.subtype === 'success') {
+		console.log(message.result);
+	}
 }
 ```
 

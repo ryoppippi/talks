@@ -1,38 +1,41 @@
 #!/usr/bin/env bun
+import process from 'node:process';
 
-const owner = "ryoppippi";
-const repo = "ccusage";
+const owner = 'ryoppippi';
+const repo = 'ccusage';
 const perPage = 100;
 
 const headers: Record<string, string> = {
-	"user-agent": "bun",
-	accept: "application/vnd.github+json",
+	'user-agent': 'bun',
+	'accept': 'application/vnd.github+json',
 };
 
 const token = process.env.GITHUB_TOKEN;
-if (token) {
+if (token != null) {
 	headers.authorization = `Bearer ${token}`;
 }
 
 const usernames = new Set<string>();
 
 const botMatchers = [
-	(login: string) => login.toLowerCase().endsWith("[bot]"),
-	(login: string) => login.toLowerCase().endsWith("-bot"),
-	(login: string) => login.toLowerCase().startsWith("dependabot"),
+	(login: string) => login.toLowerCase().endsWith('[bot]'),
+	(login: string) => login.toLowerCase().endsWith('-bot'),
+	(login: string) => login.toLowerCase().startsWith('dependabot'),
 ];
 
 const blockedLogins = new Set([
-	"copilot",
-	"github-copilot",
-	"claudecode",
-	"claude-code",
+	'copilot',
+	'github-copilot',
+	'claudecode',
+	'claude-code',
 ]);
 
 function isBot(login: string) {
 	const normalized = login.toLowerCase();
-	if (blockedLogins.has(normalized)) return true;
-	return botMatchers.some((matcher) => matcher(normalized));
+	if (blockedLogins.has(normalized)) {
+		return true;
+	}
+	return botMatchers.some(matcher => matcher(normalized));
 }
 
 for (let page = 1; ; page++) {
@@ -49,8 +52,8 @@ for (let page = 1; ; page++) {
 	}
 
 	for (const contributor of contributors) {
-		if (contributor?.login) {
-			const login = contributor.login;
+		if (contributor?.login != null) {
+			const { login } = contributor;
 			if (!isBot(login)) {
 				usernames.add(login);
 			}
@@ -62,7 +65,7 @@ for (let page = 1; ; page++) {
 	}
 }
 
-const outputPath = new URL("../contributors.json", import.meta.url);
-await Bun.write(outputPath, JSON.stringify(Array.from(usernames).sort(), null, 2) + "\n");
+const outputPath = new URL('../contributors.json', import.meta.url);
+await Bun.write(outputPath, `${JSON.stringify(Array.from(usernames).sort(), null, 2)}\n`);
 
 console.log(`Saved ${usernames.size} contributors to ${outputPath.pathname}`);

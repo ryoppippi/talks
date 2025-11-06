@@ -38,4 +38,3 @@ I'm a member of vim-jp and the core member of Svelte Japan.
 The important thing you remember is the pronunciation of my name.
 So, remember my name is called リョッピッピ
 -->
-
