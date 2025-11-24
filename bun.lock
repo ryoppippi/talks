@@ -5,7 +5,7 @@
     "": {
       "name": "talks",
       "devDependencies": {
-        "@iconify/json": "^2.2.406",
+        "@iconify/json": "^2.2.409",
         "@ryoppippi/eslint-config": "^0.4.0",
         "@ryoppippi/unocss-preset": "npm:@jsr/ryoppippi__unocss-preset",
         "@slidev/cli": "^51.8.2",
@@ -13,7 +13,7 @@
         "@slidev/theme-default": "^0.25.0",
         "@slidev/theme-seriph": "latest",
         "@types/bun": "^1.3.2",
-        "@typescript/native-preview": "^7.0.0-dev.20251113.1",
+        "@typescript/native-preview": "^7.0.0-dev.20251120.1",
         "eslint": "^9.39.1",
         "eslint-plugin-format": "^1.0.2",
         "feed": "^4.2.2",
@@ -24,7 +24,7 @@
         "prettier-plugin-slidev": "^1.0.5",
         "tinyglobby": "^0.2.15",
         "ufo": "^1.6.1",
-        "unocss": "^66.5.6",
+        "unocss": "^66.5.9",
         "valibot": "^0.42.1",
         "vue": "^3.5.24",
       },
@@ -266,7 +266,7 @@
 
     "@iconify-json/svg-spinners": ["@iconify-json/svg-spinners@1.2.4", "", { "dependencies": { "@iconify/types": "*" } }, "sha512-ayn0pogFPwJA1WFZpDnoq9/hjDxN+keeCMyThaX4d3gSJ3y0mdKUxIA/b1YXWGtY9wVtZmxwcvOIeEieG4+JNg=="],
 
-    "@iconify/json": ["@iconify/json@2.2.407", "", { "dependencies": { "@iconify/types": "*", "pathe": "^2.0.3" } }, "sha512-GI81Sh05/31UyyIK2+hhMpzJb3PgvAJq/w6B0xgfQcTMwsWOaLL0QV50WNgoIHltt8FvqgR+BK/nOGnrTqugiQ=="],
+    "@iconify/json": ["@iconify/json@2.2.409", "", { "dependencies": { "@iconify/types": "*", "pathe": "^2.0.3" } }, "sha512-PnTFu5JSM+GTL2mPwLBi6UDFiQvqG+OVITz9JNfZgSjFuWcF67LhedfjKd4jO/0EgLQLl0StjGbDEu1B19V5vw=="],
 
     "@iconify/types": ["@iconify/types@2.0.0", "", {}, "sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg=="],
 
@@ -526,21 +526,21 @@
 
     "@typescript/ata": ["@typescript/ata@0.9.8", "", { "peerDependencies": { "typescript": ">=4.4.4" } }, "sha512-+M815CeDRJS5H5ciWfhFCKp25nNfF+LFWawWAaBhNlquFb2wS5IIMDI+2bKWN3GuU6mpj+FzySsOD29M4nG8Xg=="],
 
-    "@typescript/native-preview": ["@typescript/native-preview@7.0.0-dev.20251116.1", "", { "optionalDependencies": { "@typescript/native-preview-darwin-arm64": "7.0.0-dev.20251116.1", "@typescript/native-preview-darwin-x64": "7.0.0-dev.20251116.1", "@typescript/native-preview-linux-arm": "7.0.0-dev.20251116.1", "@typescript/native-preview-linux-arm64": "7.0.0-dev.20251116.1", "@typescript/native-preview-linux-x64": "7.0.0-dev.20251116.1", "@typescript/native-preview-win32-arm64": "7.0.0-dev.20251116.1", "@typescript/native-preview-win32-x64": "7.0.0-dev.20251116.1" }, "bin": { "tsgo": "bin/tsgo.js" } }, "sha512-ZfMvOGyzDSN3PxUYOSbx3jqszetxLSzLQkS+37oY40gX1YnGK8oZNf4ljVdGqYWpyRloYVREB8YbAY+UxLZxhQ=="],
+    "@typescript/native-preview": ["@typescript/native-preview@7.0.0-dev.20251123.1", "", { "optionalDependencies": { "@typescript/native-preview-darwin-arm64": "7.0.0-dev.20251123.1", "@typescript/native-preview-darwin-x64": "7.0.0-dev.20251123.1", "@typescript/native-preview-linux-arm": "7.0.0-dev.20251123.1", "@typescript/native-preview-linux-arm64": "7.0.0-dev.20251123.1", "@typescript/native-preview-linux-x64": "7.0.0-dev.20251123.1", "@typescript/native-preview-win32-arm64": "7.0.0-dev.20251123.1", "@typescript/native-preview-win32-x64": "7.0.0-dev.20251123.1" }, "bin": { "tsgo": "bin/tsgo.js" } }, "sha512-6RhDqHTom3N4QMxZYiWXxaye2bDdsVgbsPcW7J3bMCp5LVATi3KP2zYk2SZpZLJVQ0es5E/6FHLk5Gyjeb0Jzw=="],
 
-    "@typescript/native-preview-darwin-arm64": ["@typescript/native-preview-darwin-arm64@7.0.0-dev.20251116.1", "", { "os": "darwin", "cpu": "arm64" }, "sha512-h9IiIyFUzFVOTFCI5DsE0mP70is3lFk6iujnZWpB9Xi2JG2g8H7ltXoBPL43ANPG3OEHQA+N7lEb/t4TliaVFg=="],
+    "@typescript/native-preview-darwin-arm64": ["@typescript/native-preview-darwin-arm64@7.0.0-dev.20251123.1", "", { "os": "darwin", "cpu": "arm64" }, "sha512-Fr9BVEIPCapAt+nEi+tOV0tOCYG39/cNjeULPmqj07YvxhDpkU73rMShnbrXguY5Pprgi570ks5S8MI45YePIw=="],
 
-    "@typescript/native-preview-darwin-x64": ["@typescript/native-preview-darwin-x64@7.0.0-dev.20251116.1", "", { "os": "darwin", "cpu": "x64" }, "sha512-y18xG8zbI8ryCybDRdKc9d7o9eSR38aGNZt02vpEHnPfWgJUP89lTJKhUDm0S2LoEDgVo3ur0Or4jlJh38rPmQ=="],
+    "@typescript/native-preview-darwin-x64": ["@typescript/native-preview-darwin-x64@7.0.0-dev.20251123.1", "", { "os": "darwin", "cpu": "x64" }, "sha512-FH9IRdvFqxPyez9k775jK00ms7d9+X3m2Kc3LcAUV3Hiwxlzfs/Q06WWDeQV20WkVHr78hxcZGlIeqt1yGZC5Q=="],
 
-    "@typescript/native-preview-linux-arm": ["@typescript/native-preview-linux-arm@7.0.0-dev.20251116.1", "", { "os": "linux", "cpu": "arm" }, "sha512-hyXKS9An1gs+vJI4adTT6COiMbqDy3sHxc7qd2f3FhK4n1Up+Lpo8Psy0615rt0Zu35hKNLtiMZx+ymyrqgQ2A=="],
+    "@typescript/native-preview-linux-arm": ["@typescript/native-preview-linux-arm@7.0.0-dev.20251123.1", "", { "os": "linux", "cpu": "arm" }, "sha512-ty7UBZwyAZUrSmVBavOnQ+nQia/oB3BfY3LOZW4xyfSGEhNQQFebZMlUqTh+rD4W+zsgOAa7+TGLB7HT9mHyQg=="],
 
-    "@typescript/native-preview-linux-arm64": ["@typescript/native-preview-linux-arm64@7.0.0-dev.20251116.1", "", { "os": "linux", "cpu": "arm64" }, "sha512-eQH1xdStw2yGqLCQtBjNvc5sYI/tYe2qIvpCpmR8LbMWLs5518vYnOrLXMs+PlAZ1zEvnY0qlxm9/4HBacrRpg=="],
+    "@typescript/native-preview-linux-arm64": ["@typescript/native-preview-linux-arm64@7.0.0-dev.20251123.1", "", { "os": "linux", "cpu": "arm64" }, "sha512-eHfHopS+hcoHD49bg0IIg5SYVGk4Ljq8aFZRko83LUv9vN8Zs8DBmQL6APgs3triIQMEONjqArh6v9YkpOmjHA=="],
 
-    "@typescript/native-preview-linux-x64": ["@typescript/native-preview-linux-x64@7.0.0-dev.20251116.1", "", { "os": "linux", "cpu": "x64" }, "sha512-CRKIu9IlvgmK5rDrLu+WviUy2lrqCFP4p5n3dtpzZuobgwI2TYuRduGDDq+qXgfdAVUpQkZOHUUQvF9PmjrNmw=="],
+    "@typescript/native-preview-linux-x64": ["@typescript/native-preview-linux-x64@7.0.0-dev.20251123.1", "", { "os": "linux", "cpu": "x64" }, "sha512-Z3H+XSRrhpbhZnmeyDbqGZ4mDkxG54QO1ZIxPGRyhurBwTjdMiEI8SeCVXA54KwSgM1oeAKZS765DN7+9WTI7A=="],
 
-    "@typescript/native-preview-win32-arm64": ["@typescript/native-preview-win32-arm64@7.0.0-dev.20251116.1", "", { "os": "win32", "cpu": "arm64" }, "sha512-FljNjkaA/0KMRUkp/ZTqcQNkqc8PNDgxSKm1lirtdkWgVXXurxyKIkKjZdOgxZchOWDwuqy5ZW4epe2ysTm5lQ=="],
+    "@typescript/native-preview-win32-arm64": ["@typescript/native-preview-win32-arm64@7.0.0-dev.20251123.1", "", { "os": "win32", "cpu": "arm64" }, "sha512-K89G2e7r/vNkeJkR1QdxZwc7WWxsjqmi4TJCrppS7gkXCcLXHmFcSInKn4T5ewfjLe2yrGoLPtAoitP/5f23pQ=="],
 
-    "@typescript/native-preview-win32-x64": ["@typescript/native-preview-win32-x64@7.0.0-dev.20251116.1", "", { "os": "win32", "cpu": "x64" }, "sha512-a2aDDFlgpPU0vYgmDkeABsWYdKGv1bYtggZ9FpDls8m7FmxdY0i/5SyPhkp/fDgW6qEEiOfcd4e/32zubcl3Gg=="],
+    "@typescript/native-preview-win32-x64": ["@typescript/native-preview-win32-x64@7.0.0-dev.20251123.1", "", { "os": "win32", "cpu": "x64" }, "sha512-Z++8epMjd5Ptz/BihxXbEUjyqPo6x0kPkNbQT8QRSCovyGhm6KST9itEYCvD5ta1J0c5EqAJL5c8krjOHeNwGQ=="],
 
     "@typescript/vfs": ["@typescript/vfs@1.6.2", "", { "dependencies": { "debug": "^4.1.1" }, "peerDependencies": { "typescript": "*" } }, "sha512-hoBwJwcbKHmvd2QVebiytN1aELvpk9B74B4L1mFm/XT1Q/VOYAWl2vQ9AWRFtQq8zmz6enTpfTV8WRc4ATjW/g=="],
 
@@ -548,55 +548,55 @@
 
     "@unhead/vue": ["@unhead/vue@2.0.19", "", { "dependencies": { "hookable": "^5.5.3", "unhead": "2.0.19" }, "peerDependencies": { "vue": ">=3.5.18" } }, "sha512-7BYjHfOaoZ9+ARJkT10Q2TjnTUqDXmMpfakIAsD/hXiuff1oqWg1xeXT5+MomhNcC15HbiABpbbBmITLSHxdKg=="],
 
-    "@unocss/astro": ["@unocss/astro@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/reset": "66.5.6", "@unocss/vite": "66.5.6" }, "peerDependencies": { "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" }, "optionalPeers": ["vite"] }, "sha512-dGnHJ9SrhzJOBwytyzexSfkor7QuUfy9NZiiYDA+bBBynJrp2HaswLviggOAgVG/c5CY1YOO5baemjB1+MTfww=="],
+    "@unocss/astro": ["@unocss/astro@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9", "@unocss/reset": "66.5.9", "@unocss/vite": "66.5.9" }, "peerDependencies": { "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" }, "optionalPeers": ["vite"] }, "sha512-t1Cd4ajbRQvcIxiGcoWPcgWzWKdsKjxgh6kIQ2VPzx+nha9ssI1ATOQNKhDTK1l5akFsMXvt1wvBSGu92Npr1Q=="],
 
-    "@unocss/cli": ["@unocss/cli@66.5.6", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "@unocss/config": "66.5.6", "@unocss/core": "66.5.6", "@unocss/preset-uno": "66.5.6", "cac": "^6.7.14", "chokidar": "^3.6.0", "colorette": "^2.0.20", "consola": "^3.4.2", "magic-string": "^0.30.21", "pathe": "^2.0.3", "perfect-debounce": "^1.0.0", "tinyglobby": "^0.2.15", "unplugin-utils": "^0.3.1" }, "bin": { "unocss": "bin/unocss.mjs" } }, "sha512-camF3/hvVhwJ8Gfe454L5CP5//6foCtYIuOBkh1kE6Zyy5Oplc+zeuiRH1JeMP87vYfdi1XfUGuKiCtYFI8mWw=="],
+    "@unocss/cli": ["@unocss/cli@66.5.9", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "@unocss/config": "66.5.9", "@unocss/core": "66.5.9", "@unocss/preset-uno": "66.5.9", "cac": "^6.7.14", "chokidar": "^3.6.0", "colorette": "^2.0.20", "consola": "^3.4.2", "magic-string": "^0.30.21", "pathe": "^2.0.3", "perfect-debounce": "^1.0.0", "tinyglobby": "^0.2.15", "unplugin-utils": "^0.3.1" }, "bin": { "unocss": "bin/unocss.mjs" } }, "sha512-XM+KowW0yRcOtmuigXEW8HGPq8uYIUoVmTz9qqSES+5Qwc23eLFeukkc1cetAGRsaj1Q4fFyHGB6CmWsS0JB1A=="],
 
-    "@unocss/config": ["@unocss/config@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "unconfig": "^7.4.1" } }, "sha512-awJSz9i1W6KpviNT+0l+xqHouW9naWg/ksiu/Dkko1QHo8a3RCJwZ/W6MBBOjQqbFNPPcD7f+6ffTMm+jXHsaw=="],
+    "@unocss/config": ["@unocss/config@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9", "unconfig": "^7.4.1" } }, "sha512-M8O0Z+6iCXuQOz/quaKueSb2cmN7cP9JGWdAH2E+qFD8txljaY88tNL4OwFZtO9GjhT2f/pEsLoEOAtAo1xT6g=="],
 
     "@unocss/core": ["@unocss/core@66.5.6", "", {}, "sha512-9hmpPXLi41YFTPexi7cT57PRWCgwtGLa1QHlPvRgx2kqjYicy7zEDylIY2ObwQien75VCDOcGpmQ/5XdZ473Rg=="],
 
-    "@unocss/extractor-arbitrary-variants": ["@unocss/extractor-arbitrary-variants@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-QAzpkX5UPjTeRbA7eed+mVPGNkwnMrIgfmlV9l8GVXHJCEnroRkzDVOPv1G9bKw1T82+NjBeZT9VnbZOmpLXQA=="],
+    "@unocss/extractor-arbitrary-variants": ["@unocss/extractor-arbitrary-variants@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9" } }, "sha512-b+D6HbtN4hpGcThdJ8IVPl3xXdNN//Rw+WhyIuRdjwCPMsOfLnEqehPm1f5Rcc+xfFwxYJwC35SZnoBSrRMULg=="],
 
     "@unocss/extractor-mdc": ["@unocss/extractor-mdc@66.5.6", "", {}, "sha512-BYZZyjS0Yu3q/IEHGt27X9xrr6nDDkgsYlg32uVB+LL2vGTqddjfq3oP9cKMKdkvXRDhnrRhTtshmmZkPXhrMA=="],
 
-    "@unocss/inspector": ["@unocss/inspector@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6", "colorette": "^2.0.20", "gzip-size": "^6.0.0", "sirv": "^3.0.2", "vue-flow-layout": "^0.2.0" } }, "sha512-9N2TunEhxHCcy4KPck/hUoctYeWCgLxHamTDn1eRCk3WavIS7l3v5wIcWUcMVXjXOJ0U2Y+w6jp/wQhA4kln/Q=="],
+    "@unocss/inspector": ["@unocss/inspector@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9", "@unocss/rule-utils": "66.5.9", "colorette": "^2.0.20", "gzip-size": "^6.0.0", "sirv": "^3.0.2", "vue-flow-layout": "^0.2.0" } }, "sha512-Rkg2mYWE64H1BANo2ZAPG9YHbDj1lalEl1hZuWSZb5Mt7SG+/cbq/FCbbq9zbS8ErmlYo2SgWXXmGuyIw1cbgw=="],
 
-    "@unocss/postcss": ["@unocss/postcss@66.5.6", "", { "dependencies": { "@unocss/config": "66.5.6", "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6", "css-tree": "^3.1.0", "postcss": "^8.5.6", "tinyglobby": "^0.2.15" } }, "sha512-l+k0qYbkmag6v2g3DQ0lSiJV5UmQcQA9b0Fd/0+P9Vtqwi0o7x1Fx4lNdRZMYMZCW3o4mTTGxew/tr3xnig1GA=="],
+    "@unocss/postcss": ["@unocss/postcss@66.5.9", "", { "dependencies": { "@unocss/config": "66.5.9", "@unocss/core": "66.5.9", "@unocss/rule-utils": "66.5.9", "css-tree": "^3.1.0", "postcss": "^8.5.6", "tinyglobby": "^0.2.15" } }, "sha512-V/UJ71p9Ist8oUHZP+JXYkrURILGnutmc/V1Zvi9V929qgt0Xs36WeXnUJAf1J+U5IfNrtWze/RngI7qFEg5uQ=="],
 
-    "@unocss/preset-attributify": ["@unocss/preset-attributify@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-2eNBHrt6rTKnYu7RqYVYnsN5EynALUsSEFXz1kwn2UhyliN+OY26PYNk3P0GQETq7ZaVaffqAruYnUhVRGreag=="],
+    "@unocss/preset-attributify": ["@unocss/preset-attributify@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9" } }, "sha512-PHmN+d32443WIV6rCksTHuO+19susHQrpiOddS6QiYN9LLTvJ8CAmdJYNmQUIOhlZsDhV7EjGZM9idUNK8C7ZA=="],
 
-    "@unocss/preset-icons": ["@unocss/preset-icons@66.5.6", "", { "dependencies": { "@iconify/utils": "^3.0.2", "@unocss/core": "66.5.6", "ofetch": "^1.5.1" } }, "sha512-VP9n/KPWfIUFlr3xrx+1NFZJEy+VlqWCi+h6EciLCjNh2oCP1hznh8M6dqirsK5WVaZSau2VsK5Ci4Uf08mGWw=="],
+    "@unocss/preset-icons": ["@unocss/preset-icons@66.5.9", "", { "dependencies": { "@iconify/utils": "^3.0.2", "@unocss/core": "66.5.9", "ofetch": "^1.5.1" } }, "sha512-06or+pt1Q59k0Y8T/jOVhIHdkL7BChGmEnSsBk0e96ery32VpmPKrjCIWvwTEFDFf6H6K+1YmOUm+NujewovkA=="],
 
-    "@unocss/preset-mini": ["@unocss/preset-mini@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/extractor-arbitrary-variants": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-HNCqsGlaKl572eu+lfVpLjid7aRIasxCm8qry8Dr1gGjG2XMx9uf+N3KRFsqlW5RU4WGtfvFaqmT+/KDIM7g0w=="],
+    "@unocss/preset-mini": ["@unocss/preset-mini@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9", "@unocss/extractor-arbitrary-variants": "66.5.9", "@unocss/rule-utils": "66.5.9" } }, "sha512-5SxMTT8kRi+SFNfTKUvFBA4E/4H5BwD5RPNeIbrNlHdeltK8rwCMpXWu5AihNR1kKt5JBBqe/8m0UdoZzAK0+A=="],
 
-    "@unocss/preset-tagify": ["@unocss/preset-tagify@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-zUJlt7xE7eJ9BV4lAECAeGuOJz6l3J5x0ZGWXyJ5vne2YNww4XU6seLtKhK/8viiZQa/D4c7zaHXJH4R8ov+LQ=="],
+    "@unocss/preset-tagify": ["@unocss/preset-tagify@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9" } }, "sha512-7c+P7wHksLEOyHWUTiM4u08xQIucnMvxBMBs9dQBjTkWYMMNxITbNSKTibt/WrrHwzb/TQTroUQ7T05H3/sJaw=="],
 
-    "@unocss/preset-typography": ["@unocss/preset-typography@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-kZBw8REe4WM1HJQYNXdMJbbN+e1FGHLpzqFfvb3SW3e6WVmlQKsaokfv6UnnMjeIvRuFOGXmXmRNUUJckFgMDQ=="],
+    "@unocss/preset-typography": ["@unocss/preset-typography@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9", "@unocss/rule-utils": "66.5.9" } }, "sha512-ip2MZDDnJ1RdIk7JtV4qLfguaHIpiM5cXMYFsiwXcJX5SZW4zIShPyuZE6BQi3Im7afHoPcLo4+zqPe0Cm48zQ=="],
 
-    "@unocss/preset-uno": ["@unocss/preset-uno@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/preset-wind3": "66.5.6" } }, "sha512-OhGTsVmTxpSc00xGAP1qE7FqT24xtfiIGvPg+zJ/vF9YZFzxdMisMLpn2db5N/RYnXZJI9tFHdI1ICgo4ccBaA=="],
+    "@unocss/preset-uno": ["@unocss/preset-uno@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9", "@unocss/preset-wind3": "66.5.9" } }, "sha512-8c1wPbV4cDZNqPcPtNJd08cmRVuhnvoyAU8ER57bbuSe4g0BspT4cLaUf7OuqBg6bmc55a6w9A66fj+kYwpMqw=="],
 
-    "@unocss/preset-web-fonts": ["@unocss/preset-web-fonts@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "ofetch": "^1.5.1" } }, "sha512-d4T9rXkh013GhbgEO+Cwdn8Y7hJ7LiMet1jjx7igwPwAqB8MV4Z/iDvsNnDhwMR6b41VrOshxUqTEo0CcERq2A=="],
+    "@unocss/preset-web-fonts": ["@unocss/preset-web-fonts@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9", "ofetch": "^1.5.1" } }, "sha512-iRXiIg7A0+QmUdH+7NNZmGm9JCV0TI1FG3kMhkc2F3EKjmyTJRxlAgcWjysyWjH2drkJYTaouVDDV43c5xQkKQ=="],
 
-    "@unocss/preset-wind": ["@unocss/preset-wind@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/preset-wind3": "66.5.6" } }, "sha512-N5A4aCgR9zDpGqVO7Gppk5anJiFtI9HvcrBV2ofHXlDSGUxzeDvE2ykTtNypFvc1dTMlI8XxHUZQ0hfu5Xc4BA=="],
+    "@unocss/preset-wind": ["@unocss/preset-wind@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9", "@unocss/preset-wind3": "66.5.9" } }, "sha512-m6G8EbZXs3c5ssnEJMidO7t788WtQX9Tf0AXhBo1nzOAZPaRrJd0qfuv/jrFsayl/WR7Ea1Hexe09csa2OoRyA=="],
 
-    "@unocss/preset-wind3": ["@unocss/preset-wind3@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/preset-mini": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-KmZUNDo7BwF6kQyjp3m6255edMbU9tsWShwxqj/ZTRGSYXe2Ewce5d7YKSFlJOrDNnsPkwFCIGgxawlAw//vLw=="],
+    "@unocss/preset-wind3": ["@unocss/preset-wind3@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9", "@unocss/preset-mini": "66.5.9", "@unocss/rule-utils": "66.5.9" } }, "sha512-eT23SDqksr6LVzkJLDkGGNIBpRevMHIrretM8VNI7PECJEcpFwX9sgWn3yxAsqy5+0hJXuvFBc9BRUN6sHl5hQ=="],
 
-    "@unocss/preset-wind4": ["@unocss/preset-wind4@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/extractor-arbitrary-variants": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-pzdtjqoJR6C+DCI/N1fPJ00jI5SfGTF2+ONF7OZM8KrH0SOg7OxcMrtHz4hWlVn88hZBpKrVrhLe3tT4ZLKcWg=="],
+    "@unocss/preset-wind4": ["@unocss/preset-wind4@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9", "@unocss/extractor-arbitrary-variants": "66.5.9", "@unocss/rule-utils": "66.5.9" } }, "sha512-pUzvBZsv5AUJus/I+D8aHDHCHwaqasNu2a/WgOBs+Otr0xoWFaLob/PVpXeAc4u45jKKd/XvGtr6OF928VVKwQ=="],
 
     "@unocss/reset": ["@unocss/reset@66.5.6", "", {}, "sha512-FX9X20vk6zTMATINxB1P8ZE3pr5Aa2sk7vfyBb/g1WWQ/D0FBnwvejMf5wjZqwVm5LEMbYP31whrbwfFFlzSCA=="],
 
-    "@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+    "@unocss/rule-utils": ["@unocss/rule-utils@66.5.9", "", { "dependencies": { "@unocss/core": "^66.5.9", "magic-string": "^0.30.21" } }, "sha512-ZdtWqbOaNQLf6NFhcEkvaBf0fjm5GZP5NV/plmQEqK6ehe1TTpaqOtO0LBFD2BUy72oXlcsFnvdgWt/CpL6FLg=="],
 
-    "@unocss/transformer-attributify-jsx": ["@unocss/transformer-attributify-jsx@66.5.6", "", { "dependencies": { "@babel/parser": "7.27.7", "@babel/traverse": "7.27.7", "@unocss/core": "66.5.6" } }, "sha512-dmqpfHNhCWjaoHEqpVtf92Kq4untC05rvhD2x4ZQDOQHCrr5vXe9I6HT0mqh32UOY6ddFFCv6qfAHp5kEXpLYA=="],
+    "@unocss/transformer-attributify-jsx": ["@unocss/transformer-attributify-jsx@66.5.9", "", { "dependencies": { "@babel/parser": "7.27.7", "@babel/traverse": "7.27.7", "@unocss/core": "66.5.9" } }, "sha512-AKkiDwTktPENtlONFGbUbzOXTKsU2YQKqFglg8Z6lwSKaLHX6irC9t8L8W1m6tAmJBBpwpzKzWxX/eFUCTePew=="],
 
-    "@unocss/transformer-compile-class": ["@unocss/transformer-compile-class@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-sjBqtO4e+R86ZQrVg8aN5+qyC4eFgLVpxcAOB/Ntt+BMbvxKit9HrmnQpRsgnV0mOhyrsC9JA7SZtXOpxCmPPQ=="],
+    "@unocss/transformer-compile-class": ["@unocss/transformer-compile-class@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9" } }, "sha512-sdzWQpFGtY4d1ykcJJglsqctfNLxCR4BRrG6RoqFUP0ETGs+2s/hqjXFePB6PAQnPuz6v8DasowMH55/Sm5vHg=="],
 
-    "@unocss/transformer-directives": ["@unocss/transformer-directives@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6", "css-tree": "^3.1.0" } }, "sha512-40noDuOeZrtNVXe8mj74AfsBzOmN7nntnF/Yu1NzUobsuxFYg5QDN4/MtOs1sACh5jwBK9qIQ7m6qdCkmzIMeA=="],
+    "@unocss/transformer-directives": ["@unocss/transformer-directives@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9", "@unocss/rule-utils": "66.5.9", "css-tree": "^3.1.0" } }, "sha512-fsK/308nqpxAPYYgSq93zVdSyu1K3LCEbC+9WGGDLnbn0s2slJ04ECelAk7hoAWuAhbgw8eNIfNFtOpzfdds1A=="],
 
-    "@unocss/transformer-variant-group": ["@unocss/transformer-variant-group@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-wgwODgbcIQ2YmM/kHgU3VrCCPk/dv0iFA4TT37t/ot0YB4p5OsAJuKeAH8Rzsgrqn93GS/MAHz/RtRSrLh0YJg=="],
+    "@unocss/transformer-variant-group": ["@unocss/transformer-variant-group@66.5.9", "", { "dependencies": { "@unocss/core": "66.5.9" } }, "sha512-a1y4ekITgHPJLywhKrAwP0WDLkGTWOCyRi2uNIZQF6fvFsjpalPx+9fFH1zSV7qTDsu5uf/16LaMR8StSqfqFg=="],
 
-    "@unocss/vite": ["@unocss/vite@66.5.6", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "@unocss/config": "66.5.6", "@unocss/core": "66.5.6", "@unocss/inspector": "66.5.6", "chokidar": "^3.6.0", "magic-string": "^0.30.21", "pathe": "^2.0.3", "tinyglobby": "^0.2.15", "unplugin-utils": "^0.3.1" }, "peerDependencies": { "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" } }, "sha512-iJMkaP5xwKxsQIuT6Niqhfd1THD55rDnIa5XKBepiDhk+plm2GgxBfXx1NGVGZa4zs90Rjgp+V8U5eG7rNO/tw=="],
+    "@unocss/vite": ["@unocss/vite@66.5.9", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "@unocss/config": "66.5.9", "@unocss/core": "66.5.9", "@unocss/inspector": "66.5.9", "chokidar": "^3.6.0", "magic-string": "^0.30.21", "pathe": "^2.0.3", "tinyglobby": "^0.2.15", "unplugin-utils": "^0.3.1" }, "peerDependencies": { "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" } }, "sha512-ejgiK9UqrSTtzgZCfph42Asun2N1OMNx4Z1wINgmLR8F0Xlpw7ECptdoLMrQaS+v4p/fY/fKqWqlX0rvfloUdA=="],
 
     "@vitejs/plugin-vue": ["@vitejs/plugin-vue@5.2.4", "", { "peerDependencies": { "vite": "^5.0.0 || ^6.0.0", "vue": "^3.2.25" } }, "sha512-7Yx/SXSOcQq5HiiV3orevHUFn+pmMB4cgbEkDYgnkUWb0WfeQ/wa2yFv6D5ICiCQOVpjA7vYDXrC7AGO8yjDHA=="],
 
@@ -1652,7 +1652,7 @@
 
     "unist-util-visit-parents": ["unist-util-visit-parents@6.0.2", "", { "dependencies": { "@types/unist": "^3.0.0", "unist-util-is": "^6.0.0" } }, "sha512-goh1s1TBrqSqukSc8wrjwWhL0hiJxgA8m4kFxGlQ+8FYQ3C/m11FcTs4YYem7V664AhHVvgoQLk890Ssdsr2IQ=="],
 
-    "unocss": ["unocss@66.5.6", "", { "dependencies": { "@unocss/astro": "66.5.6", "@unocss/cli": "66.5.6", "@unocss/core": "66.5.6", "@unocss/postcss": "66.5.6", "@unocss/preset-attributify": "66.5.6", "@unocss/preset-icons": "66.5.6", "@unocss/preset-mini": "66.5.6", "@unocss/preset-tagify": "66.5.6", "@unocss/preset-typography": "66.5.6", "@unocss/preset-uno": "66.5.6", "@unocss/preset-web-fonts": "66.5.6", "@unocss/preset-wind": "66.5.6", "@unocss/preset-wind3": "66.5.6", "@unocss/preset-wind4": "66.5.6", "@unocss/transformer-attributify-jsx": "66.5.6", "@unocss/transformer-compile-class": "66.5.6", "@unocss/transformer-directives": "66.5.6", "@unocss/transformer-variant-group": "66.5.6", "@unocss/vite": "66.5.6" }, "peerDependencies": { "@unocss/webpack": "66.5.6", "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" }, "optionalPeers": ["@unocss/webpack", "vite"] }, "sha512-8ix8Cl09LNd1QdC2b22FJ5WbyBaNZ2Q0oJ3yhjj2AEe75A8pMBpb8Khd01b4coRillEzuBNBIP+fIpeot0/8EQ=="],
+    "unocss": ["unocss@66.5.9", "", { "dependencies": { "@unocss/astro": "66.5.9", "@unocss/cli": "66.5.9", "@unocss/core": "66.5.9", "@unocss/postcss": "66.5.9", "@unocss/preset-attributify": "66.5.9", "@unocss/preset-icons": "66.5.9", "@unocss/preset-mini": "66.5.9", "@unocss/preset-tagify": "66.5.9", "@unocss/preset-typography": "66.5.9", "@unocss/preset-uno": "66.5.9", "@unocss/preset-web-fonts": "66.5.9", "@unocss/preset-wind": "66.5.9", "@unocss/preset-wind3": "66.5.9", "@unocss/preset-wind4": "66.5.9", "@unocss/transformer-attributify-jsx": "66.5.9", "@unocss/transformer-compile-class": "66.5.9", "@unocss/transformer-directives": "66.5.9", "@unocss/transformer-variant-group": "66.5.9", "@unocss/vite": "66.5.9" }, "peerDependencies": { "@unocss/webpack": "66.5.9", "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" }, "optionalPeers": ["@unocss/webpack", "vite"] }, "sha512-uMW5ZKayDQ1ZiqdrO7WiGOJ3H5PE3D4eN1xn0EZXU1Tiu37e5DtuNLa7AzT0z4Dx0AX8GK1xQrNC0US971mfFA=="],
 
     "unpipe": ["unpipe@1.0.0", "", {}, "sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ=="],
 
@@ -1798,21 +1798,73 @@
 
     "@nuxt/kit/ignore": ["ignore@7.0.5", "", {}, "sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg=="],
 
+    "@slidev/cli/unocss": ["unocss@66.5.6", "", { "dependencies": { "@unocss/astro": "66.5.6", "@unocss/cli": "66.5.6", "@unocss/core": "66.5.6", "@unocss/postcss": "66.5.6", "@unocss/preset-attributify": "66.5.6", "@unocss/preset-icons": "66.5.6", "@unocss/preset-mini": "66.5.6", "@unocss/preset-tagify": "66.5.6", "@unocss/preset-typography": "66.5.6", "@unocss/preset-uno": "66.5.6", "@unocss/preset-web-fonts": "66.5.6", "@unocss/preset-wind": "66.5.6", "@unocss/preset-wind3": "66.5.6", "@unocss/preset-wind4": "66.5.6", "@unocss/transformer-attributify-jsx": "66.5.6", "@unocss/transformer-compile-class": "66.5.6", "@unocss/transformer-directives": "66.5.6", "@unocss/transformer-variant-group": "66.5.6", "@unocss/vite": "66.5.6" }, "peerDependencies": { "@unocss/webpack": "66.5.6", "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" }, "optionalPeers": ["@unocss/webpack", "vite"] }, "sha512-8ix8Cl09LNd1QdC2b22FJ5WbyBaNZ2Q0oJ3yhjj2AEe75A8pMBpb8Khd01b4coRillEzuBNBIP+fIpeot0/8EQ=="],
+
+    "@slidev/client/unocss": ["unocss@66.5.6", "", { "dependencies": { "@unocss/astro": "66.5.6", "@unocss/cli": "66.5.6", "@unocss/core": "66.5.6", "@unocss/postcss": "66.5.6", "@unocss/preset-attributify": "66.5.6", "@unocss/preset-icons": "66.5.6", "@unocss/preset-mini": "66.5.6", "@unocss/preset-tagify": "66.5.6", "@unocss/preset-typography": "66.5.6", "@unocss/preset-uno": "66.5.6", "@unocss/preset-web-fonts": "66.5.6", "@unocss/preset-wind": "66.5.6", "@unocss/preset-wind3": "66.5.6", "@unocss/preset-wind4": "66.5.6", "@unocss/transformer-attributify-jsx": "66.5.6", "@unocss/transformer-compile-class": "66.5.6", "@unocss/transformer-directives": "66.5.6", "@unocss/transformer-variant-group": "66.5.6", "@unocss/vite": "66.5.6" }, "peerDependencies": { "@unocss/webpack": "66.5.6", "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" }, "optionalPeers": ["@unocss/webpack", "vite"] }, "sha512-8ix8Cl09LNd1QdC2b22FJ5WbyBaNZ2Q0oJ3yhjj2AEe75A8pMBpb8Khd01b4coRillEzuBNBIP+fIpeot0/8EQ=="],
+
     "@slidev/theme-apple-basic/@slidev/types": ["@slidev/types@0.47.5", "", {}, "sha512-X67V4cCgM0Sz50bP8GbVzmiL8DHC2IXvdKcsN7DlxHyf+/T4d9GveeGukwha5Fx3MuYeGZWKag7TFL2ZY4w54A=="],
 
     "@slidev/theme-default/@slidev/types": ["@slidev/types@0.47.5", "", {}, "sha512-X67V4cCgM0Sz50bP8GbVzmiL8DHC2IXvdKcsN7DlxHyf+/T4d9GveeGukwha5Fx3MuYeGZWKag7TFL2ZY4w54A=="],
 
     "@slidev/theme-seriph/@slidev/types": ["@slidev/types@0.47.5", "", {}, "sha512-X67V4cCgM0Sz50bP8GbVzmiL8DHC2IXvdKcsN7DlxHyf+/T4d9GveeGukwha5Fx3MuYeGZWKag7TFL2ZY4w54A=="],
 
+    "@slidev/types/unocss": ["unocss@66.5.6", "", { "dependencies": { "@unocss/astro": "66.5.6", "@unocss/cli": "66.5.6", "@unocss/core": "66.5.6", "@unocss/postcss": "66.5.6", "@unocss/preset-attributify": "66.5.6", "@unocss/preset-icons": "66.5.6", "@unocss/preset-mini": "66.5.6", "@unocss/preset-tagify": "66.5.6", "@unocss/preset-typography": "66.5.6", "@unocss/preset-uno": "66.5.6", "@unocss/preset-web-fonts": "66.5.6", "@unocss/preset-wind": "66.5.6", "@unocss/preset-wind3": "66.5.6", "@unocss/preset-wind4": "66.5.6", "@unocss/transformer-attributify-jsx": "66.5.6", "@unocss/transformer-compile-class": "66.5.6", "@unocss/transformer-directives": "66.5.6", "@unocss/transformer-variant-group": "66.5.6", "@unocss/vite": "66.5.6" }, "peerDependencies": { "@unocss/webpack": "66.5.6", "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" }, "optionalPeers": ["@unocss/webpack", "vite"] }, "sha512-8ix8Cl09LNd1QdC2b22FJ5WbyBaNZ2Q0oJ3yhjj2AEe75A8pMBpb8Khd01b4coRillEzuBNBIP+fIpeot0/8EQ=="],
+
     "@typescript-eslint/eslint-plugin/ignore": ["ignore@7.0.5", "", {}, "sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg=="],
 
     "@typescript-eslint/typescript-estree/minimatch": ["minimatch@9.0.5", "", { "dependencies": { "brace-expansion": "^2.0.1" } }, "sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow=="],
+
+    "@unocss/astro/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/astro/@unocss/reset": ["@unocss/reset@66.5.9", "", {}, "sha512-GcXdJcCd/oF8Kbh0JcFXSgGnSTEPFfHjsyd1AWbkhfFqBX8BV/8++GkWZxJDL7/FYa07wLeivdXuPbdvRV1TBA=="],
+
+    "@unocss/cli/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
 
     "@unocss/cli/chokidar": ["chokidar@3.6.0", "", { "dependencies": { "anymatch": "~3.1.2", "braces": "~3.0.2", "glob-parent": "~5.1.2", "is-binary-path": "~2.1.0", "is-glob": "~4.0.1", "normalize-path": "~3.0.0", "readdirp": "~3.6.0" }, "optionalDependencies": { "fsevents": "~2.3.2" } }, "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw=="],
 
     "@unocss/cli/perfect-debounce": ["perfect-debounce@1.0.0", "", {}, "sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA=="],
 
     "@unocss/cli/unplugin-utils": ["unplugin-utils@0.3.1", "", { "dependencies": { "pathe": "^2.0.3", "picomatch": "^4.0.3" } }, "sha512-5lWVjgi6vuHhJ526bI4nlCOmkCIF3nnfXkCMDeMJrtdvxTs6ZFCM8oNufGTsDbKv/tJ/xj8RpvXjRuPBZJuJog=="],
+
+    "@unocss/config/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/extractor-arbitrary-variants/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/inspector/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/postcss/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/preset-attributify/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/preset-icons/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/preset-mini/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/preset-tagify/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/preset-typography/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/preset-uno/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/preset-web-fonts/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/preset-wind/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/preset-wind3/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/preset-wind4/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/rule-utils/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/transformer-attributify-jsx/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/transformer-compile-class/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/transformer-directives/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/transformer-variant-group/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
+    "@unocss/vite/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
 
     "@unocss/vite/chokidar": ["chokidar@3.6.0", "", { "dependencies": { "anymatch": "~3.1.2", "braces": "~3.0.2", "glob-parent": "~5.1.2", "is-binary-path": "~2.1.0", "is-glob": "~4.0.1", "normalize-path": "~3.0.0", "readdirp": "~3.6.0" }, "optionalDependencies": { "fsevents": "~2.3.2" } }, "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw=="],
 
@@ -1896,6 +1948,8 @@
 
     "unctx/estree-walker": ["estree-walker@3.0.3", "", { "dependencies": { "@types/estree": "^1.0.0" } }, "sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g=="],
 
+    "unocss/@unocss/core": ["@unocss/core@66.5.9", "", {}, "sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A=="],
+
     "unplugin-vue-components/chokidar": ["chokidar@3.6.0", "", { "dependencies": { "anymatch": "~3.1.2", "braces": "~3.0.2", "glob-parent": "~5.1.2", "is-binary-path": "~2.1.0", "is-glob": "~4.0.1", "normalize-path": "~3.0.0", "readdirp": "~3.6.0" }, "optionalDependencies": { "fsevents": "~2.3.2" } }, "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw=="],
 
     "untun/pathe": ["pathe@1.1.2", "", {}, "sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ=="],
@@ -1917,6 +1971,114 @@
     "@babel/helper-replace-supers/@babel/traverse/@babel/parser": ["@babel/parser@7.28.5", "", { "dependencies": { "@babel/types": "^7.28.5" }, "bin": "./bin/babel-parser.js" }, "sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ=="],
 
     "@babel/helper-skip-transparent-expression-wrappers/@babel/traverse/@babel/parser": ["@babel/parser@7.28.5", "", { "dependencies": { "@babel/types": "^7.28.5" }, "bin": "./bin/babel-parser.js" }, "sha512-KKBU1VGYR7ORr3At5HAtUQ+TV3SzRCXmA/8OdDZiLDBIZxVyzXuztPjfLd3BV1PRAQGCMWWSHYhL0F8d5uHBDQ=="],
+
+    "@slidev/cli/unocss/@unocss/astro": ["@unocss/astro@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/reset": "66.5.6", "@unocss/vite": "66.5.6" }, "peerDependencies": { "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" }, "optionalPeers": ["vite"] }, "sha512-dGnHJ9SrhzJOBwytyzexSfkor7QuUfy9NZiiYDA+bBBynJrp2HaswLviggOAgVG/c5CY1YOO5baemjB1+MTfww=="],
+
+    "@slidev/cli/unocss/@unocss/cli": ["@unocss/cli@66.5.6", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "@unocss/config": "66.5.6", "@unocss/core": "66.5.6", "@unocss/preset-uno": "66.5.6", "cac": "^6.7.14", "chokidar": "^3.6.0", "colorette": "^2.0.20", "consola": "^3.4.2", "magic-string": "^0.30.21", "pathe": "^2.0.3", "perfect-debounce": "^1.0.0", "tinyglobby": "^0.2.15", "unplugin-utils": "^0.3.1" }, "bin": { "unocss": "bin/unocss.mjs" } }, "sha512-camF3/hvVhwJ8Gfe454L5CP5//6foCtYIuOBkh1kE6Zyy5Oplc+zeuiRH1JeMP87vYfdi1XfUGuKiCtYFI8mWw=="],
+
+    "@slidev/cli/unocss/@unocss/postcss": ["@unocss/postcss@66.5.6", "", { "dependencies": { "@unocss/config": "66.5.6", "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6", "css-tree": "^3.1.0", "postcss": "^8.5.6", "tinyglobby": "^0.2.15" } }, "sha512-l+k0qYbkmag6v2g3DQ0lSiJV5UmQcQA9b0Fd/0+P9Vtqwi0o7x1Fx4lNdRZMYMZCW3o4mTTGxew/tr3xnig1GA=="],
+
+    "@slidev/cli/unocss/@unocss/preset-attributify": ["@unocss/preset-attributify@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-2eNBHrt6rTKnYu7RqYVYnsN5EynALUsSEFXz1kwn2UhyliN+OY26PYNk3P0GQETq7ZaVaffqAruYnUhVRGreag=="],
+
+    "@slidev/cli/unocss/@unocss/preset-icons": ["@unocss/preset-icons@66.5.6", "", { "dependencies": { "@iconify/utils": "^3.0.2", "@unocss/core": "66.5.6", "ofetch": "^1.5.1" } }, "sha512-VP9n/KPWfIUFlr3xrx+1NFZJEy+VlqWCi+h6EciLCjNh2oCP1hznh8M6dqirsK5WVaZSau2VsK5Ci4Uf08mGWw=="],
+
+    "@slidev/cli/unocss/@unocss/preset-mini": ["@unocss/preset-mini@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/extractor-arbitrary-variants": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-HNCqsGlaKl572eu+lfVpLjid7aRIasxCm8qry8Dr1gGjG2XMx9uf+N3KRFsqlW5RU4WGtfvFaqmT+/KDIM7g0w=="],
+
+    "@slidev/cli/unocss/@unocss/preset-tagify": ["@unocss/preset-tagify@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-zUJlt7xE7eJ9BV4lAECAeGuOJz6l3J5x0ZGWXyJ5vne2YNww4XU6seLtKhK/8viiZQa/D4c7zaHXJH4R8ov+LQ=="],
+
+    "@slidev/cli/unocss/@unocss/preset-typography": ["@unocss/preset-typography@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-kZBw8REe4WM1HJQYNXdMJbbN+e1FGHLpzqFfvb3SW3e6WVmlQKsaokfv6UnnMjeIvRuFOGXmXmRNUUJckFgMDQ=="],
+
+    "@slidev/cli/unocss/@unocss/preset-uno": ["@unocss/preset-uno@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/preset-wind3": "66.5.6" } }, "sha512-OhGTsVmTxpSc00xGAP1qE7FqT24xtfiIGvPg+zJ/vF9YZFzxdMisMLpn2db5N/RYnXZJI9tFHdI1ICgo4ccBaA=="],
+
+    "@slidev/cli/unocss/@unocss/preset-web-fonts": ["@unocss/preset-web-fonts@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "ofetch": "^1.5.1" } }, "sha512-d4T9rXkh013GhbgEO+Cwdn8Y7hJ7LiMet1jjx7igwPwAqB8MV4Z/iDvsNnDhwMR6b41VrOshxUqTEo0CcERq2A=="],
+
+    "@slidev/cli/unocss/@unocss/preset-wind": ["@unocss/preset-wind@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/preset-wind3": "66.5.6" } }, "sha512-N5A4aCgR9zDpGqVO7Gppk5anJiFtI9HvcrBV2ofHXlDSGUxzeDvE2ykTtNypFvc1dTMlI8XxHUZQ0hfu5Xc4BA=="],
+
+    "@slidev/cli/unocss/@unocss/preset-wind3": ["@unocss/preset-wind3@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/preset-mini": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-KmZUNDo7BwF6kQyjp3m6255edMbU9tsWShwxqj/ZTRGSYXe2Ewce5d7YKSFlJOrDNnsPkwFCIGgxawlAw//vLw=="],
+
+    "@slidev/cli/unocss/@unocss/preset-wind4": ["@unocss/preset-wind4@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/extractor-arbitrary-variants": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-pzdtjqoJR6C+DCI/N1fPJ00jI5SfGTF2+ONF7OZM8KrH0SOg7OxcMrtHz4hWlVn88hZBpKrVrhLe3tT4ZLKcWg=="],
+
+    "@slidev/cli/unocss/@unocss/transformer-attributify-jsx": ["@unocss/transformer-attributify-jsx@66.5.6", "", { "dependencies": { "@babel/parser": "7.27.7", "@babel/traverse": "7.27.7", "@unocss/core": "66.5.6" } }, "sha512-dmqpfHNhCWjaoHEqpVtf92Kq4untC05rvhD2x4ZQDOQHCrr5vXe9I6HT0mqh32UOY6ddFFCv6qfAHp5kEXpLYA=="],
+
+    "@slidev/cli/unocss/@unocss/transformer-compile-class": ["@unocss/transformer-compile-class@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-sjBqtO4e+R86ZQrVg8aN5+qyC4eFgLVpxcAOB/Ntt+BMbvxKit9HrmnQpRsgnV0mOhyrsC9JA7SZtXOpxCmPPQ=="],
+
+    "@slidev/cli/unocss/@unocss/transformer-directives": ["@unocss/transformer-directives@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6", "css-tree": "^3.1.0" } }, "sha512-40noDuOeZrtNVXe8mj74AfsBzOmN7nntnF/Yu1NzUobsuxFYg5QDN4/MtOs1sACh5jwBK9qIQ7m6qdCkmzIMeA=="],
+
+    "@slidev/cli/unocss/@unocss/transformer-variant-group": ["@unocss/transformer-variant-group@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-wgwODgbcIQ2YmM/kHgU3VrCCPk/dv0iFA4TT37t/ot0YB4p5OsAJuKeAH8Rzsgrqn93GS/MAHz/RtRSrLh0YJg=="],
+
+    "@slidev/cli/unocss/@unocss/vite": ["@unocss/vite@66.5.6", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "@unocss/config": "66.5.6", "@unocss/core": "66.5.6", "@unocss/inspector": "66.5.6", "chokidar": "^3.6.0", "magic-string": "^0.30.21", "pathe": "^2.0.3", "tinyglobby": "^0.2.15", "unplugin-utils": "^0.3.1" }, "peerDependencies": { "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" } }, "sha512-iJMkaP5xwKxsQIuT6Niqhfd1THD55rDnIa5XKBepiDhk+plm2GgxBfXx1NGVGZa4zs90Rjgp+V8U5eG7rNO/tw=="],
+
+    "@slidev/client/unocss/@unocss/astro": ["@unocss/astro@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/reset": "66.5.6", "@unocss/vite": "66.5.6" }, "peerDependencies": { "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" }, "optionalPeers": ["vite"] }, "sha512-dGnHJ9SrhzJOBwytyzexSfkor7QuUfy9NZiiYDA+bBBynJrp2HaswLviggOAgVG/c5CY1YOO5baemjB1+MTfww=="],
+
+    "@slidev/client/unocss/@unocss/cli": ["@unocss/cli@66.5.6", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "@unocss/config": "66.5.6", "@unocss/core": "66.5.6", "@unocss/preset-uno": "66.5.6", "cac": "^6.7.14", "chokidar": "^3.6.0", "colorette": "^2.0.20", "consola": "^3.4.2", "magic-string": "^0.30.21", "pathe": "^2.0.3", "perfect-debounce": "^1.0.0", "tinyglobby": "^0.2.15", "unplugin-utils": "^0.3.1" }, "bin": { "unocss": "bin/unocss.mjs" } }, "sha512-camF3/hvVhwJ8Gfe454L5CP5//6foCtYIuOBkh1kE6Zyy5Oplc+zeuiRH1JeMP87vYfdi1XfUGuKiCtYFI8mWw=="],
+
+    "@slidev/client/unocss/@unocss/postcss": ["@unocss/postcss@66.5.6", "", { "dependencies": { "@unocss/config": "66.5.6", "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6", "css-tree": "^3.1.0", "postcss": "^8.5.6", "tinyglobby": "^0.2.15" } }, "sha512-l+k0qYbkmag6v2g3DQ0lSiJV5UmQcQA9b0Fd/0+P9Vtqwi0o7x1Fx4lNdRZMYMZCW3o4mTTGxew/tr3xnig1GA=="],
+
+    "@slidev/client/unocss/@unocss/preset-attributify": ["@unocss/preset-attributify@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-2eNBHrt6rTKnYu7RqYVYnsN5EynALUsSEFXz1kwn2UhyliN+OY26PYNk3P0GQETq7ZaVaffqAruYnUhVRGreag=="],
+
+    "@slidev/client/unocss/@unocss/preset-icons": ["@unocss/preset-icons@66.5.6", "", { "dependencies": { "@iconify/utils": "^3.0.2", "@unocss/core": "66.5.6", "ofetch": "^1.5.1" } }, "sha512-VP9n/KPWfIUFlr3xrx+1NFZJEy+VlqWCi+h6EciLCjNh2oCP1hznh8M6dqirsK5WVaZSau2VsK5Ci4Uf08mGWw=="],
+
+    "@slidev/client/unocss/@unocss/preset-mini": ["@unocss/preset-mini@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/extractor-arbitrary-variants": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-HNCqsGlaKl572eu+lfVpLjid7aRIasxCm8qry8Dr1gGjG2XMx9uf+N3KRFsqlW5RU4WGtfvFaqmT+/KDIM7g0w=="],
+
+    "@slidev/client/unocss/@unocss/preset-tagify": ["@unocss/preset-tagify@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-zUJlt7xE7eJ9BV4lAECAeGuOJz6l3J5x0ZGWXyJ5vne2YNww4XU6seLtKhK/8viiZQa/D4c7zaHXJH4R8ov+LQ=="],
+
+    "@slidev/client/unocss/@unocss/preset-typography": ["@unocss/preset-typography@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-kZBw8REe4WM1HJQYNXdMJbbN+e1FGHLpzqFfvb3SW3e6WVmlQKsaokfv6UnnMjeIvRuFOGXmXmRNUUJckFgMDQ=="],
+
+    "@slidev/client/unocss/@unocss/preset-uno": ["@unocss/preset-uno@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/preset-wind3": "66.5.6" } }, "sha512-OhGTsVmTxpSc00xGAP1qE7FqT24xtfiIGvPg+zJ/vF9YZFzxdMisMLpn2db5N/RYnXZJI9tFHdI1ICgo4ccBaA=="],
+
+    "@slidev/client/unocss/@unocss/preset-web-fonts": ["@unocss/preset-web-fonts@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "ofetch": "^1.5.1" } }, "sha512-d4T9rXkh013GhbgEO+Cwdn8Y7hJ7LiMet1jjx7igwPwAqB8MV4Z/iDvsNnDhwMR6b41VrOshxUqTEo0CcERq2A=="],
+
+    "@slidev/client/unocss/@unocss/preset-wind": ["@unocss/preset-wind@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/preset-wind3": "66.5.6" } }, "sha512-N5A4aCgR9zDpGqVO7Gppk5anJiFtI9HvcrBV2ofHXlDSGUxzeDvE2ykTtNypFvc1dTMlI8XxHUZQ0hfu5Xc4BA=="],
+
+    "@slidev/client/unocss/@unocss/preset-wind3": ["@unocss/preset-wind3@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/preset-mini": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-KmZUNDo7BwF6kQyjp3m6255edMbU9tsWShwxqj/ZTRGSYXe2Ewce5d7YKSFlJOrDNnsPkwFCIGgxawlAw//vLw=="],
+
+    "@slidev/client/unocss/@unocss/preset-wind4": ["@unocss/preset-wind4@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/extractor-arbitrary-variants": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-pzdtjqoJR6C+DCI/N1fPJ00jI5SfGTF2+ONF7OZM8KrH0SOg7OxcMrtHz4hWlVn88hZBpKrVrhLe3tT4ZLKcWg=="],
+
+    "@slidev/client/unocss/@unocss/transformer-attributify-jsx": ["@unocss/transformer-attributify-jsx@66.5.6", "", { "dependencies": { "@babel/parser": "7.27.7", "@babel/traverse": "7.27.7", "@unocss/core": "66.5.6" } }, "sha512-dmqpfHNhCWjaoHEqpVtf92Kq4untC05rvhD2x4ZQDOQHCrr5vXe9I6HT0mqh32UOY6ddFFCv6qfAHp5kEXpLYA=="],
+
+    "@slidev/client/unocss/@unocss/transformer-compile-class": ["@unocss/transformer-compile-class@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-sjBqtO4e+R86ZQrVg8aN5+qyC4eFgLVpxcAOB/Ntt+BMbvxKit9HrmnQpRsgnV0mOhyrsC9JA7SZtXOpxCmPPQ=="],
+
+    "@slidev/client/unocss/@unocss/transformer-directives": ["@unocss/transformer-directives@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6", "css-tree": "^3.1.0" } }, "sha512-40noDuOeZrtNVXe8mj74AfsBzOmN7nntnF/Yu1NzUobsuxFYg5QDN4/MtOs1sACh5jwBK9qIQ7m6qdCkmzIMeA=="],
+
+    "@slidev/client/unocss/@unocss/transformer-variant-group": ["@unocss/transformer-variant-group@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-wgwODgbcIQ2YmM/kHgU3VrCCPk/dv0iFA4TT37t/ot0YB4p5OsAJuKeAH8Rzsgrqn93GS/MAHz/RtRSrLh0YJg=="],
+
+    "@slidev/client/unocss/@unocss/vite": ["@unocss/vite@66.5.6", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "@unocss/config": "66.5.6", "@unocss/core": "66.5.6", "@unocss/inspector": "66.5.6", "chokidar": "^3.6.0", "magic-string": "^0.30.21", "pathe": "^2.0.3", "tinyglobby": "^0.2.15", "unplugin-utils": "^0.3.1" }, "peerDependencies": { "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" } }, "sha512-iJMkaP5xwKxsQIuT6Niqhfd1THD55rDnIa5XKBepiDhk+plm2GgxBfXx1NGVGZa4zs90Rjgp+V8U5eG7rNO/tw=="],
+
+    "@slidev/types/unocss/@unocss/astro": ["@unocss/astro@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/reset": "66.5.6", "@unocss/vite": "66.5.6" }, "peerDependencies": { "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" }, "optionalPeers": ["vite"] }, "sha512-dGnHJ9SrhzJOBwytyzexSfkor7QuUfy9NZiiYDA+bBBynJrp2HaswLviggOAgVG/c5CY1YOO5baemjB1+MTfww=="],
+
+    "@slidev/types/unocss/@unocss/cli": ["@unocss/cli@66.5.6", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "@unocss/config": "66.5.6", "@unocss/core": "66.5.6", "@unocss/preset-uno": "66.5.6", "cac": "^6.7.14", "chokidar": "^3.6.0", "colorette": "^2.0.20", "consola": "^3.4.2", "magic-string": "^0.30.21", "pathe": "^2.0.3", "perfect-debounce": "^1.0.0", "tinyglobby": "^0.2.15", "unplugin-utils": "^0.3.1" }, "bin": { "unocss": "bin/unocss.mjs" } }, "sha512-camF3/hvVhwJ8Gfe454L5CP5//6foCtYIuOBkh1kE6Zyy5Oplc+zeuiRH1JeMP87vYfdi1XfUGuKiCtYFI8mWw=="],
+
+    "@slidev/types/unocss/@unocss/postcss": ["@unocss/postcss@66.5.6", "", { "dependencies": { "@unocss/config": "66.5.6", "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6", "css-tree": "^3.1.0", "postcss": "^8.5.6", "tinyglobby": "^0.2.15" } }, "sha512-l+k0qYbkmag6v2g3DQ0lSiJV5UmQcQA9b0Fd/0+P9Vtqwi0o7x1Fx4lNdRZMYMZCW3o4mTTGxew/tr3xnig1GA=="],
+
+    "@slidev/types/unocss/@unocss/preset-attributify": ["@unocss/preset-attributify@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-2eNBHrt6rTKnYu7RqYVYnsN5EynALUsSEFXz1kwn2UhyliN+OY26PYNk3P0GQETq7ZaVaffqAruYnUhVRGreag=="],
+
+    "@slidev/types/unocss/@unocss/preset-icons": ["@unocss/preset-icons@66.5.6", "", { "dependencies": { "@iconify/utils": "^3.0.2", "@unocss/core": "66.5.6", "ofetch": "^1.5.1" } }, "sha512-VP9n/KPWfIUFlr3xrx+1NFZJEy+VlqWCi+h6EciLCjNh2oCP1hznh8M6dqirsK5WVaZSau2VsK5Ci4Uf08mGWw=="],
+
+    "@slidev/types/unocss/@unocss/preset-mini": ["@unocss/preset-mini@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/extractor-arbitrary-variants": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-HNCqsGlaKl572eu+lfVpLjid7aRIasxCm8qry8Dr1gGjG2XMx9uf+N3KRFsqlW5RU4WGtfvFaqmT+/KDIM7g0w=="],
+
+    "@slidev/types/unocss/@unocss/preset-tagify": ["@unocss/preset-tagify@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-zUJlt7xE7eJ9BV4lAECAeGuOJz6l3J5x0ZGWXyJ5vne2YNww4XU6seLtKhK/8viiZQa/D4c7zaHXJH4R8ov+LQ=="],
+
+    "@slidev/types/unocss/@unocss/preset-typography": ["@unocss/preset-typography@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-kZBw8REe4WM1HJQYNXdMJbbN+e1FGHLpzqFfvb3SW3e6WVmlQKsaokfv6UnnMjeIvRuFOGXmXmRNUUJckFgMDQ=="],
+
+    "@slidev/types/unocss/@unocss/preset-uno": ["@unocss/preset-uno@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/preset-wind3": "66.5.6" } }, "sha512-OhGTsVmTxpSc00xGAP1qE7FqT24xtfiIGvPg+zJ/vF9YZFzxdMisMLpn2db5N/RYnXZJI9tFHdI1ICgo4ccBaA=="],
+
+    "@slidev/types/unocss/@unocss/preset-web-fonts": ["@unocss/preset-web-fonts@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "ofetch": "^1.5.1" } }, "sha512-d4T9rXkh013GhbgEO+Cwdn8Y7hJ7LiMet1jjx7igwPwAqB8MV4Z/iDvsNnDhwMR6b41VrOshxUqTEo0CcERq2A=="],
+
+    "@slidev/types/unocss/@unocss/preset-wind": ["@unocss/preset-wind@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/preset-wind3": "66.5.6" } }, "sha512-N5A4aCgR9zDpGqVO7Gppk5anJiFtI9HvcrBV2ofHXlDSGUxzeDvE2ykTtNypFvc1dTMlI8XxHUZQ0hfu5Xc4BA=="],
+
+    "@slidev/types/unocss/@unocss/preset-wind3": ["@unocss/preset-wind3@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/preset-mini": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-KmZUNDo7BwF6kQyjp3m6255edMbU9tsWShwxqj/ZTRGSYXe2Ewce5d7YKSFlJOrDNnsPkwFCIGgxawlAw//vLw=="],
+
+    "@slidev/types/unocss/@unocss/preset-wind4": ["@unocss/preset-wind4@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/extractor-arbitrary-variants": "66.5.6", "@unocss/rule-utils": "66.5.6" } }, "sha512-pzdtjqoJR6C+DCI/N1fPJ00jI5SfGTF2+ONF7OZM8KrH0SOg7OxcMrtHz4hWlVn88hZBpKrVrhLe3tT4ZLKcWg=="],
+
+    "@slidev/types/unocss/@unocss/transformer-attributify-jsx": ["@unocss/transformer-attributify-jsx@66.5.6", "", { "dependencies": { "@babel/parser": "7.27.7", "@babel/traverse": "7.27.7", "@unocss/core": "66.5.6" } }, "sha512-dmqpfHNhCWjaoHEqpVtf92Kq4untC05rvhD2x4ZQDOQHCrr5vXe9I6HT0mqh32UOY6ddFFCv6qfAHp5kEXpLYA=="],
+
+    "@slidev/types/unocss/@unocss/transformer-compile-class": ["@unocss/transformer-compile-class@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-sjBqtO4e+R86ZQrVg8aN5+qyC4eFgLVpxcAOB/Ntt+BMbvxKit9HrmnQpRsgnV0mOhyrsC9JA7SZtXOpxCmPPQ=="],
+
+    "@slidev/types/unocss/@unocss/transformer-directives": ["@unocss/transformer-directives@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6", "css-tree": "^3.1.0" } }, "sha512-40noDuOeZrtNVXe8mj74AfsBzOmN7nntnF/Yu1NzUobsuxFYg5QDN4/MtOs1sACh5jwBK9qIQ7m6qdCkmzIMeA=="],
+
+    "@slidev/types/unocss/@unocss/transformer-variant-group": ["@unocss/transformer-variant-group@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-wgwODgbcIQ2YmM/kHgU3VrCCPk/dv0iFA4TT37t/ot0YB4p5OsAJuKeAH8Rzsgrqn93GS/MAHz/RtRSrLh0YJg=="],
+
+    "@slidev/types/unocss/@unocss/vite": ["@unocss/vite@66.5.6", "", { "dependencies": { "@jridgewell/remapping": "^2.3.5", "@unocss/config": "66.5.6", "@unocss/core": "66.5.6", "@unocss/inspector": "66.5.6", "chokidar": "^3.6.0", "magic-string": "^0.30.21", "pathe": "^2.0.3", "tinyglobby": "^0.2.15", "unplugin-utils": "^0.3.1" }, "peerDependencies": { "vite": "^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0 || ^6.0.0-0 || ^7.0.0-0" } }, "sha512-iJMkaP5xwKxsQIuT6Niqhfd1THD55rDnIa5XKBepiDhk+plm2GgxBfXx1NGVGZa4zs90Rjgp+V8U5eG7rNO/tw=="],
 
     "@typescript-eslint/typescript-estree/minimatch/brace-expansion": ["brace-expansion@2.0.2", "", { "dependencies": { "balanced-match": "^1.0.0" } }, "sha512-Jt0vHyM+jmUBqojB7E1NIYadt0vI0Qxjxd2TErW94wDz+E2LAm5vKMXXwg6ZZBTHPuUlDgQHKXvjGBdfcF1ZDQ=="],
 
@@ -1960,6 +2122,108 @@
 
     "vite-plugin-static-copy/chokidar/readdirp": ["readdirp@3.6.0", "", { "dependencies": { "picomatch": "^2.2.1" } }, "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA=="],
 
+    "@slidev/cli/unocss/@unocss/cli/@unocss/config": ["@unocss/config@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "unconfig": "^7.4.1" } }, "sha512-awJSz9i1W6KpviNT+0l+xqHouW9naWg/ksiu/Dkko1QHo8a3RCJwZ/W6MBBOjQqbFNPPcD7f+6ffTMm+jXHsaw=="],
+
+    "@slidev/cli/unocss/@unocss/cli/chokidar": ["chokidar@3.6.0", "", { "dependencies": { "anymatch": "~3.1.2", "braces": "~3.0.2", "glob-parent": "~5.1.2", "is-binary-path": "~2.1.0", "is-glob": "~4.0.1", "normalize-path": "~3.0.0", "readdirp": "~3.6.0" }, "optionalDependencies": { "fsevents": "~2.3.2" } }, "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw=="],
+
+    "@slidev/cli/unocss/@unocss/cli/perfect-debounce": ["perfect-debounce@1.0.0", "", {}, "sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA=="],
+
+    "@slidev/cli/unocss/@unocss/cli/unplugin-utils": ["unplugin-utils@0.3.1", "", { "dependencies": { "pathe": "^2.0.3", "picomatch": "^4.0.3" } }, "sha512-5lWVjgi6vuHhJ526bI4nlCOmkCIF3nnfXkCMDeMJrtdvxTs6ZFCM8oNufGTsDbKv/tJ/xj8RpvXjRuPBZJuJog=="],
+
+    "@slidev/cli/unocss/@unocss/postcss/@unocss/config": ["@unocss/config@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "unconfig": "^7.4.1" } }, "sha512-awJSz9i1W6KpviNT+0l+xqHouW9naWg/ksiu/Dkko1QHo8a3RCJwZ/W6MBBOjQqbFNPPcD7f+6ffTMm+jXHsaw=="],
+
+    "@slidev/cli/unocss/@unocss/postcss/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/cli/unocss/@unocss/preset-mini/@unocss/extractor-arbitrary-variants": ["@unocss/extractor-arbitrary-variants@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-QAzpkX5UPjTeRbA7eed+mVPGNkwnMrIgfmlV9l8GVXHJCEnroRkzDVOPv1G9bKw1T82+NjBeZT9VnbZOmpLXQA=="],
+
+    "@slidev/cli/unocss/@unocss/preset-mini/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/cli/unocss/@unocss/preset-typography/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/cli/unocss/@unocss/preset-wind3/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/cli/unocss/@unocss/preset-wind4/@unocss/extractor-arbitrary-variants": ["@unocss/extractor-arbitrary-variants@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-QAzpkX5UPjTeRbA7eed+mVPGNkwnMrIgfmlV9l8GVXHJCEnroRkzDVOPv1G9bKw1T82+NjBeZT9VnbZOmpLXQA=="],
+
+    "@slidev/cli/unocss/@unocss/preset-wind4/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/cli/unocss/@unocss/transformer-directives/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/cli/unocss/@unocss/vite/@unocss/config": ["@unocss/config@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "unconfig": "^7.4.1" } }, "sha512-awJSz9i1W6KpviNT+0l+xqHouW9naWg/ksiu/Dkko1QHo8a3RCJwZ/W6MBBOjQqbFNPPcD7f+6ffTMm+jXHsaw=="],
+
+    "@slidev/cli/unocss/@unocss/vite/@unocss/inspector": ["@unocss/inspector@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6", "colorette": "^2.0.20", "gzip-size": "^6.0.0", "sirv": "^3.0.2", "vue-flow-layout": "^0.2.0" } }, "sha512-9N2TunEhxHCcy4KPck/hUoctYeWCgLxHamTDn1eRCk3WavIS7l3v5wIcWUcMVXjXOJ0U2Y+w6jp/wQhA4kln/Q=="],
+
+    "@slidev/cli/unocss/@unocss/vite/chokidar": ["chokidar@3.6.0", "", { "dependencies": { "anymatch": "~3.1.2", "braces": "~3.0.2", "glob-parent": "~5.1.2", "is-binary-path": "~2.1.0", "is-glob": "~4.0.1", "normalize-path": "~3.0.0", "readdirp": "~3.6.0" }, "optionalDependencies": { "fsevents": "~2.3.2" } }, "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw=="],
+
+    "@slidev/cli/unocss/@unocss/vite/unplugin-utils": ["unplugin-utils@0.3.1", "", { "dependencies": { "pathe": "^2.0.3", "picomatch": "^4.0.3" } }, "sha512-5lWVjgi6vuHhJ526bI4nlCOmkCIF3nnfXkCMDeMJrtdvxTs6ZFCM8oNufGTsDbKv/tJ/xj8RpvXjRuPBZJuJog=="],
+
+    "@slidev/client/unocss/@unocss/cli/@unocss/config": ["@unocss/config@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "unconfig": "^7.4.1" } }, "sha512-awJSz9i1W6KpviNT+0l+xqHouW9naWg/ksiu/Dkko1QHo8a3RCJwZ/W6MBBOjQqbFNPPcD7f+6ffTMm+jXHsaw=="],
+
+    "@slidev/client/unocss/@unocss/cli/chokidar": ["chokidar@3.6.0", "", { "dependencies": { "anymatch": "~3.1.2", "braces": "~3.0.2", "glob-parent": "~5.1.2", "is-binary-path": "~2.1.0", "is-glob": "~4.0.1", "normalize-path": "~3.0.0", "readdirp": "~3.6.0" }, "optionalDependencies": { "fsevents": "~2.3.2" } }, "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw=="],
+
+    "@slidev/client/unocss/@unocss/cli/perfect-debounce": ["perfect-debounce@1.0.0", "", {}, "sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA=="],
+
+    "@slidev/client/unocss/@unocss/cli/unplugin-utils": ["unplugin-utils@0.3.1", "", { "dependencies": { "pathe": "^2.0.3", "picomatch": "^4.0.3" } }, "sha512-5lWVjgi6vuHhJ526bI4nlCOmkCIF3nnfXkCMDeMJrtdvxTs6ZFCM8oNufGTsDbKv/tJ/xj8RpvXjRuPBZJuJog=="],
+
+    "@slidev/client/unocss/@unocss/postcss/@unocss/config": ["@unocss/config@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "unconfig": "^7.4.1" } }, "sha512-awJSz9i1W6KpviNT+0l+xqHouW9naWg/ksiu/Dkko1QHo8a3RCJwZ/W6MBBOjQqbFNPPcD7f+6ffTMm+jXHsaw=="],
+
+    "@slidev/client/unocss/@unocss/postcss/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/client/unocss/@unocss/preset-mini/@unocss/extractor-arbitrary-variants": ["@unocss/extractor-arbitrary-variants@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-QAzpkX5UPjTeRbA7eed+mVPGNkwnMrIgfmlV9l8GVXHJCEnroRkzDVOPv1G9bKw1T82+NjBeZT9VnbZOmpLXQA=="],
+
+    "@slidev/client/unocss/@unocss/preset-mini/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/client/unocss/@unocss/preset-typography/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/client/unocss/@unocss/preset-wind3/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/client/unocss/@unocss/preset-wind4/@unocss/extractor-arbitrary-variants": ["@unocss/extractor-arbitrary-variants@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-QAzpkX5UPjTeRbA7eed+mVPGNkwnMrIgfmlV9l8GVXHJCEnroRkzDVOPv1G9bKw1T82+NjBeZT9VnbZOmpLXQA=="],
+
+    "@slidev/client/unocss/@unocss/preset-wind4/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/client/unocss/@unocss/transformer-directives/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/client/unocss/@unocss/vite/@unocss/config": ["@unocss/config@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "unconfig": "^7.4.1" } }, "sha512-awJSz9i1W6KpviNT+0l+xqHouW9naWg/ksiu/Dkko1QHo8a3RCJwZ/W6MBBOjQqbFNPPcD7f+6ffTMm+jXHsaw=="],
+
+    "@slidev/client/unocss/@unocss/vite/@unocss/inspector": ["@unocss/inspector@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6", "colorette": "^2.0.20", "gzip-size": "^6.0.0", "sirv": "^3.0.2", "vue-flow-layout": "^0.2.0" } }, "sha512-9N2TunEhxHCcy4KPck/hUoctYeWCgLxHamTDn1eRCk3WavIS7l3v5wIcWUcMVXjXOJ0U2Y+w6jp/wQhA4kln/Q=="],
+
+    "@slidev/client/unocss/@unocss/vite/chokidar": ["chokidar@3.6.0", "", { "dependencies": { "anymatch": "~3.1.2", "braces": "~3.0.2", "glob-parent": "~5.1.2", "is-binary-path": "~2.1.0", "is-glob": "~4.0.1", "normalize-path": "~3.0.0", "readdirp": "~3.6.0" }, "optionalDependencies": { "fsevents": "~2.3.2" } }, "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw=="],
+
+    "@slidev/client/unocss/@unocss/vite/unplugin-utils": ["unplugin-utils@0.3.1", "", { "dependencies": { "pathe": "^2.0.3", "picomatch": "^4.0.3" } }, "sha512-5lWVjgi6vuHhJ526bI4nlCOmkCIF3nnfXkCMDeMJrtdvxTs6ZFCM8oNufGTsDbKv/tJ/xj8RpvXjRuPBZJuJog=="],
+
+    "@slidev/types/unocss/@unocss/cli/@unocss/config": ["@unocss/config@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "unconfig": "^7.4.1" } }, "sha512-awJSz9i1W6KpviNT+0l+xqHouW9naWg/ksiu/Dkko1QHo8a3RCJwZ/W6MBBOjQqbFNPPcD7f+6ffTMm+jXHsaw=="],
+
+    "@slidev/types/unocss/@unocss/cli/chokidar": ["chokidar@3.6.0", "", { "dependencies": { "anymatch": "~3.1.2", "braces": "~3.0.2", "glob-parent": "~5.1.2", "is-binary-path": "~2.1.0", "is-glob": "~4.0.1", "normalize-path": "~3.0.0", "readdirp": "~3.6.0" }, "optionalDependencies": { "fsevents": "~2.3.2" } }, "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw=="],
+
+    "@slidev/types/unocss/@unocss/cli/perfect-debounce": ["perfect-debounce@1.0.0", "", {}, "sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA=="],
+
+    "@slidev/types/unocss/@unocss/cli/unplugin-utils": ["unplugin-utils@0.3.1", "", { "dependencies": { "pathe": "^2.0.3", "picomatch": "^4.0.3" } }, "sha512-5lWVjgi6vuHhJ526bI4nlCOmkCIF3nnfXkCMDeMJrtdvxTs6ZFCM8oNufGTsDbKv/tJ/xj8RpvXjRuPBZJuJog=="],
+
+    "@slidev/types/unocss/@unocss/postcss/@unocss/config": ["@unocss/config@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "unconfig": "^7.4.1" } }, "sha512-awJSz9i1W6KpviNT+0l+xqHouW9naWg/ksiu/Dkko1QHo8a3RCJwZ/W6MBBOjQqbFNPPcD7f+6ffTMm+jXHsaw=="],
+
+    "@slidev/types/unocss/@unocss/postcss/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/types/unocss/@unocss/preset-mini/@unocss/extractor-arbitrary-variants": ["@unocss/extractor-arbitrary-variants@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-QAzpkX5UPjTeRbA7eed+mVPGNkwnMrIgfmlV9l8GVXHJCEnroRkzDVOPv1G9bKw1T82+NjBeZT9VnbZOmpLXQA=="],
+
+    "@slidev/types/unocss/@unocss/preset-mini/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/types/unocss/@unocss/preset-typography/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/types/unocss/@unocss/preset-wind3/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/types/unocss/@unocss/preset-wind4/@unocss/extractor-arbitrary-variants": ["@unocss/extractor-arbitrary-variants@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6" } }, "sha512-QAzpkX5UPjTeRbA7eed+mVPGNkwnMrIgfmlV9l8GVXHJCEnroRkzDVOPv1G9bKw1T82+NjBeZT9VnbZOmpLXQA=="],
+
+    "@slidev/types/unocss/@unocss/preset-wind4/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/types/unocss/@unocss/transformer-directives/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/types/unocss/@unocss/vite/@unocss/config": ["@unocss/config@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "unconfig": "^7.4.1" } }, "sha512-awJSz9i1W6KpviNT+0l+xqHouW9naWg/ksiu/Dkko1QHo8a3RCJwZ/W6MBBOjQqbFNPPcD7f+6ffTMm+jXHsaw=="],
+
+    "@slidev/types/unocss/@unocss/vite/@unocss/inspector": ["@unocss/inspector@66.5.6", "", { "dependencies": { "@unocss/core": "66.5.6", "@unocss/rule-utils": "66.5.6", "colorette": "^2.0.20", "gzip-size": "^6.0.0", "sirv": "^3.0.2", "vue-flow-layout": "^0.2.0" } }, "sha512-9N2TunEhxHCcy4KPck/hUoctYeWCgLxHamTDn1eRCk3WavIS7l3v5wIcWUcMVXjXOJ0U2Y+w6jp/wQhA4kln/Q=="],
+
+    "@slidev/types/unocss/@unocss/vite/chokidar": ["chokidar@3.6.0", "", { "dependencies": { "anymatch": "~3.1.2", "braces": "~3.0.2", "glob-parent": "~5.1.2", "is-binary-path": "~2.1.0", "is-glob": "~4.0.1", "normalize-path": "~3.0.0", "readdirp": "~3.6.0" }, "optionalDependencies": { "fsevents": "~2.3.2" } }, "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw=="],
+
+    "@slidev/types/unocss/@unocss/vite/unplugin-utils": ["unplugin-utils@0.3.1", "", { "dependencies": { "pathe": "^2.0.3", "picomatch": "^4.0.3" } }, "sha512-5lWVjgi6vuHhJ526bI4nlCOmkCIF3nnfXkCMDeMJrtdvxTs6ZFCM8oNufGTsDbKv/tJ/xj8RpvXjRuPBZJuJog=="],
+
     "@unocss/cli/chokidar/readdirp/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
 
     "@unocss/vite/chokidar/readdirp/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
@@ -1967,5 +2231,47 @@
     "unplugin-vue-components/chokidar/readdirp/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
 
     "vite-plugin-static-copy/chokidar/readdirp/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
+
+    "@slidev/cli/unocss/@unocss/cli/chokidar/glob-parent": ["glob-parent@5.1.2", "", { "dependencies": { "is-glob": "^4.0.1" } }, "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow=="],
+
+    "@slidev/cli/unocss/@unocss/cli/chokidar/readdirp": ["readdirp@3.6.0", "", { "dependencies": { "picomatch": "^2.2.1" } }, "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA=="],
+
+    "@slidev/cli/unocss/@unocss/vite/@unocss/inspector/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/cli/unocss/@unocss/vite/chokidar/glob-parent": ["glob-parent@5.1.2", "", { "dependencies": { "is-glob": "^4.0.1" } }, "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow=="],
+
+    "@slidev/cli/unocss/@unocss/vite/chokidar/readdirp": ["readdirp@3.6.0", "", { "dependencies": { "picomatch": "^2.2.1" } }, "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA=="],
+
+    "@slidev/client/unocss/@unocss/cli/chokidar/glob-parent": ["glob-parent@5.1.2", "", { "dependencies": { "is-glob": "^4.0.1" } }, "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow=="],
+
+    "@slidev/client/unocss/@unocss/cli/chokidar/readdirp": ["readdirp@3.6.0", "", { "dependencies": { "picomatch": "^2.2.1" } }, "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA=="],
+
+    "@slidev/client/unocss/@unocss/vite/@unocss/inspector/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/client/unocss/@unocss/vite/chokidar/glob-parent": ["glob-parent@5.1.2", "", { "dependencies": { "is-glob": "^4.0.1" } }, "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow=="],
+
+    "@slidev/client/unocss/@unocss/vite/chokidar/readdirp": ["readdirp@3.6.0", "", { "dependencies": { "picomatch": "^2.2.1" } }, "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA=="],
+
+    "@slidev/types/unocss/@unocss/cli/chokidar/glob-parent": ["glob-parent@5.1.2", "", { "dependencies": { "is-glob": "^4.0.1" } }, "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow=="],
+
+    "@slidev/types/unocss/@unocss/cli/chokidar/readdirp": ["readdirp@3.6.0", "", { "dependencies": { "picomatch": "^2.2.1" } }, "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA=="],
+
+    "@slidev/types/unocss/@unocss/vite/@unocss/inspector/@unocss/rule-utils": ["@unocss/rule-utils@66.5.6", "", { "dependencies": { "@unocss/core": "^66.5.6", "magic-string": "^0.30.21" } }, "sha512-HzFlKDIaX/yPnNx7rn24Yi23RkVqwGiE1n9qVNJnEUZTE9IHx32P7eLfIUKOLU58tcMVslsLZDnt/DpJCs6RCw=="],
+
+    "@slidev/types/unocss/@unocss/vite/chokidar/glob-parent": ["glob-parent@5.1.2", "", { "dependencies": { "is-glob": "^4.0.1" } }, "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow=="],
+
+    "@slidev/types/unocss/@unocss/vite/chokidar/readdirp": ["readdirp@3.6.0", "", { "dependencies": { "picomatch": "^2.2.1" } }, "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA=="],
+
+    "@slidev/cli/unocss/@unocss/cli/chokidar/readdirp/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
+
+    "@slidev/cli/unocss/@unocss/vite/chokidar/readdirp/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
+
+    "@slidev/client/unocss/@unocss/cli/chokidar/readdirp/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
+
+    "@slidev/client/unocss/@unocss/vite/chokidar/readdirp/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
+
+    "@slidev/types/unocss/@unocss/cli/chokidar/readdirp/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
+
+    "@slidev/types/unocss/@unocss/vite/chokidar/readdirp/picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
   }
 }
