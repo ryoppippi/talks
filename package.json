@@ -10,16 +10,16 @@
 		"deploy": "bunx wrangler@latest pages deploy ."
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.417",
+		"@iconify/json": "^2.2.421",
 		"@ryoppippi/eslint-config": "^0.4.0",
 		"@ryoppippi/unocss-preset": "npm:@jsr/ryoppippi__unocss-preset",
 		"@slidev/cli": "^51.8.2",
 		"@slidev/client": "^51.8.2",
 		"@slidev/theme-default": "^0.25.0",
 		"@slidev/theme-seriph": "latest",
-		"@types/bun": "^1.3.4",
-		"@typescript/native-preview": "^7.0.0-dev.20251211.1",
-		"eslint": "^9.39.1",
+		"@types/bun": "^1.3.5",
+		"@typescript/native-preview": "^7.0.0-dev.20251226.1",
+		"eslint": "^9.39.2",
 		"eslint-plugin-format": "^1.1.0",
 		"feed": "^4.2.2",
 		"gray-matter": "^4.0.3",
@@ -29,9 +29,9 @@
 		"prettier-plugin-slidev": "^1.0.5",
 		"tinyglobby": "^0.2.15",
 		"ufo": "^1.6.1",
-		"unocss": "^66.5.10",
+		"unocss": "^66.5.11",
 		"valibot": "^0.42.1",
-		"vue": "^3.5.25"
+		"vue": "^3.5.26"
 	},
 	"workspaces": [
 		"*"
