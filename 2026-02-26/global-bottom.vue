@@ -13,6 +13,8 @@ import seedrandom from 'seedrandom';
  * - glowSeed: string | false - Seed for the stable random distribution (default: 'default')
  */
 import { computed, ref, watch } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
+import { slides } from '#slidev/slides';
 
 const colors = [
 	// 'from-[#00DC82]',
@@ -23,7 +25,28 @@ const colors = [
 	'from-#FF6B6B',
 ];
 
-const { currentSlideRoute } = useNav();
+const nav = (() => {
+	try {
+		const routeContext = useRoute();
+		const routerContext = useRouter();
+		if (!routeContext || !('name' in routeContext) || !routerContext?.currentRoute?.value)
+			return null;
+		return useNav();
+	}
+	catch {
+		return null;
+	}
+})();
+
+const fallbackSlideRoute = computed(() => slides.value[0]);
+const currentSlideRoute = computed(() => {
+	try {
+		return nav?.currentSlideRoute.value ?? fallbackSlideRoute.value;
+	}
+	catch (error) {
+		return fallbackSlideRoute.value;
+	}
+});
 
 export type Range = [number, number];
 
