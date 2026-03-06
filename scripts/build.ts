@@ -6,7 +6,7 @@ import { Feed } from 'feed';
 import matter from 'gray-matter';
 import { glob } from 'tinyglobby';
 import * as ufo from 'ufo';
-import * as v from 'valibot';
+import * as z from 'zod';
 
 const ROOT_URL = 'https://talks.ryoppippi.com/';
 
@@ -39,18 +39,17 @@ await $`cp -r _redirects ${rootDist}/`;
 		absolute: true,
 	});
 
-	const urlSchema = v.pipe(v.string(), v.url());
-	const schema = v.object({
-		title: v.string(),
-		date: v.date(),
-		lang: v.union([v.literal('ja'), v.literal('en')]),
-		event: v.string(),
-		eventLink: v.optional(urlSchema),
-		videoLink: v.optional(urlSchema),
-		content: v.string(),
-		links: v.pipe(
-			v.array(urlSchema),
-			v.transform((links: string[]) => links.filter(l => l.startsWith(ROOT_URL)).concat(links.filter(l => !l.startsWith(ROOT_URL)))),
+	const urlSchema = z.string().url();
+	const schema = z.object({
+		title: z.string(),
+		date: z.date(),
+		lang: z.enum(['ja', 'en']),
+		event: z.string(),
+		eventLink: urlSchema.optional(),
+		videoLink: urlSchema.optional(),
+		content: z.string(),
+		links: z.array(urlSchema).transform(links =>
+			links.filter(l => l.startsWith(ROOT_URL)).concat(links.filter(l => !l.startsWith(ROOT_URL))),
 		),
 	});
 
@@ -79,22 +78,21 @@ await $`cp -r _redirects ${rootDist}/`;
 			links.push(pdf);
 		}
 
-		const result = v.safeParse(schema, {
+		const result = schema.safeParse({
 			...data,
 			content,
 			links,
 		});
 		if (!result.success) {
 			console.error({
-				issues: result.issues,
+				issues: result.error.issues,
 				path: p.dirname(projectMD),
 				data,
 			});
 			continue;
 		}
 
-		const { output } = result;
-		results.push(output);
+		results.push(result.data);
 	}
 
 	results.sort((a, b) => b.date.getTime() - a.date.getTime());
