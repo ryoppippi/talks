@@ -84,11 +84,8 @@ await $`cp -r _redirects ${rootDist}/`;
 			links,
 		});
 		if (!result.success) {
-			console.error({
-				issues: result.error.issues,
-				path: p.dirname(projectMD),
-				data,
-			});
+			console.error(`Invalid frontmatter in ${projectDirName}:`);
+			console.error(z.prettifyError(result.error));
 			continue;
 		}
 
