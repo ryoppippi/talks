@@ -15,6 +15,19 @@
       forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f nixpkgs.legacyPackages.${system});
     in
     {
+      apps = forAllSystems (pkgs: {
+        build = {
+          type = "app";
+          program = toString (
+            pkgs.writeShellScript "build" ''
+              export PATH="${pkgs.lib.makeBinPath [ pkgs.bun pkgs.git ]}:$PATH"
+              bun ci
+              bun run build
+            ''
+          );
+        };
+      });
+
       devShells = forAllSystems (pkgs: {
         default = pkgs.mkShellNoCC {
           buildInputs = with pkgs; [
