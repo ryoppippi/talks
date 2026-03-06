@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { slides } from '#slidev/slides';
 import { useNav } from '@slidev/client';
 import seedrandom from 'seedrandom';
 /**
@@ -14,7 +15,6 @@ import seedrandom from 'seedrandom';
  */
 import { computed, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import { slides } from '#slidev/slides';
 
 const colors = [
 	// 'from-[#00DC82]',
@@ -29,8 +29,9 @@ const nav = (() => {
 	try {
 		const routeContext = useRoute();
 		const routerContext = useRouter();
-		if (!routeContext || !('name' in routeContext) || !routerContext?.currentRoute?.value)
+		if (!routeContext || !('name' in routeContext) || !routerContext?.currentRoute?.value) {
 			return null;
+		}
 		return useNav();
 	}
 	catch {
@@ -43,7 +44,7 @@ const currentSlideRoute = computed(() => {
 	try {
 		return nav?.currentSlideRoute.value ?? fallbackSlideRoute.value;
 	}
-	catch (error) {
+	catch {
 		return fallbackSlideRoute.value;
 	}
 });

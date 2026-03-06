@@ -20,7 +20,12 @@
           type = "app";
           program = toString (
             pkgs.writeShellScript "build" ''
-              export PATH="${pkgs.lib.makeBinPath [ pkgs.bun pkgs.git ]}:$PATH"
+              export PATH="${
+                pkgs.lib.makeBinPath [
+                  pkgs.bun
+                  pkgs.git
+                ]
+              }:$PATH"
               bun ci
               bun run build
             ''
@@ -34,6 +39,7 @@
             bun
             typescript-go
             lefthook
+            nixfmt
             jq
             git
             gh
