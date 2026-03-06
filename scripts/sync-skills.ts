@@ -1,15 +1,16 @@
 #!/usr/bin/env bun
 
-import { readdir, symlink, lstat, rm, readlink, mkdir } from "node:fs/promises";
-import { join } from "node:path";
+import { lstat, mkdir, readdir, readlink, rm, symlink } from 'node:fs/promises';
+import { join } from 'node:path';
+import process from 'node:process';
 
-const ROOT = new URL("..", import.meta.url).pathname;
-const checkMode = process.argv.includes("--check");
+const ROOT = new URL('..', import.meta.url).pathname;
+const checkMode = process.argv.includes('--check');
 
 let hasErrors = false;
 
-const AGENTS_SKILLS = join(ROOT, ".agents", "skills");
-const CLAUDE_SKILLS = join(ROOT, ".claude", "skills");
+const AGENTS_SKILLS = join(ROOT, '.agents', 'skills');
+const CLAUDE_SKILLS = join(ROOT, '.claude', 'skills');
 
 await mkdir(CLAUDE_SKILLS, { recursive: true });
 
@@ -21,7 +22,9 @@ const expectedTarget = (name: string) => `../../.agents/skills/${name}`;
 const linkedSkills = await Promise.all(
 	agentSkillDirs.map(async (name) => {
 		const s = await lstat(join(AGENTS_SKILLS, name));
-		if (!s.isDirectory()) return null;
+		if (!s.isDirectory()) {
+			return null;
+		}
 
 		const dst = join(CLAUDE_SKILLS, name);
 
@@ -40,20 +43,25 @@ const linkedSkills = await Promise.all(
 					return null;
 				}
 				return name;
-			} catch {
+			}
+			catch {
 				console.error(`❌ Skill missing: .claude/skills/${name}`);
 				hasErrors = true;
 				return null;
 			}
-		} else {
+		}
+		else {
 			try {
 				const existing = await lstat(dst);
 				if (existing.isSymbolicLink()) {
 					const target = await readlink(dst);
-					if (target === expectedTarget(name)) return name;
+					if (target === expectedTarget(name)) {
+						return name;
+					}
 				}
 				await rm(dst, { recursive: true, force: true });
-			} catch {
+			}
+			catch {
 				// doesn't exist
 			}
 
@@ -66,7 +74,7 @@ const linkedSkills = await Promise.all(
 const validSkills = linkedSkills.filter((n): n is string => n !== null);
 const expectedSkillNames = new Set(validSkills);
 const skillOrphans = claudeSkillEntries.filter(
-	(name) => !expectedSkillNames.has(name),
+	name => !expectedSkillNames.has(name),
 );
 
 if (!checkMode) {
@@ -86,12 +94,14 @@ if (skillOrphans.length > 0 && checkMode) {
 }
 
 if (checkMode && hasErrors) {
-	console.error("\n❌ Skills are not in sync!");
-	console.error("Run: bun scripts/sync-skills.ts");
+	console.error('\n❌ Skills are not in sync!');
+	console.error('Run: bun scripts/sync-skills.ts');
 	process.exit(1);
-} else if (checkMode) {
-	console.log("✅ Skills are in sync!");
-} else {
+}
+else if (checkMode) {
+	console.log('✅ Skills are in sync!');
+}
+else {
 	console.log(
 		`Synced ${validSkills.length} skills: .agents/skills/ -> .claude/skills/ (symlinks)`,
 	);

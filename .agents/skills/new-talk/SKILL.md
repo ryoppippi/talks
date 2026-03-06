@@ -28,6 +28,7 @@ Create a new talk directory. README.md is always created. When mode is `slidev`,
 First, read an existing talk's `README.md` (e.g. the most recent one) to match the exact format.
 
 Ask the user for:
+
 - `title`: Talk title
 - `lang`: `ja` or `en` (default: `ja`)
 - `event`: Event name
@@ -40,6 +41,7 @@ Generate `README.md` following the same YAML frontmatter format as the reference
 First, read an existing Slidev talk's `package.json` (e.g. the most recent one) to match the exact format and fields.
 
 Ask the user for:
+
 - `slug`: Short name for the package (e.g. `vimconf`, `findy`). Suggest one based on the directory name.
 
 The date portion is the first 10 characters of `$0` (the `YYYY-MM-DD` part).

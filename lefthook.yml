@@ -3,6 +3,6 @@ pre-commit:
   jobs:
     - name: check skills sync
       glob:
-        - ".agents/skills/**"
-        - ".claude/skills/**"
+        - '.agents/skills/**'
+        - '.claude/skills/**'
       run: bun scripts/sync-skills.ts --check
