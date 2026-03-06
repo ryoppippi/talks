@@ -1,5 +1,5 @@
 ---
-title: 'claude codeの進化とccusage、そしてこれから'
+title: 'OSSで世界と戦うには - ccusageの舞台裏'
 transition: view-transition
 mdc: true
 highlighter: shiki
@@ -9,19 +9,17 @@ layout: cover
 glowSeed: 4
 ---
 
-# ccusage
-## Claude Code, Agentic Coding, そしてこれから
+# OSSで世界と戦うには
+## ccusageの舞台裏
 
 {@ryoppippi}
 
 <div abs-br mx-10 mb-10 flex="~ col gap-4 items-end" text-left>
-  <img src="/aiau.png" w-40 />
-  <div class="text-2xl font-semibold">Claude Code Meetup Tokyo</div>
-  <div text-sm opacity-75 mt--4>17th October 2025</div>
+  <img src="/findy-conf.png" w-48 />
 </div>
 
 ---
-src: '../reuse/personal-stackone.md'
+src: '../reuse/personal-rork.md'
 ---
 
 <!--
@@ -30,9 +28,41 @@ talk: StackOne / Neovim / AI ops 自己紹介。
 
 <!--
 talk: 初めまして、ryoppippi です。ccusage を作りました。
-talk: Claude Code Meetup Tokyo に合わせて 2025-10-16 に UK から到着したばかりです。
-talk: まずはターミナル視点で Claude Code の話をさせてください。
 -->
+
+---
+layout: section
+---
+
+# 宣伝
+
+---
+layout: section
+---
+
+  <div class="font-britti inline-flex items-end gap-1.5">
+    <span class="text-6xl md:text-7xl font-bold tracking-[-0.04em] leading-[0.95] text-white">
+      Rork
+    </span>
+    <span class="text-6xl md:text-7xl font-bold tracking-[-0.04em] leading-[0.95] text-orange-400">
+      Max
+    </span>
+  </div>
+
+---
+layout: image
+image: /rork-max-hero.png
+backgroundSize: contain
+---
+
+<!-- talk: 先日、Rork Maxというプロダクトをリリースしました。完全バイブコーディングでswiftでiosアプリを作れてしまう革命的なプロダクトです。 -->
+<!-- talk: もし興味があればぜひ触ってみてください！ -->
+
+---
+layout: section
+---
+
+https://rork.com/ja/max
 
 ---
 layout: section
@@ -50,7 +80,7 @@ layout: quote
 
 <div class="flex justify-end">
 
-https://zenn.dev/ryoppippi/articles/6c9a8fe6629cd6
+https://ryoppippi.com/blog/2025-05-29-zenn-6c9a8fe6629cd6-ja
 
 </div>
 
@@ -83,18 +113,9 @@ backgroundSize: contain
 ---
 
 <!--
-talk: GitHub Star は 8,500 を超えています。
--->
-
----
-layout: image
-image: /npm.jpeg
-backgroundSize: contain
----
-
-<!--
-talk: npm ダウンロード数は累計 50 万を突破しました。
-talk: リリースから 5 か月も経たずにここまで来られたのはコミュニティのおかげです。
+talk: GitHub Star は 1万 を超えています。
+talk: npm ダウンロード数は累計 90 万を突破しました。
+talk: ここまで来られたのはコミュニティのおかげです。
 -->
 
 ---
@@ -172,17 +193,6 @@ Zennにも記事を書いた
 <!-- https://x.com/__syumai/status/1940205816868741150 -->
 <Tweet id="1940205816868741150" absolute bottom-5 left-10 class="important:[&_iframe]:w-200 important:[&_iframe]:rounded-13px important:[&_iframe]:shadow-xl" v-click />
 </div>
-
----
-layout: image
-title: またしても何も知らない
-image: https://blogimg.goo.ne.jp/user_image/4e/33/f26648a242349393ccc3c06f49df0bbb.jpg
-backgroundSize: contain
----
-
-<!--
-これが大事になるとは思っても見なかった
--->
 
 ---
 layout: section
@@ -375,12 +385,6 @@ layout: section
 -->
 
 ---
-layout: image
-image: /this-is-how-i-was-born.png
-backgroundSize: contain
----
-
----
 layout: section
 ---
 
@@ -404,15 +408,205 @@ layout: section
 layout: section
 ---
 
+# そして現在...
+
+---
+layout: image
+image: /ccusage-apps.png
+backgroundSize: contain
+---
+
+---
+layout: default
+---
+
+# ccusage for x!
+
+- amp
+- claude code
+- openai/codex (codex cli -> cc)
+- opencode
+- pi agent
+
+---
+layout: section
+---
+
+# 技術的なお話
+
+
+---
+layout: image
+image: /my-cli-stack.png
+---
+
+---
+layout: default
+---
+
+# 大事にしていたこと
+
+- UNIX 哲学
+- 速さ
+- ユーザーの声
+
+---
+layout: section
+---
+
+# UNIX哲学
+
+小さな部品を組み合わせて大きな仕事をする
+
+---
+layout: default
+---
+
+- 最初のversionから `--json` オプションをつけた
+  - pipe で 好きなように加工できるように
+  - 例: `ccusage daily --json | jq '.[0].costUSD'`
+- 機能を最小限に絞る
+
+<v-clicks>
+- しかしユーザーの要望で機能は増えていった...
+  - daily
+  - monthly
+  - weekly
+  - blocks
+  - statusline
+</v-clicks>
+
+---
+layout: image
+image: /noba.jpg
+backgroundSize: contain
+---
+
+---
+layout: section
+---
+
+# 速さ
+
+---
+layout: default
+---
+
+# 速さ
+
+- バンドルサイズを小さく保つ
+  - 最新版は **600KB** しかない
+- `bun x ccusage`を推奨
+  - インストール不要で、常に最新のものが使える
+
+---
+layout: default
+---
+
+# ccusgeを支える技術スタック
+
+- https://gunshi.dev by {@kazupon}
+- byethrow by {@Karibash}
+- tsdown by {@sxzz}
+- vitepress by {@vuejs}
+- vitest by {@vitest}
+- 強めのeslint rules (@ryoppippi/eslint-config)
+
+<v-clicks>
+
+どれも新しいOSSだが、bundle sizeに強み
+
+</v-clicks>
+
+---
+layout: default
+---
+
+# ccusgeを支える技術スタック
+
+- https://gunshi.dev by {@kazupon}
+- byethrow by {@Karibash}
+- tsdown by {@sxzz}
+- <span op50> vitepress by {@vuejs} </span>
+- <span op50> vitest by {@vitest} </span>
+- <span op50> 強めのeslint rules (@ryoppippi/eslint-config) </span>
+
+
+どれも新しいOSSだが、bundle sizeに強み
+
+---
+layout: default
+---
+
+# Coding Agent フレンドリーな開発環境
+
+<div grid="~ cols-2 gap-8">
+<div>
+
+**Local**
+
+- nixによる開発環境の均質化
+  - nodeだけじゃなくて、周辺のツールも一括管理
+- vitest inline test
+  - testコードと実装コードを隣り合わせにする
+- pre-commit
+  - eslint
+  - commit message形式
+
+</div>
+<div>
+
+**CI/CD**
+
+- CI
+  - eslint
+  - vitest
+- npm publish の自動化
+  - GitHub Actionsで、tag pushをトリガーにpublish
+
+</div>
+</div>
+
+---
+layout: section
+---
+
+# ユーザーの声
+
+---
+layout: default
+---
+
+# ユーザーの声
+
+- 毎日毎日 Twitter をエゴサ
+- 毎日issueをチェック、すぐに修正
+- できるだけ早くリリース
+
+<!-- talks: 半年で66リリースしている。 -->
+<!-- 多い時は１日に３回リリースなど -->
+
+---
+layout: default
+--- 
+
+# 大変だったこと
+
+- 速さと軽さを保ちながら機能追加
+- 仕事との両立
+- 大量のissue/AI生成による大量のPRへの対処
+
+---
+layout: section
+---
+
 # ccusageがもたらしたもの
 
 ---
 layout: default
 ---
 
-# ccusageがもたらしたもの
-
-<v-clicks>
+# ccusageがClaude Codeへもたらしたもの
 
 - Claude Code 利用者の増加
 - Claude Code のDXの向上
@@ -421,103 +615,90 @@ layout: default
 - mcp/subagentなどの概念の普及
 - ユーザーのToken/Context Windowへの解像度向上
 
-</v-clicks>
+---
+layout: default
+---
+
+# 例: <span> serena </span>
+
+<div flex='~ justify-center'>
+    <SlidevVideo autoplay controls w-200>
+        <source src="/serena.mp4" type="video/mp4" />
+    </SlidevVideo>
+</div>
 
 ---
 layout: default
 ---
 
-# 例: <span v-click> serena </span>
+# ccusageが私にもたらしたもの
 
-<div flex='~ justify-center'>
-    <SlidevVideo v-click autoplay controls w-200>
-        <source src="https://private-user-images.githubusercontent.com/35432522/475806037-ab78ebe0-f77d-43cc-879a-cc399efefd87.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjA2NzYyOTYsIm5iZiI6MTc2MDY3NTk5NiwicGF0aCI6Ii8zNTQzMjUyMi80NzU4MDYwMzctYWI3OGViZTAtZjc3ZC00M2NjLTg3OWEtY2MzOTllZmVmZDg3Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMTclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDE3VDA0Mzk1NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU3MWM4NDg1MjdjNTZjNzMwOTU0M2Y3YTM1OWFiZjllZWM1ODY2ODIzMDE2ZDlkYzUxMDNiNGE2MDBiMTM1NDEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.a2PhThWWDhkKWrEkOQMuFs9t9AABi05R7e9Kw4Ii1Yg" type="video/mp4" />
-    </SlidevVideo>
-</div>
+<v-clicks>
+
+  - 知名度
+  - コミュニティとの繋がり
+  - 代表作
+  - 仕事のオファー
+
+</v-clicks>
 
 ---
 layout: section
 ---
 
-# 君たちはどう生きるか
+---
+layout: image
+title: ccusage screenshot
+image: /boris.jpeg
+backgroundSize: contain
+---
+
+<!-- talk: 先日、claude codeの1周年記念パーティがSFで開催されました -->
+<!-- talk: claude codeの作者のborisに先日会いました。知ってくれてました -->
+
+
+<!-- --- -->
+<!-- class: text-center -->
+<!-- transition: view-transition -->
+<!-- title: pick up contributors -->
+<!-- --- -->
+<!---->
+<!-- <h1 font-serif text-4xl mt-20 important-mb-16>Thanks to</h1> -->
+<!---->
+<!-- <div flex="~ gap-18 items-center justify-center" > -->
+<!--   <div flex="~ col items-center" v-click> -->
+<!--     <img src="https://github.com/nyatinte.png" rounded-full w-30 mb4 view-transition-contributor-nyatinte duration-1000 /> -->
+<!--     <div>NakamuraTakumi</div> -->
+<!--     <div font-mono text-sm op50>@nyatinte</div> -->
+<!--   </div> -->
+<!---->
+<!--   <div flex="~ col items-center" v-click> -->
+<!--     <img src="https://github.com/a-c-m.png" rounded-full w-30 mb4 view-transition-contributor-a-c-m duration-1000 /> -->
+<!--     <div>Alex McFadyen</div> -->
+<!--     <div font-mono text-sm op50>@a-c-m</div> -->
+<!--   </div> -->
+<!---->
+<!--   <div flex="~ col items-center" v-click> -->
+<!--     <img src="https://github.com/ben-vargas.png" rounded-full w-30 mb4 view-transition-contributor-ben-vargas duration-1000 /> -->
+<!--     <div>Ben Vargas</div> -->
+<!--     <div font-mono text-sm op50>@ben-vargas</div> -->
+<!--   </div> -->
+<!-- </div> -->
+
+---
+layout: section
+---
+
+# まとめ
+## なぜ、ccusageが成功したのか
 
 ---
 layout: default
 ---
 
-# Agentの社会実装を担う我々
-
-<v-clicks>
-
-- Claude Codeと戯れることでLLMの理解を深めた
-  - Tool Usage
-  - MCP
-  - Subagents
-  - Context Window Management
-- 知見をCoding Agent以外の領域で応用してほしい
-  - [ Claude Agent SDK ](https://docs.claude.com/en/api/agent-sdk/overview)
-  - [AI SDK](https://ai-sdk.dev/docs/introduction)
-  - [MCP](https://modelcontextprotocol.io/docs/getting-started/intro)
-
-</v-clicks>
-
----
-layout: center
----
-
-```ts
-import { query } from '@anthropic-ai/claude-agent-sdk';
-
-for await (const message of query({
-	prompt: 'implement a cli to echo string using gunshi',
-	options: {
-		mcpServers: {
-			gunshi: {
-				command: 'bunx',
-				args: ['sitemcp', 'https://gunshi.dev'],
-			}
-		},
-		allowedTools: ['mcp__gunshi__indexOfGunshi', 'mcp__gunshi__getDocumentOfGunshi']
-	}
-})) {
-	if (message.type === 'result' && message.subtype === 'success') {
-		console.log(message.result);
-	}
-}
-```
-
----
-layout: center
----
-
-# Agentを社会実装していこう
-
----
-class: text-center
-transition: view-transition
----
-
-<h1 font-serif text-4xl mt-20 important-mb-16>Thanks to</h1>
-
-<div flex="~ gap-18 items-center justify-center" >
-  <div flex="~ col items-center" v-click>
-    <img src="https://github.com/nyatinte.png" rounded-full w-30 mb4 view-transition-contributor-nyatinte duration-1000 />
-    <div>NakamuraTakumi</div>
-    <div font-mono text-sm op50>@nyatinte</div>
-  </div>
-
-  <div flex="~ col items-center" v-click>
-    <img src="https://github.com/a-c-m.png" rounded-full w-30 mb4 view-transition-contributor-a-c-m duration-1000 />
-    <div>Alex McFadyen</div>
-    <div font-mono text-sm op50>@a-c-m</div>
-  </div>
-
-  <div flex="~ col items-center" v-click>
-    <img src="https://github.com/ben-vargas.png" rounded-full w-30 mb4 view-transition-contributor-ben-vargas duration-1000 />
-    <div>Ben Vargas</div>
-    <div font-mono text-sm op50>@ben-vargas</div>
-  </div>
-</div>
+- アイデアと、それをいかに早くshipするか
+- コミュニティとの密なコミュニケーション
+- 開発環境を整え、コントリビュータ
 
 ---
 
@@ -536,6 +717,7 @@ talk: コントリビュータのみなさん、本当にありがとう。あ�
 ---
 src: '../reuse/sponsors.md'
 ---
+
 
 <!--
 sponsor ありがとうございます。
