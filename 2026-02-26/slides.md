@@ -40,7 +40,7 @@ layout: section
 layout: section
 ---
 
-  <div class="font-britti inline-flex items-end gap-1.5">
+<div class="font-britti inline-flex items-end gap-1.5">
     <span class="text-6xl md:text-7xl font-bold tracking-[-0.04em] leading-[0.95] text-white">
       Rork
     </span>
@@ -56,7 +56,10 @@ backgroundSize: contain
 ---
 
 <!-- talk: 先日、Rork Maxというプロダクトをリリースしました。完全バイブコーディングでswiftでiosアプリを作れてしまう革命的なプロダクトです。 -->
-<!-- talk: もし興味があればぜひ触ってみてください！ -->
+
+<!--
+talk: もし興味があればぜひ触ってみてください！
+-->
 
 ---
 layout: section
@@ -434,7 +437,6 @@ layout: section
 
 # 技術的なお話
 
-
 ---
 layout: image
 image: /my-cli-stack.png
@@ -531,7 +533,6 @@ layout: default
 - <span op50> vitest by {@vitest} </span>
 - <span op50> 強めのeslint rules (@ryoppippi/eslint-config) </span>
 
-
 どれも新しいOSSだが、bundle sizeに強み
 
 ---
@@ -584,11 +585,14 @@ layout: default
 - できるだけ早くリリース
 
 <!-- talks: 半年で66リリースしている。 -->
-<!-- 多い時は１日に３回リリースなど -->
+
+<!--
+多い時は１日に３回リリースなど
+-->
 
 ---
 layout: default
---- 
+---
 
 # 大変だったこと
 
@@ -656,7 +660,6 @@ backgroundSize: contain
 <!-- talk: 先日、claude codeの1周年記念パーティがSFで開催されました -->
 <!-- talk: claude codeの作者のborisに先日会いました。知ってくれてました -->
 
-
 <!-- --- -->
 <!-- class: text-center -->
 <!-- transition: view-transition -->
@@ -683,7 +686,10 @@ backgroundSize: contain
 <!--     <div>Ben Vargas</div> -->
 <!--     <div font-mono text-sm op50>@ben-vargas</div> -->
 <!--   </div> -->
-<!-- </div> -->
+
+<!--
+</div>
+-->
 
 ---
 layout: section
@@ -717,7 +723,6 @@ talk: コントリビュータのみなさん、本当にありがとう。あ�
 ---
 src: '../reuse/sponsors.md'
 ---
-
 
 <!--
 sponsor ありがとうございます。

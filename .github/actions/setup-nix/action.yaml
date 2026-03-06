@@ -1,0 +1,19 @@
+name: Setup Nix
+description: Install Nix and configure Cachix
+runs:
+  using: composite
+  steps:
+    - name: Install Nix
+      uses: cachix/install-nix-action@2126ae7fc54c9df00dd18f7f18754393182c73cd # v31.9.1
+      with:
+        github_access_token: ${{ github.token }}
+
+    - name: Setup Cachix (numtide)
+      uses: cachix/cachix-action@0fc020193b5a1fa3ac4575aa3a7d3aa6a35435ad # v16
+      with:
+        name: numtide
+        authToken: ''
+
+    - name: Load Nix development environment
+      shell: bash
+      run: nix develop --command true
