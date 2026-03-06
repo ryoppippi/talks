@@ -8,7 +8,7 @@ pre-commit:
       run: bun scripts/sync-skills.ts --check
     - name: lint
       glob:
-        - '*.{ts,js,vue,md,yaml,yml}'
-        - '**/*.{ts,js,vue,md,yaml,yml}'
+        - '*.{ts,js,vue,md,yaml,yml,json}'
+        - '**/*.{ts,js,vue,md,yaml,yml,json}'
       run: bun run lint --fix {staged_files}
       stage_fixed: true
