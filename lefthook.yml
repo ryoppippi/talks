@@ -6,3 +6,9 @@ pre-commit:
         - '.agents/skills/**'
         - '.claude/skills/**'
       run: bun scripts/sync-skills.ts --check
+    - name: lint
+      glob:
+        - '*.{ts,js,vue,md}'
+        - '**/*.{ts,js,vue,md}'
+      run: bun run lint --fix {staged_files}
+      stage_fixed: true
