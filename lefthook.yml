@@ -12,3 +12,7 @@ pre-commit:
         - '**/*.{ts,js,vue,md,yaml,yml,json}'
       run: bun run lint --fix {staged_files}
       stage_fixed: true
+    - name: nixfmt
+      glob: '*.nix'
+      run: nix develop --command nixfmt {staged_files}
+      stage_fixed: true
