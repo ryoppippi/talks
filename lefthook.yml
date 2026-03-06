@@ -1,0 +1,8 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - name: check skills sync
+      glob:
+        - ".agents/skills/**"
+        - ".claude/skills/**"
+      run: bun scripts/sync-skills.ts --check
