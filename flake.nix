@@ -32,6 +32,7 @@
         default = pkgs.mkShellNoCC {
           buildInputs = with pkgs; [
             bun
+            typescript-go
             lefthook
             jq
             git
