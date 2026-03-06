@@ -39,7 +39,8 @@
           ];
 
           shellHook = ''
-            lefthook install
+            # Install lefthook git hooks
+            lefthook install > /dev/null 2>&1
 
             if [ ! -d node_modules ] || [ bun.lock -nt node_modules/.stamp ]; then
               echo "📦 Installing dependencies..."
