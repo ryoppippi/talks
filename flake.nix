@@ -32,12 +32,15 @@
         default = pkgs.mkShellNoCC {
           buildInputs = with pkgs; [
             bun
+            lefthook
             jq
             git
             gh
           ];
 
           shellHook = ''
+            lefthook install
+
             if [ ! -d node_modules ] || [ bun.lock -nt node_modules/.stamp ]; then
               echo "📦 Installing dependencies..."
               bun ci
