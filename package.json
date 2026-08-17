@@ -10,7 +10,7 @@
 		"deploy": "bunx wrangler@latest pages deploy ."
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.510",
+		"@iconify/json": "^2.2.516",
 		"@ryoppippi/eslint-config": "^0.4.0",
 		"@ryoppippi/unocss-preset": "^2.0.1",
 		"@slidev/cli": "^51.8.2",
