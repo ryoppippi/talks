@@ -10,14 +10,14 @@
 		"deploy": "bunx wrangler@latest pages deploy ."
 	},
 	"devDependencies": {
-		"@iconify/json": "^2.2.543",
+		"@iconify/json": "^2.2.546",
 		"@ryoppippi/eslint-config": "^0.4.0",
 		"@ryoppippi/unocss-preset": "^2.0.1",
 		"@slidev/cli": "^51.8.2",
 		"@slidev/client": "^53.0.0",
 		"@slidev/theme-default": "^0.25.0",
 		"@slidev/theme-seriph": "latest",
-		"@types/bun": "^1.4.3",
+		"@types/bun": "^1.4.4",
 		"eslint": "^9.39.5",
 		"eslint-plugin-format": "^2.0.1",
 		"feed": "^6.0.0",
