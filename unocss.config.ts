@@ -6,8 +6,6 @@ import { mergeConfigs } from 'unocss';
 export default mergeConfigs([
 	slidevUno,
 	{
-		presets: [
-			presetRyoppippi(),
-		],
+		presets: [presetRyoppippi()],
 	},
 ]);

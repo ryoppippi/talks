@@ -24,7 +24,5 @@
 		"verbatimModuleSyntax": true,
 		"skipLibCheck": true
 	},
-	"exclude": [
-		"**/*.md"
-	]
+	"exclude": ["**/*.md"]
 }

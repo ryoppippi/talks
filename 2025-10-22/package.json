@@ -1,7 +1,7 @@
 {
 	"name": "2025-10-22-work-not-build-meetup-feat-ryoppippi",
-	"type": "module",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"build": "slidev build --base /2025-10-22/ --out ../dist/2025-10-22",
 		"dev": "slidev --open",

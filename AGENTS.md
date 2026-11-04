@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-Date-stamped folders such as `2024-11-19/` or `2024-08-30/` hold individual Slidev talks; each contains `slides.md`, supporting Vue overrides, and a `public/` asset bucket. Shared tooling and configuration live at the repo root: `scripts/build.ts` orchestrates multi-talk builds and feed generation, `vite.config.ts` holds the shared Slidev markdown setup, `unocss.config.ts` and `eslint.config.js` centralise styling rules, and `reuse/` stores reusable content. The build output is written to `dist/` (ignored in VCS) during CI or manual builds.
+Date-stamped folders such as `2024-11-19/` or `2024-08-30/` hold individual Slidev talks; each contains `slides.md`, supporting Vue overrides, and a `public/` asset bucket. Shared tooling and configuration live at the repo root: `scripts/build.ts` orchestrates multi-talk builds and feed generation, `vite.config.ts` holds the shared Slidev markdown setup plus the Vite+ lint, format, and pre-commit configuration, `unocss.config.ts` centralises styling rules, and `reuse/` stores reusable content. The build output is written to `dist/` (ignored in VCS) during CI or manual builds.
 
 The `reuse/PersonalIntro.vue` component renders the shared self-introduction layout. Markdown front matter for intro slides should import it and provide content via slots. For StackOne branding, use `reuse/personal-stackone.md`, which already injects the GitHub magic link `{@StackOneHQ}` so Slidev renders the avatar automatically.
 
@@ -10,11 +10,11 @@ Slide markdown supports GitHub-style cards via `markdown-it-magic-link`; wrap th
 
 ## Build, Test, and Development Commands
 
-The toolchain is [Vite+](https://viteplus.dev) (`vp`) on pnpm; Node.js is pinned through `devEngines` in `package.json`, and `nix develop` provides `vp`. Install dependencies with `vp install`. Use `pnpm run new` to scaffold a fresh talk folder via Slidev. Develop a specific deck with a workspace filter, e.g. `vp run --filter ./2024-11-19 dev` to open the local server. `vp run build` performs a full repo build: it runs every talk’s Slidev build, copies PDFs, and regenerates `dist/talks.json` plus `dist/feed.xml`. Lint the codebase with `vp run lint`; auto-fix formatting via `vp run format`. Deployments are published through Cloudflare Pages using `vp run deploy` once `dist/` is up to date.
+The toolchain is [Vite+](https://viteplus.dev) (`vp`) on pnpm; Node.js is pinned through `devEngines` in `package.json`, and `nix develop` provides `vp`. Install dependencies with `vp install`. Use `pnpm run new` to scaffold a fresh talk folder via Slidev. Develop a specific deck with a workspace filter, e.g. `vp run --filter ./2024-11-19 dev` to open the local server. `vp run build` performs a full repo build: it runs every talk’s Slidev build, copies PDFs, and regenerates `dist/talks.json` plus `dist/feed.xml`. Run `vp check` to lint (Oxlint) and check formatting (Oxfmt), and `vp check --fix` to apply fixes; the pre-commit hook runs `vp staged`. Deployments are published through Cloudflare Pages using `vp run deploy` once `dist/` is up to date.
 
 ## Coding Style & Naming Conventions
 
-Follow the shared ESLint + Prettier stack from `@ryoppippi/eslint-config` and `prettier-plugin-slidev`. Scripts are ESM TypeScript that Node.js runs directly through type stripping, so use only erasable type syntax and import local modules with their `.ts` extension. Use tabs and single quotes (lint rules enforce this). Name new talk directories as `YYYY-MM-DD-*` so workspace filtering remains predictable, and keep slide filenames descriptive if you add additional Markdown entry points.
+Linting and formatting use Oxlint and Oxfmt through Vite+, configured in the root `vite.config.ts`. Oxfmt does not understand Slidev markdown, so `*.md` files are excluded from formatting; keep slide markdown tidy by hand. Scripts are ESM TypeScript that Node.js runs directly through type stripping, so use only erasable type syntax and import local modules with their `.ts` extension. Use tabs and single quotes (the formatter enforces this). Name new talk directories as `YYYY-MM-DD-*` so workspace filtering remains predictable, and keep slide filenames descriptive if you add additional Markdown entry points.
 
 ## Testing Guidelines
 

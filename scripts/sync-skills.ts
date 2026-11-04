@@ -43,14 +43,12 @@ const linkedSkills = await Promise.all(
 					return null;
 				}
 				return name;
-			}
-			catch {
+			} catch {
 				console.error(`❌ Skill missing: .claude/skills/${name}`);
 				hasErrors = true;
 				return null;
 			}
-		}
-		else {
+		} else {
 			try {
 				const existing = await lstat(dst);
 				if (existing.isSymbolicLink()) {
@@ -60,8 +58,7 @@ const linkedSkills = await Promise.all(
 					}
 				}
 				await rm(dst, { recursive: true, force: true });
-			}
-			catch {
+			} catch {
 				// doesn't exist
 			}
 
@@ -73,9 +70,7 @@ const linkedSkills = await Promise.all(
 
 const validSkills = linkedSkills.filter((n): n is string => n !== null);
 const expectedSkillNames = new Set(validSkills);
-const skillOrphans = claudeSkillEntries.filter(
-	name => !expectedSkillNames.has(name),
-);
+const skillOrphans = claudeSkillEntries.filter((name) => !expectedSkillNames.has(name));
 
 if (!checkMode) {
 	await Promise.all(
@@ -97,12 +92,8 @@ if (checkMode && hasErrors) {
 	console.error('\n❌ Skills are not in sync!');
 	console.error('Run: node scripts/sync-skills.ts');
 	process.exit(1);
-}
-else if (checkMode) {
+} else if (checkMode) {
 	console.log('✅ Skills are in sync!');
-}
-else {
-	console.log(
-		`Synced ${validSkills.length} skills: .agents/skills/ -> .claude/skills/ (symlinks)`,
-	);
+} else {
+	console.log(`Synced ${validSkills.length} skills: .agents/skills/ -> .claude/skills/ (symlinks)`);
 }

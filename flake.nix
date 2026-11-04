@@ -18,6 +18,8 @@
       forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f nixpkgs.legacyPackages.${system});
     in
     {
+      formatter = forAllSystems (pkgs: pkgs.nixfmt);
+
       devShells = forAllSystems (pkgs: {
         default = pkgs.mkShellNoCC {
           buildInputs = [
@@ -25,7 +27,6 @@
           ]
           ++ (with pkgs; [
             typescript-go
-            lefthook
             nixfmt
             jq
             git
@@ -33,9 +34,6 @@
           ]);
 
           shellHook = ''
-            # Install lefthook git hooks
-            lefthook install > /dev/null 2>&1
-
             if [ ! -f node_modules/.pnpm/lock.yaml ] || [ pnpm-lock.yaml -nt node_modules/.pnpm/lock.yaml ]; then
               echo "📦 Installing dependencies..."
               vp install --frozen-lockfile
