@@ -5,12 +5,12 @@ pre-commit:
       glob:
         - '.agents/skills/**'
         - '.claude/skills/**'
-      run: bun scripts/sync-skills.ts --check
+      run: node scripts/sync-skills.ts --check
     - name: lint
       glob:
         - '*.{ts,js,vue,md,yaml,yml,json}'
         - '**/*.{ts,js,vue,md,yaml,yml,json}'
-      run: bun run lint --fix {staged_files}
+      run: pnpm exec eslint --cache --fix {staged_files}
       stage_fixed: true
     - name: nixfmt
       glob: '*.nix'

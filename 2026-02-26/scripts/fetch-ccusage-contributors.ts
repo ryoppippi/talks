@@ -1,4 +1,5 @@
-#!/usr/bin/env bun
+#!/usr/bin/env node
+import { writeFile } from 'node:fs/promises';
 import process from 'node:process';
 
 const owner = 'ryoppippi';
@@ -6,7 +7,7 @@ const repo = 'ccusage';
 const perPage = 100;
 
 const headers: Record<string, string> = {
-	'user-agent': 'bun',
+	'user-agent': 'node',
 	'accept': 'application/vnd.github+json',
 };
 
@@ -66,6 +67,6 @@ for (let page = 1; ; page++) {
 }
 
 const outputPath = new URL('../contributors.json', import.meta.url);
-await Bun.write(outputPath, `${JSON.stringify(Array.from(usernames).sort(), null, 2)}\n`);
+await writeFile(outputPath, `${JSON.stringify(Array.from(usernames).sort(), null, 2)}\n`);
 
 console.log(`Saved ${usernames.size} contributors to ${outputPath.pathname}`);

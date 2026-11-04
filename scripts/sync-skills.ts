@@ -1,4 +1,4 @@
-#!/usr/bin/env bun
+#!/usr/bin/env node
 
 import { lstat, mkdir, readdir, readlink, rm, symlink } from 'node:fs/promises';
 import { join } from 'node:path';
@@ -95,7 +95,7 @@ if (skillOrphans.length > 0 && checkMode) {
 
 if (checkMode && hasErrors) {
 	console.error('\n❌ Skills are not in sync!');
-	console.error('Run: bun scripts/sync-skills.ts');
+	console.error('Run: node scripts/sync-skills.ts');
 	process.exit(1);
 }
 else if (checkMode) {
