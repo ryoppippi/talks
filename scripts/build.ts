@@ -52,9 +52,13 @@ await cp('_redirects', p.join(rootDist, '_redirects'));
 		eventLink: urlSchema.optional(),
 		videoLink: urlSchema.optional(),
 		content: z.string(),
-		links: z.array(urlSchema).transform(links =>
-			links.filter(l => l.startsWith(ROOT_URL)).concat(links.filter(l => !l.startsWith(ROOT_URL))),
-		),
+		links: z
+			.array(urlSchema)
+			.transform((links) =>
+				links
+					.filter((l) => l.startsWith(ROOT_URL))
+					.concat(links.filter((l) => !l.startsWith(ROOT_URL))),
+			),
 	});
 
 	const results = [];

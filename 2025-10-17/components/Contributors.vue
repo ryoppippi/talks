@@ -29,8 +29,7 @@ onMounted(() => {
 				width: box.inlineSize,
 				height: box.blockSize,
 			};
-		}
-		else {
+		} else {
 			containerSize.value = {
 				width: entry.contentRect.width,
 				height: entry.contentRect.height,
@@ -55,8 +54,8 @@ onBeforeUnmount(() => {
 
 const grid = computed(() => {
 	const total = contributors.length || 1;
-	const ratio
-		= containerSize.value.width && containerSize.value.height
+	const ratio =
+		containerSize.value.width && containerSize.value.height
 			? containerSize.value.width / containerSize.value.height
 			: 16 / 9;
 
@@ -108,7 +107,7 @@ function getAvatarStyle(login: string) {
 			:alt="contributor"
 			:style="getAvatarStyle(contributor)"
 			loading="lazy"
-		>
+		/>
 	</div>
 </template>
 

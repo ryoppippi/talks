@@ -27,26 +27,27 @@ const { currentSlideRoute } = useNav();
 
 export type Range = [number, number];
 
-export type Distribution
-	= | 'full'
-		| 'top'
-		| 'bottom'
-		| 'left'
-		| 'right'
-		| 'top-left'
-		| 'top-right'
-		| 'bottom-left'
-		| 'bottom-right'
-		| 'center'
-		| 'topmost';
+export type Distribution =
+	| 'full'
+	| 'top'
+	| 'bottom'
+	| 'left'
+	| 'right'
+	| 'top-left'
+	| 'top-right'
+	| 'bottom-left'
+	| 'bottom-right'
+	| 'center'
+	| 'topmost';
 
 const formatter = computed(() => (currentSlideRoute.value.meta?.slide as any)?.frontmatter || {});
 const distribution = computed(() => (formatter.value.glow || 'full') as Distribution);
 const opacity = computed<number>(() => +(formatter.value.glowOpacity ?? 0.4));
 const hue = computed<number>(() => +(formatter.value.glowHue || 0));
-const seed = computed<string>(() => (formatter.value.glowSeed === 'false' || formatter.value.glowSeed === false)
-	? Date.now().toString()
-	: formatter.value.glowSeed || 'default',
+const seed = computed<string>(() =>
+	formatter.value.glowSeed === 'false' || formatter.value.glowSeed === false
+		? Date.now().toString()
+		: formatter.value.glowSeed || 'default',
 );
 const overflow = 0.3;
 const disturb = 0.3;
@@ -165,19 +166,19 @@ const poly3 = usePloy(3);
 		aria-hidden="true"
 	>
 		<div
-			class="clip bg-gradient-to-r  to-white/10"
+			class="clip bg-gradient-to-r to-white/10"
 			:class="colors[0]"
-			:style="{ 'clip-path': `polygon(${poly1})`, 'opacity': opacity }"
+			:style="{ 'clip-path': `polygon(${poly1})`, opacity: opacity }"
 		/>
 		<div
 			class="clip bg-gradient-to-l to-white/10"
 			:class="colors[1]"
-			:style="{ 'clip-path': `polygon(${poly2})`, 'opacity': opacity }"
+			:style="{ 'clip-path': `polygon(${poly2})`, opacity: opacity }"
 		/>
 		<div
 			class="clip bg-gradient-to-t to-white/10"
 			:class="colors[2]"
-			:style="{ 'clip-path': `polygon(${poly3})`, 'opacity': 0.2 }"
+			:style="{ 'clip-path': `polygon(${poly3})`, opacity: 0.2 }"
 		/>
 	</div>
 </template>

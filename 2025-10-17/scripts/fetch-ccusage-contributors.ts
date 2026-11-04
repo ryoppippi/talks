@@ -8,7 +8,7 @@ const perPage = 100;
 
 const headers: Record<string, string> = {
 	'user-agent': 'node',
-	'accept': 'application/vnd.github+json',
+	accept: 'application/vnd.github+json',
 };
 
 const token = process.env.GITHUB_TOKEN;
@@ -24,19 +24,14 @@ const botMatchers = [
 	(login: string) => login.toLowerCase().startsWith('dependabot'),
 ];
 
-const blockedLogins = new Set([
-	'copilot',
-	'github-copilot',
-	'claudecode',
-	'claude-code',
-]);
+const blockedLogins = new Set(['copilot', 'github-copilot', 'claudecode', 'claude-code']);
 
 function isBot(login: string) {
 	const normalized = login.toLowerCase();
 	if (blockedLogins.has(normalized)) {
 		return true;
 	}
-	return botMatchers.some(matcher => matcher(normalized));
+	return botMatchers.some((matcher) => matcher(normalized));
 }
 
 for (let page = 1; ; page++) {
