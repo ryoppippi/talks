@@ -8,6 +8,7 @@
 		"check": "vp check",
 		"lint": "vp lint",
 		"format": "vp check --fix",
+		"test": "vp test --run",
 		"prepare": "vp config --no-agent",
 		"deploy": "vp dlx wrangler@latest pages deploy ."
 	},

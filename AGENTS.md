@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-Date-stamped folders such as `2024-11-19/` or `2024-08-30/` hold individual Slidev talks; each contains `slides.md`, supporting Vue overrides, and a `public/` asset bucket. Shared tooling and configuration live at the repo root: `scripts/build.ts` orchestrates multi-talk builds and feed generation, `vite.config.ts` holds the shared Slidev markdown setup plus the Vite+ lint, format, and pre-commit configuration, `unocss.config.ts` centralises styling rules, and `reuse/` stores reusable content. The build output is written to `dist/` (ignored in VCS) during CI or manual builds.
+Date-stamped folders such as `2024-11-19/` or `2024-08-30/` hold individual Slidev talks; each contains `slides.md`, supporting Vue overrides, and a `public/` asset bucket. Shared tooling and configuration live at the repo root: `scripts/build.ts` orchestrates multi-talk builds and feed generation, `vite.config.ts` holds the shared Slidev markdown setup plus the Vite+ lint, format, test, and pre-commit configuration, `unocss.config.ts` centralises styling rules, and `reuse/` stores reusable content. The build output is written to `dist/` (ignored in VCS) during CI or manual builds.
 
 The `reuse/PersonalIntro.vue` component renders the shared self-introduction layout. Markdown front matter for intro slides should import it and provide content via slots. For StackOne branding, use `reuse/personal-stackone.md`, which already injects the GitHub magic link `{@StackOneHQ}` so Slidev renders the avatar automatically.
 
@@ -18,7 +18,7 @@ Linting and formatting use Oxlint and Oxfmt through Vite+, configured in the roo
 
 ## Testing Guidelines
 
-There is no standalone unit-test suite; validation happens through Slidev and the aggregate build. Before committing, run `vp run --filter ./<talk> build` for the deck you touched, plus `vp run build` to confirm feeds regenerate without schema errors. When exporting speaker PDFs, prefer `vp run --filter ./<talk> export` so shared scripts can copy artefacts into `dist/` automatically. Attach regenerated PDFs to the relevant talk folder and keep exports under version control as required by the event.
+`vp test` runs the Vitest suite under `scripts/`, which checks every talk `README.md` front matter against the feed schema; import test APIs from `vite-plus/test`. Before committing, run `vp run --filter ./<talk> build` for the deck you touched, plus `vp run build` to confirm feeds regenerate. When exporting speaker PDFs, prefer `vp run --filter ./<talk> export` so shared scripts can copy artefacts into `dist/` automatically. Attach regenerated PDFs to the relevant talk folder and keep exports under version control as required by the event.
 
 ## Commit & Pull Request Guidelines
 
