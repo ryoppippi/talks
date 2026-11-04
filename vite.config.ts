@@ -50,6 +50,9 @@ export default defineConfig({
 	lint: {
 		ignorePatterns,
 	},
+	test: {
+		include: ['scripts/**/*.test.ts'],
+	},
 	staged: {
 		'*.{ts,js,vue,json,yaml,yml}': 'vp check --fix',
 		'*.nix': 'nix fmt --',

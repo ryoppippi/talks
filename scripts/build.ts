@@ -6,12 +6,10 @@ import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import p from 'node:path';
 import process from 'node:process';
 import { Feed } from 'feed';
-import matter from 'gray-matter';
 import { glob } from 'tinyglobby';
 import * as ufo from 'ufo';
 import * as z from 'zod';
-
-const ROOT_URL = 'https://talks.ryoppippi.com/';
+import { parseTalkReadme, ROOT_URL } from './talks.ts';
 
 const root = p.join(import.meta.dirname, '..');
 const rootDist = p.join(root, 'dist');
@@ -43,54 +41,27 @@ await cp('_redirects', p.join(rootDist, '_redirects'));
 		absolute: true,
 	});
 
-	const urlSchema = z.string().url();
-	const schema = z.object({
-		title: z.string(),
-		date: z.date(),
-		lang: z.enum(['ja', 'en']),
-		event: z.string(),
-		eventLink: urlSchema.optional(),
-		videoLink: urlSchema.optional(),
-		content: z.string(),
-		links: z
-			.array(urlSchema)
-			.transform((links) =>
-				links
-					.filter((l) => l.startsWith(ROOT_URL))
-					.concat(links.filter((l) => !l.startsWith(ROOT_URL))),
-			),
-	});
-
 	const results = [];
 	for (const projectMD of projectMDs) {
-		const md = await readFile(projectMD, 'utf8');
-		const { data, content } = matter(md);
-
 		const projectDirName = p.relative(root, p.dirname(projectMD));
 		const distPath = p.join(rootDist, projectDirName);
 
-		const { links = [] } = data as { links: string[] };
+		const extraLinks = [];
 
 		/* find url */
 		if (existsSync(p.join(distPath, 'index.html'))) {
 			console.log('exists', distPath);
-			const url = ufo.joinURL(ROOT_URL, p.relative(rootDist, distPath));
-			links.push(url);
+			extraLinks.push(ufo.joinURL(ROOT_URL, p.relative(rootDist, distPath)));
 		}
 
 		/* find pdf */
 		const pdfPath = await glob(p.join(distPath, '*.pdf'), { onlyFiles: true });
 		if (pdfPath.length > 0) {
 			console.log('exists', pdfPath[0]);
-			const pdf = ufo.joinURL(ROOT_URL, p.relative(rootDist, pdfPath[0]));
-			links.push(pdf);
+			extraLinks.push(ufo.joinURL(ROOT_URL, p.relative(rootDist, pdfPath[0])));
 		}
 
-		const result = schema.safeParse({
-			...data,
-			content,
-			links,
-		});
+		const result = parseTalkReadme(await readFile(projectMD, 'utf8'), extraLinks);
 		if (!result.success) {
 			console.error(`Invalid frontmatter in ${projectDirName}:`);
 			console.error(z.prettifyError(result.error));
