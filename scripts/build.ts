@@ -19,6 +19,7 @@ process.chdir(root);
 
 await rm(rootDist, { recursive: true, force: true });
 
+execFileSync('playwright', ['install', '--only-shell', 'chromium'], { stdio: 'inherit' });
 execFileSync('vp', ['run', '--filter', './20*', 'build'], { stdio: 'inherit' });
 
 /* copy pdfs */
