@@ -1,7 +1,10 @@
-#!/usr/bin/env bun
+#!/usr/bin/env node
 
+import { execFileSync } from 'node:child_process';
+import { existsSync } from 'node:fs';
+import { cp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import p from 'node:path';
-import { $ } from 'bun';
+import process from 'node:process';
 import { Feed } from 'feed';
 import matter from 'gray-matter';
 import { glob } from 'tinyglobby';
@@ -10,13 +13,13 @@ import * as z from 'zod';
 
 const ROOT_URL = 'https://talks.ryoppippi.com/';
 
-const root = p.join(__dirname, '..');
+const root = p.join(import.meta.dirname, '..');
 const rootDist = p.join(root, 'dist');
-$.cwd(root);
+process.chdir(root);
 
-await $`rm -rf dist`;
+await rm(rootDist, { recursive: true, force: true });
 
-await $`bun run --filter '*' build`;
+execFileSync('vp', ['run', '--filter', './20*', 'build'], { stdio: 'inherit' });
 
 /* copy pdfs */
 {
@@ -24,14 +27,14 @@ await $`bun run --filter '*' build`;
 		onlyFiles: true,
 	});
 	for (const pdf of pdfs) {
-		const projectDirName = p.dirname(pdf);
-		await $`mkdir -p ${p.join(rootDist, projectDirName)}`;
-		await $`cp ${pdf} ${p.join(rootDist, projectDirName)}/`;
+		const projectDistDir = p.join(rootDist, p.dirname(pdf));
+		await mkdir(projectDistDir, { recursive: true });
+		await cp(pdf, p.join(projectDistDir, p.basename(pdf)));
 	}
 }
 
 /* copy redirects */
-await $`cp -r _redirects ${rootDist}/`;
+await cp('_redirects', p.join(rootDist, '_redirects'));
 
 {
 	const projectMDs = await glob('*/README.md', {
@@ -55,7 +58,7 @@ await $`cp -r _redirects ${rootDist}/`;
 
 	const results = [];
 	for (const projectMD of projectMDs) {
-		const md = await $`cat ${projectMD}`.text();
+		const md = await readFile(projectMD, 'utf8');
 		const { data, content } = matter(md);
 
 		const projectDirName = p.relative(root, p.dirname(projectMD));
@@ -64,7 +67,7 @@ await $`cp -r _redirects ${rootDist}/`;
 		const { links = [] } = data as { links: string[] };
 
 		/* find url */
-		if (await Bun.file(p.join(distPath, 'index.html')).exists()) {
+		if (existsSync(p.join(distPath, 'index.html'))) {
 			console.log('exists', distPath);
 			const url = ufo.joinURL(ROOT_URL, p.relative(rootDist, distPath));
 			links.push(url);
@@ -94,7 +97,7 @@ await $`cp -r _redirects ${rootDist}/`;
 
 	results.sort((a, b) => b.date.getTime() - a.date.getTime());
 
-	await Bun.write(p.join(rootDist, 'talks.json'), JSON.stringify(results, null, 2));
+	await writeFile(p.join(rootDist, 'talks.json'), JSON.stringify(results, null, 2));
 
 	/* generate rss */
 	const feed = new Feed({
@@ -115,5 +118,5 @@ await $`cp -r _redirects ${rootDist}/`;
 		});
 	}
 
-	await Bun.write(p.join(rootDist, 'feed.xml'), feed.rss2());
+	await writeFile(p.join(rootDist, 'feed.xml'), feed.rss2());
 }

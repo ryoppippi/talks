@@ -7,7 +7,7 @@
 		"dev": "slidev --open",
 		"dev:remote": "slidev --open --remote --tunnel",
 		"export": "slidev export",
-		"contributors:ccusage": "bun scripts/fetch-ccusage-contributors.ts"
+		"contributors:ccusage": "node scripts/fetch-ccusage-contributors.ts"
 	},
 	"devDependencies": {
 		"seedrandom": "^3.0.5"
