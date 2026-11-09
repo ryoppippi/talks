@@ -26,7 +26,8 @@
             nix-vite-plus.packages.${pkgs.stdenv.hostPlatform.system}.vp
           ]
           ++ (with pkgs; [
-            typescript-go
+            nodejs_26
+            pnpm
             nixfmt
             jq
             git
