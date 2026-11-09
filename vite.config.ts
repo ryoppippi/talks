@@ -10,7 +10,7 @@ const ignorePatterns = ['.direnv/**', 'dist/**', 'node_modules/**', '**/public/*
 export default defineConfig({
 	slidev: {
 		markdown: {
-			markdownItSetup(md) {
+			markdownSetup(md) {
 				md.use(Figures, {
 					figcaption: true,
 					lazy: true,
