@@ -15,7 +15,7 @@
 	"devDependencies": {
 		"@iconify/json": "^2.2.553",
 		"@ryoppippi/unocss-preset": "^2.0.1",
-		"@slidev/cli": "^51.8.2",
+		"@slidev/cli": "^53.1.0",
 		"@slidev/client": "^53.1.0",
 		"@slidev/theme-default": "^0.25.0",
 		"@slidev/theme-seriph": "latest",
